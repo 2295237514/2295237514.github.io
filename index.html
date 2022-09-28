@@ -1,165 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Hexo Theme Keep">
-    <meta name="description" content="Hexo Theme Keep">
-    <meta name="author" content="Keep Team">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://2295237514.github.io/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://2295237514.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-09-28 11:33:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-    <title>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-        Keep Theme
-    </title>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-<link rel="stylesheet" href="/css/style.css">
-
-    <link rel="shortcut icon" href="/images/logo.svg">
-    
-<link rel="stylesheet" href="/css/font-awesome.min.css">
-
-    <script id="hexo-configurations">
-    let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"2295237514.github.io","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
-    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
-  </script>
-<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-
-
-<body>
-<div class="progress-bar-container">
-    
-
-    
-</div>
-
-
-<main class="page-container">
-
-    
-
-    <div class="page-main-content">
-
-        <div class="page-main-content-top">
-            <header class="header-wrapper">
-
-    <div class="header-content">
-        <div class="left">
-            
-            <a class="logo-title" href="/">
-                Keep Theme
-            </a>
-        </div>
-
-        <div class="right">
-            <div class="pc">
-                <ul class="menu-list">
-                    
-                        <li class="menu-item">
-                            <a class="active"
-                               href="/"
-                            >
-                                HOME
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/archives"
-                            >
-                                ARCHIVES
-                            </a>
-                        </li>
-                    
-                    
-                </ul>
-            </div>
-            <div class="mobile">
-                
-                <div class="icon-item menu-bar">
-                    <div class="menu-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-drawer">
-        <ul class="drawer-menu-list">
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class="active"
-                       href="/">HOME</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/archives">ARCHIVES</a>
-                </li>
-            
-        </ul>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="page-main-content-middle">
-
-            <div class="main-content">
-
-                
-                    <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/post/%E9%9D%A2%E8%AF%95%E7%B2%BE%E9%80%89%E9%97%AE%E9%A2%98.html">
-                        面试精选问题
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        JAVA1.一道关于Integer的面试题1，来，先来一道考题，你看做对了吗？
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/post/%E9%9D%A2%E8%AF%95%E7%B2%BE%E9%80%89%E9%97%AE%E9%A2%98.html" title="面试精选问题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面试精选问题"></a></div><div class="recent-post-info"><a class="article-title" href="/post/%E9%9D%A2%E8%AF%95%E7%B2%BE%E9%80%89%E9%97%AE%E9%A2%98.html" title="面试精选问题">面试精选问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-26T08:13:25.000Z" title="Created 2022-09-26 16:13:25">2022-09-26</time></span></div><div class="content">JAVA1.一道关于Integer的面试题1，来，先来一道考题，你看做对了吗？
 Integer i1 &#x3D; new Integer(66);
 Integer i2 &#x3D; new Integer(66);
-System.out.prin...
-                    
-                </div>
+System.out.println(i1 &#x3D;&#x3D; i2);
+Integer i3 &#x3D; 66;
+Integer i4 &#x3D; 66;
+int i5 &#x3D; 66;
+System.out.println(i3 &#x3D;&#x3D; i4);
+System.out.println(i3 &#x3D;&#x3D; i5);
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Sep 26 2022 16:13:25 GMT+0800">2022-09-26</span></span>
-        
-        
-    </div>
-
-    <a href="/post/%E9%9D%A2%E8%AF%95%E7%B2%BE%E9%80%89%E9%97%AE%E9%A2%98.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/post/JVM.html">
-                        JVM
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        定义： Java Virtual Machine - java程序的运行环境 (java二进制字节码的运行环境)
+Integer i6 &#x3D; 128;
+Integer i7 &#x3D; 128;
+int i8 &#x3D; 128;
+System.out.println(i6 &#x3D;&#x3D; i7);
+System.out.println(i6 &#x3D;&#x3D; i8);
+大家可以猜测下结果，然后将程序运行起来，验证自己的答案是否正确
+这道题主要考查大家对Integer实现原理的掌握程度
+下面， ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/JVM.html" title="JVM"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JVM"></a></div><div class="recent-post-info"><a class="article-title" href="/post/JVM.html" title="JVM">JVM</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-28T00:37:05.000Z" title="Created 2022-07-28 08:37:05">2022-07-28</time></span></div><div class="content">定义： Java Virtual Machine - java程序的运行环境 (java二进制字节码的运行环境)
 好处：
 
 一次编写，到处运行
@@ -168,35 +164,33 @@ System.out.prin...
 多态
 
 比较：
-​	JRE: Java Runtime En...
-                    
-                </div>
+​	JRE: Java Runtime Enviroment（）
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Thu Jul 28 2022 08:37:05 GMT+0800">2022-07-28</span></span>
-        
-        
-    </div>
+常见的JVM:
 
-    <a href="/post/JVM.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
+学习路线：
 
-            </li>
-        
-            <li class="home-article-item">
+内存结构程序计数器
+Program Counter Register 程序计数器（寄存器）
 
-                
+作用：​	用于保存下一条JVM指令的执行地址地址
+特点：​	1.是线程私有的:
 
-                <h3 class="home-article-title">
-                    <a href="/post/SSM.html">
-                        SSM
-                    </a>
-                </h3>
+CPU会为每个线程分配时间片，当当前线程的时间片使用完以后，CPU就会去执行另一个线程中的代码
 
-                <div class="home-article-content markdown-body">
-                    
-                        spring官网
+程序计数器是每个线程所私有的，当另一个线程的时间片用完，又返回来执行当前线程的代码时，通过程序计数器可以知道应该执行哪一句指令
+
+
+​	2.不会存在内存溢出
+虚拟机栈定义：
+每个线程运行时所需要的内存，称为虚拟机栈
+每个栈由多个栈帧组成，对应着每次方法调用时所占用的内存
+每个线程只能有一个活动栈帧，对应着当前正在执行的那个方法
+
+ 问题辨析：
+1.垃圾回收是否涉及栈内存？
+
+不涉及，因为虚拟机栈是有一个个栈帧组成的， ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/SSM.html" title="SSM"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM"></a></div><div class="recent-post-info"><a class="article-title" href="/post/SSM.html" title="SSM">SSM</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-26T08:33:15.000Z" title="Created 2022-07-26 16:33:15">2022-07-26</time></span></div><div class="content">spring官网
 Spring
 Spring Framework是Spring生态圈中最基础的项目，是其他项目的根基
 
@@ -210,367 +204,189 @@ Spring Framework是Spring生态圈中最基础的项目，是其他项目的根�
 
 解决方案
 
-使用对象时，在程序中不要主动使用new产生对象，转换...
-                    
-                </div>
+使用对象时，在程序中不要主动使用new产生对象，转换为由外部提供对象
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Jul 26 2022 16:33:15 GMT+0800">2022-07-26</span></span>
-        
-        
-    </div>
 
-    <a href="/post/SSM.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
+IoC(Inversion of Control) 控制反转
 
-            </li>
-        
-            <li class="home-article-item">
+对象的创建控制权由程序转移到外部，这种思想称为控制反转
+目标：解耦
 
-                
 
-                <h3 class="home-article-title">
-                    <a href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86.html">
-                        计算机组成原理
-                    </a>
-                </h3>
+Spring技术对IoC思想进行了实现
 
-                <div class="home-article-content markdown-body">
-                    
-                        第一章1.21.2.1 冯诺依曼计算机的特点：
+Spring提供了一个容器，称为IoC容器，用来充当IoC思想的外部
+IoC容器负责对象的创建、初始化等一系列工作，被创建或被管理的对象在IoC容器中统称为Bean
+
+
+DI(Dependency Injection)依赖注入
+
+在容器中建立bean与bean之间的依赖关系的整个过程，称为依赖注入
+
+
+
+
+本节总结：
+
+目标：充分解耦
+在IoC容器中管理bean（IoC）
+在IoC容器内将有依赖关系的bean进行关系绑定（DI）
+
+
+最终效果
+使用对象时不仅可以直接从IoC容器中获取，并且获取的bean已经绑定了所有的依赖关系
+
+
+
+IoC入门 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86.html" title="计算机组成原理"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机组成原理"></a></div><div class="recent-post-info"><a class="article-title" href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86.html" title="计算机组成原理">计算机组成原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-13T13:29:14.000Z" title="Created 2022-07-13 21:29:14">2022-07-13</time></span></div><div class="content">第一章1.21.2.1 冯诺依曼计算机的特点：
 计算机有哦运算器，存储器，控制器，输入设备和输出设备五大部件组成
 指令和数据以同等地位存放于存储器中，并可按地址寻访
 指令和数据均用二进制数表示
-指令由操作码和地址码组成，操作码用来表示操作的性质，地址...
-                    
-                </div>
+指令由操作码和地址码组成，操作码用来表示操作的性质，地址码用来表示操作数在存储器中的位置
+指令在存储器内按顺序存放。通常，指令是顺序执行的，在特定条件下，可根据运算结果或根据设定的条件改变执行顺序
+机器以运算器为中心，输入输出设备与存储期间的数据传送通过运算器完成。
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Jul 13 2022 21:29:14 GMT+0800">2022-07-13</span></span>
-        
-        
-    </div>
+相比于经典的冯诺依曼计算机的最后一个特点，现代的计算机已转化为以存储器为中心
+1.2.2 计算机的硬件框图计算机硬件各部件的功能：
 
-    <a href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
+运算器用来完成算术运算和逻辑运算，并将运算的中间结果暂存在运算器内
+存储器用来存放数据和程序
+控制器用来控制，指挥程序和数据的输入，运行以及处理运算结果
+输入设备用来将人们熟悉的信息形式转化为机器能识别的信息形式，常见的有键盘，鼠标等
+输出设备可将机器运算结果转换为人们熟悉的信息形式，如打印机输出，显示器输出等
 
-            </li>
-        
-            <li class="home-article-item">
+计算机的五大部件（又称五大子系统）在控制器的统一指挥下，有条不紊的自动工作
+运算器和控 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/Web%E6%A0%B8%E5%BF%83.html" title="Web核心"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Web核心"></a></div><div class="recent-post-info"><a class="article-title" href="/post/Web%E6%A0%B8%E5%BF%83.html" title="Web核心">Web核心</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-06T06:27:05.000Z" title="Created 2022-07-06 14:27:05">2022-07-06</time></span></div><div class="content">Web概述JavaWeb技术栈
+B&#x2F;S架构：Browser&#x2F;Server，浏览器&#x2F;服务器 架构模式，它的特点是，客户端只需要浏览器，应用程序的逻辑和数据都存储在服务器端。浏览器只需要请求服务器，获取Web资源，服务器把Web资源发送给浏览器即可
 
-                
+好处：易于维护升级：服务器升级苟，客户端无需任何不输就可以使用到新的版本
 
-                <h3 class="home-article-title">
-                    <a href="/post/Web%E6%A0%B8%E5%BF%83.html">
-                        Web核心
-                    </a>
-                </h3>
 
-                <div class="home-article-content markdown-body">
-                    
-                        Web概述JavaWeb技术栈
-B&#x2F;S架构：Browser&#x2F;Server，浏览器&#x2F;服务器 架构模式，它的特点是，客户端只需要浏览器，应用程序的逻辑和数据都存储在服务器端。浏览器只需要请求服务器，获取Web资源，服务器把W...
-                    
-                </div>
+静态资源：HTML  CSS  JavaScript  图片等。 负责页面展现
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Jul 06 2022 14:27:05 GMT+0800">2022-07-06</span></span>
-        
-        
-    </div>
+动态资源：Servlet  Jsp等。 负责逻辑处理
 
-    <a href="/post/Web%E6%A0%B8%E5%BF%83.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
+数据库：负责存储数据
 
-            </li>
-        
-            <li class="home-article-item">
 
-                
 
-                <h3 class="home-article-title">
-                    <a href="/post/java%E7%9A%84%E5%80%BC%E4%BC%A0%E9%80%92%E5%92%8C%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92.html">
-                        java的值传递和引用传递
-                    </a>
-                </h3>
+HTTP
+概念：HyperText  Transfer  Protocol， 超文本传输协议，规定了浏览器和服务器之间数据传输的规则
 
-                <div class="home-article-content markdown-body">
-                    
-                        一、基本类型和引用类型的理解Java中的数据类型分为两种为基本类型和引用类型。
+HTTP协议特点：
+1.基于TCP协议：面向连接，安全
+2.基于请求-响应模型：一次请求对应一次响应
+3.HTTP协议是无状态的协议：对于事务处理没有记忆能力。每次请求-响应都是独立的
+
+缺点：多次请求间不能共享数据       Java中使用会话技术（Cookie、Session）来解决
+有点：速度快
+
+
+
+请求数据格式
+请求数据分为三部 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/java%E7%9A%84%E5%80%BC%E4%BC%A0%E9%80%92%E5%92%8C%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92.html" title="java的值传递和引用传递"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java的值传递和引用传递"></a></div><div class="recent-post-info"><a class="article-title" href="/post/java%E7%9A%84%E5%80%BC%E4%BC%A0%E9%80%92%E5%92%8C%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92.html" title="java的值传递和引用传递">java的值传递和引用传递</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-05T08:53:49.000Z" title="Created 2022-07-05 16:53:49">2022-07-05</time></span></div><div class="content">一、基本类型和引用类型的理解Java中的数据类型分为两种为基本类型和引用类型。
 1、基本类型的变量保存原始值，所以变量就是数据本身。
-  常见的基本类型：byte,short,int,long,char,float,double,Boolean,re...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Jul 05 2022 16:53:49 GMT+0800">2022-07-05</span></span>
-        
-        
-    </div>
-
-    <a href="/post/java%E7%9A%84%E5%80%BC%E4%BC%A0%E9%80%92%E5%92%8C%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/post/Leetcode%E9%AB%98%E9%A2%91%E9%A2%98%E6%80%BB%E7%BB%93.html">
-                        Leetcode高频题总结
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        剑指Offer18 删除链表的节点class Solution &#123;
+  常见的基本类型：byte,short,int,long,char,float,double,Boolean,returnAddress。
+2、引用类型的变量保存引用值，所谓的引用值就是对象所在内存空间的“首地址值”，通过对这个引用值来操作对象。
+  常见的引用类型：类类型，接口类型和数组。
+二、值传递和引用传递的理解1、值传递  在方法的调用过程中，实参把它的实际值传递给形参，此传递过程就是将实参的值复制一份传递到函数中，这样如果在函数中对该值（形参的值）进行了操作将不会影响实参的值。因为是直接复制，所以这种方式在传递大量数据时，运行效率会特别低下。
+2、引用传递  引用传递弥补了值传递的不足，如果传递的数据量很大，直接复过去的话，会占用大量的内存空间，而引用传递就是将对象的地址值传递过去，函数接收的是原始值的首地址值。在方法的执行过程中，形参和实参的内容相同，指向同一块内存地址，也就是说操作的其实都是源数据，所以方法的执行将会影响到实际对象。
+举例 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/Leetcode%E9%AB%98%E9%A2%91%E9%A2%98%E6%80%BB%E7%BB%93.html" title="Leetcode高频题总结"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Leetcode高频题总结"></a></div><div class="recent-post-info"><a class="article-title" href="/post/Leetcode%E9%AB%98%E9%A2%91%E9%A2%98%E6%80%BB%E7%BB%93.html" title="Leetcode高频题总结">Leetcode高频题总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-05T03:05:06.000Z" title="Created 2022-07-05 11:05:06">2022-07-05</time></span></div><div class="content">剑指Offer18 删除链表的节点class Solution &#123;
     public ListNode deleteNode(ListNode head, int val) &#123;
-        while(head !&#x3...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Jul 05 2022 11:05:06 GMT+0800">2022-07-05</span></span>
-        
-        
-    </div>
-
-    <a href="/post/Leetcode%E9%AB%98%E9%A2%91%E9%A2%98%E6%80%BB%E7%BB%93.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html">
-                        数据结构与算法学习
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        由于之前并未完整成体系的学习算法，在力扣刷100道题后
+        while(head !&#x3D; null)&#123;
+            if(head.val !&#x3D; val)&#123;
+                break;
+            &#125;
+            head &#x3D; head.next;
+        &#125; &#x2F;&#x2F;找到第一个非空的头结点，用于返回和执行下步操作
+        ListNode pre &#x3D; head;
+        ListNode cur &#x3D; head;
+        while(cur !&#x3D; null)&#123;
+            if(cur.val &#x3D;&#x3D; val)&#123;
+                pre.next &#x3D; cur. ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html" title="数据结构与算法学习"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构与算法学习"></a></div><div class="recent-post-info"><a class="article-title" href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html" title="数据结构与算法学习">数据结构与算法学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-02T01:51:23.000Z" title="Created 2022-07-02 09:51:23">2022-07-02</time></span></div><div class="content">由于之前并未完整成体系的学习算法，在力扣刷100道题后
 感觉到算法知识不成体系，决定看左程云的体系学习班学习算法
 学习路线
 搞定1,2,3差不多达到面试水平
 杂记子问题规模一样的递归可以用Master公式求时间复杂度
-T(N) &#x3D; a * ...
-                    
-                </div>
+T(N) &#x3D; a * T(N&#x2F;b) + O(N ^ d);
+a:会有几次调用代码
+b:每次调用规模的大小
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Jul 02 2022 09:51:23 GMT+0800">2022-07-02</span></span>
-        
-        
-    </div>
+如果 log（b , a) &lt; d 时间复杂度为： O(N^d)
+如果log (b , a) &gt; d 时间复杂度为 ： O(N^(log(b,a)))
+如果log（b , a）&#x3D;&#x3D; d 时间复杂度为：O(N^d * log(2,n)))注：log(b,a) 指以b为地a为指数
 
-    <a href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/post/%E5%89%8D%E7%AB%AF%E4%B8%89%E4%BB%B6%E5%A5%97%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html">
-                        前端三件套
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        HTMLHTML：超文本标记语言超文本：超越了文本的的限制，比普通文本更强大，除了文字信息，还可以定义图片，音频，视频等内容。标记语言：由标签构成的语言
+基础的数据结构实现栈和队列用数组实现队列&#x2F;&#x2F; 给定一个长度被限制数组空间，如何实现队列？
+public class RingArray&#123;
+    public static class MyQueue&#123;
+        private int[]arr;
+        private int pus ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/%E5%89%8D%E7%AB%AF%E4%B8%89%E4%BB%B6%E5%A5%97%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html" title="前端三件套"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端三件套"></a></div><div class="recent-post-info"><a class="article-title" href="/post/%E5%89%8D%E7%AB%AF%E4%B8%89%E4%BB%B6%E5%A5%97%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html" title="前端三件套">前端三件套</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-06-30T02:44:09.000Z" title="Created 2022-06-30 10:44:09">2022-06-30</time></span></div><div class="content">HTMLHTML：超文本标记语言超文本：超越了文本的的限制，比普通文本更强大，除了文字信息，还可以定义图片，音频，视频等内容。标记语言：由标签构成的语言
 HTML运行在浏览器上，HTML标签由浏览器来解析
-HTML标签都是预定义好的。例如：使用&lt...
-                    
-                </div>
+HTML标签都是预定义好的。例如：使用&lt;img&gt;展示图片
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Thu Jun 30 2022 10:44:09 GMT+0800">2022-06-30</span></span>
+W3C标准：网页主要由三部分组成
+结构：HTML
+表现：CSS
+行为：JavaScript
+
+
+
+HTML结构：
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;&#x2F;title&gt;
+    &lt;&#x2F;head&gt;
+    &lt;body&gt;
         
-        
-    </div>
+    &lt;&#x2F;body&gt;
+&lt;&#x2F;html&gt;
 
-    <a href="/post/%E5%89%8D%E7%AB%AF%E4%B8%89%E4%BB%B6%E5%A5%97%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
 
-            </li>
-        
-            <li class="home-article-item">
 
-                
 
-                <h3 class="home-article-title">
-                    <a href="/post/Mybatis.html">
-                        Mybatis
-                    </a>
-                </h3>
 
-                <div class="home-article-content markdown-body">
-                    
-                        入门_MyBatis中文网(Mybatis.pdf)什么是Mybatis？
+
+
+
+ 
+CSS导入方式：
+1、使用“”引入css样式；
+2、在style标签里写css样式；
+3、在元素标签里使用style属性写css样式。
+具体使用查W3cschool
+js导入方式：
+1、直接引入
+&lt;script&gt;alert(&quot;这是js的内部引 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/Mybatis.html" title="Mybatis"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Mybatis"></a></div><div class="recent-post-info"><a class="article-title" href="/post/Mybatis.html" title="Mybatis">Mybatis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-06-07T08:06:27.000Z" title="Created 2022-06-07 16:06:27">2022-06-07</time></span></div><div class="content">入门_MyBatis中文网(Mybatis.pdf)什么是Mybatis？
 Mybatis是一款优秀的持久层框架，用于简化JDBC开发
 官网：https://mybatis.org/mybatis-3/zh/index.html
 
 持久层：
 
-负责将...
-                    
-                </div>
+负责将数据保存到数据库的那一层代码
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Jun 07 2022 16:06:27 GMT+0800">2022-06-07</span></span>
-        
-        
-    </div>
-
-    <a href="/post/Mybatis.html">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-    </ul>
-
-    <div class="home-paginator">
-        <div class="paginator">
-    
-
-    
-        <a class="next btn"
-           href="/page/2/"
-        >Next</a>
-    
-</div>
-
-    </div>
-</div>
+JavaEE三层架构：表现层，业务层，持久层
 
 
-                
-            </div>
+框架：
 
-        </div>
+框架就是一个半成品软件，是一套可重用的、通用的、软件基础代码模型
 
-        <div class="page-main-content-bottom">
-            <footer class="footer">
-    <div class="info-container">
-        <div class="copyright-info info-item">
-            &copy;
-            
-              <span>2020</span>
-              -
-            
-            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
-        </div>
-        
-        <div class="theme-info info-item">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
-        </div>
-        
-        
-    </div>
-</footer>
-
-        </div>
-    </div>
-
-    
-
-    <div class="right-bottom-side-tools">
-        <div class="side-tools-container">
-    <ul class="side-tools-list">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
-
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
-
-        <li class="tools-item tool-expand-width flex-center">
-            <i class="fas fa-arrows-alt-h"></i>
-        </li>
-
-        <li class="tools-item tool-dark-light-toggle flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
-
-        <!-- rss -->
-        
-
-        
-            <li class="tools-item tool-scroll-to-top flex-center">
-                <i class="fas fa-arrow-up"></i>
-            </li>
-        
-
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="exposed-tools-list">
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
-        
-    </ul>
-</div>
-
-    </div>
-
-    
-
-    <div class="image-viewer-container">
-    <img src="">
-</div>
-
-
-    
-
-</main>
+在框架的基础之上构建软件编写更加高效、规范、通用、可扩展
 
 
 
+快速入门
+JDBC写的是硬编码，后期维护很麻烦，无论是增删改查语句的修改，或者是用户名密码的改变，
+MyBatis虽然麻烦，不过很多步骤只做一次，后期维护非常的方便
+解决SQL映射文件的警告提示产生原因：IDEA和数据库没有建立连接，不识别表信息
+解决方法：在IDEA中配置MySQL数据库连接
 
 
-<script src="/js/utils.js"></script>
+Mapper代理开发
+目的
+1.解决原生方式中的硬编码
+2.简化后期执行SQL
 
-<script src="/js/main.js"></script>
-
-<script src="/js/header-shrink.js"></script>
-
-<script src="/js/back2top.js"></script>
-
-<script src="/js/dark-light-toggle.js"></script>
-
-
-
-
-
-
-
-
-<div class="post-scripts">
-    
-</div>
-
-
-
-</body>
-</html>
+步骤
+1.定义与SQL映射文件同名的Mapper接口，并且将Mapper接口和SQL映射文件放置在同一目录下
+2.设置SQL映射文件的names ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/%E9%9D%A2%E8%AF%95%E7%B2%BE%E9%80%89%E9%97%AE%E9%A2%98.html" title="面试精选问题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面试精选问题"/></a><div class="content"><a class="title" href="/post/%E9%9D%A2%E8%AF%95%E7%B2%BE%E9%80%89%E9%97%AE%E9%A2%98.html" title="面试精选问题">面试精选问题</a><time datetime="2022-09-26T08:13:25.000Z" title="Created 2022-09-26 16:13:25">2022-09-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/JVM.html" title="JVM"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JVM"/></a><div class="content"><a class="title" href="/post/JVM.html" title="JVM">JVM</a><time datetime="2022-07-28T00:37:05.000Z" title="Created 2022-07-28 08:37:05">2022-07-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/SSM.html" title="SSM"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM"/></a><div class="content"><a class="title" href="/post/SSM.html" title="SSM">SSM</a><time datetime="2022-07-26T08:33:15.000Z" title="Created 2022-07-26 16:33:15">2022-07-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86.html" title="计算机组成原理"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机组成原理"/></a><div class="content"><a class="title" href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86.html" title="计算机组成原理">计算机组成原理</a><time datetime="2022-07-13T13:29:14.000Z" title="Created 2022-07-13 21:29:14">2022-07-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/Web%E6%A0%B8%E5%BF%83.html" title="Web核心"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Web核心"/></a><div class="content"><a class="title" href="/post/Web%E6%A0%B8%E5%BF%83.html" title="Web核心">Web核心</a><time datetime="2022-07-06T06:27:05.000Z" title="Created 2022-07-06 14:27:05">2022-07-06</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/JavaWeb/" style="font-size: 1.1em; color: #999">JavaWeb</a> <a href="/tags/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 1.1em; color: #999">java基础知识</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.5em; color: #99a9bf">算法与数据结构</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">September 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">July 2022</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">June 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">May 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">April 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-09-28T03:33:10.536Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
