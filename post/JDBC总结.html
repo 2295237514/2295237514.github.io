@@ -1,1 +1,576 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><link href="/static/css/chunk-libs.eebac533.css" rel="stylesheet"><link href="/static/css/app.0d31776f.css" rel="stylesheet"><!-- hexo injector head_end start --><script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/components/prism-core.js" data-manual></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/themes/prism.min.css"/><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"/><link rel="stylesheet" href="https://fonts.loli.net/css?family=Rubik" /><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.2/gitalk.min.js"></script><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.2/gitalk.min.css"/><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body id="body-container"><noscript><strong>We're sorry but Aurora Blog doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>(function(e){function t(t){for(var a,n,u=t[0],i=t[1],c=t[2],l=0,p=[];l<u.length;l++)n=u[l],Object.prototype.hasOwnProperty.call(o,n)&&o[n]&&p.push(o[n][0]),o[n]=0;for(a in i)Object.prototype.hasOwnProperty.call(i,a)&&(e[a]=i[a]);f&&f(t);while(p.length)p.shift()();return s.push.apply(s,c||[]),r()}function r(){for(var e,t=0;t<s.length;t++){for(var r=s[t],a=!0,n=1;n<r.length;n++){var u=r[n];0!==o[u]&&(a=!1)}a&&(s.splice(t--,1),e=i(i.s=r[0]))}return e}var a={},n={runtime:0},o={runtime:0},s=[];function u(e){return i.p+"static/js/"+({404:"404",about:"about",archives:"archives",categories:"categories",page:"page",post:"post",result:"result",tags:"tags"}[e]||e)+"."+{404:"00d640a8",about:"024aacd1",archives:"574ac664",categories:"90aa5475",page:"a02618ad",post:"cebfbaa4",result:"39470350",tags:"2ad613f5"}[e]+".js"}function i(t){if(a[t])return a[t].exports;var r=a[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.e=function(e){var t=[],r={404:1,about:1,archives:1,categories:1,page:1,post:1,result:1,tags:1};n[e]?t.push(n[e]):0!==n[e]&&r[e]&&t.push(n[e]=new Promise((function(t,r){for(var a="static/css/"+({404:"404",about:"about",archives:"archives",categories:"categories",page:"page",post:"post",result:"result",tags:"tags"}[e]||e)+"."+{404:"1a6cd5bd",about:"32dfa3b0",archives:"c0d49bd5",categories:"10e2be12",page:"749ad047",post:"9f951a60",result:"10e2be12",tags:"10e2be12"}[e]+".css",o=i.p+a,s=document.getElementsByTagName("link"),u=0;u<s.length;u++){var c=s[u],l=c.getAttribute("data-href")||c.getAttribute("href");if("stylesheet"===c.rel&&(l===a||l===o))return t()}var p=document.getElementsByTagName("style");for(u=0;u<p.length;u++){c=p[u],l=c.getAttribute("data-href");if(l===a||l===o)return t()}var f=document.createElement("link");f.rel="stylesheet",f.type="text/css",f.onload=t,f.onerror=function(t){var a=t&&t.target&&t.target.src||o,s=new Error("Loading CSS chunk "+e+" failed.\n("+a+")");s.code="CSS_CHUNK_LOAD_FAILED",s.request=a,delete n[e],f.parentNode.removeChild(f),r(s)},f.href=o;var d=document.getElementsByTagName("head")[0];d.appendChild(f)})).then((function(){n[e]=0})));var a=o[e];if(0!==a)if(a)t.push(a[2]);else{var s=new Promise((function(t,r){a=o[e]=[t,r]}));t.push(a[2]=s);var c,l=document.createElement("script");l.charset="utf-8",l.timeout=120,i.nc&&l.setAttribute("nonce",i.nc),l.src=u(e);var p=new Error;c=function(t){l.onerror=l.onload=null,clearTimeout(f);var r=o[e];if(0!==r){if(r){var a=t&&("load"===t.type?"missing":t.type),n=t&&t.target&&t.target.src;p.message="Loading chunk "+e+" failed.\n("+a+": "+n+")",p.name="ChunkLoadError",p.type=a,p.request=n,r[1](p)}o[e]=void 0}};var f=setTimeout((function(){c({type:"timeout",target:l})}),12e4);l.onerror=l.onload=c,document.head.appendChild(l)}return Promise.all(t)},i.m=e,i.c=a,i.d=function(e,t,r){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},i.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"===typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(i.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)i.d(r,a,function(t){return e[t]}.bind(null,a));return r},i.n=function(e){var t=e&&e.__esModule?function(){return e["default"]}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="/",i.oe=function(e){throw console.error(e),e};var c=window["webpackJsonp"]=window["webpackJsonp"]||[],l=c.push.bind(c);c.push=t,c=c.slice();for(var p=0;p<c.length;p++)t(c[p]);var f=l;r()})([]);</script><script src="/static/js/chunk-libs.dc6146cd.js"></script><script src="/static/js/app.6d2c358d.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+            JDBC总结 |
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"2295237514.github.io","root":"/","language":"en"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">JDBC总结</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Keep Team</span>
+                        
+                            <span class="author-label">Lv2</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-05-07 10:47:07</span>
+        <span class="mobile">2022-05-07 10:47</span>
+    </span>
+    
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="JDBC快速入门-JDBC-pdf"><a href="#JDBC快速入门-JDBC-pdf" class="headerlink" title="JDBC快速入门	(JDBC.pdf)"></a>JDBC快速入门	<a target="_blank" href="\doc\JDBC.pdf ">(JDBC.pdf)</h1><h2 id="1、编写代码步骤"><a href="#1、编写代码步骤" class="headerlink" title="1、编写代码步骤"></a>1、编写代码步骤</h2><h3 id="1、创建工程-导入驱动jar包"><a href="#1、创建工程-导入驱动jar包" class="headerlink" title="1、创建工程,导入驱动jar包"></a>1、创建工程,导入驱动jar包</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507155303.png"></p>
+<p><a target = "_blank" href = "\doc\mysql-connector-java-5.1.48.jar"> <em><strong>jar包</strong></em></p>
+<h3 id="2、注册驱动"><a href="#2、注册驱动" class="headerlink" title="2、注册驱动"></a>2、注册驱动</h3><pre class="line-numbers language-none"><code class="language-none">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</code></pre>
+
+<h3 id="3、获取连接"><a href="#3、获取连接" class="headerlink" title="3、获取连接"></a>3、获取连接</h3><pre class="line-numbers language-none"><code class="language-none">Connection conn &#x3D; DriverMannager.getConnection(url,username,password);</code></pre>
+
+<h3 id="4、定义SQL语句"><a href="#4、定义SQL语句" class="headerlink" title="4、定义SQL语句"></a>4、定义SQL语句</h3><pre class="line-numbers language-none"><code class="language-none">String sql &#x3D; &quot;&quot;;</code></pre>
+
+<h3 id="5、获取执行SQL的对象"><a href="#5、获取执行SQL的对象" class="headerlink" title="5、获取执行SQL的对象"></a>5、获取执行SQL的对象</h3><pre class="line-numbers language-none"><code class="language-none">Statement stmt &#x3D; conn.createStatement();</code></pre>
+
+<h3 id="6、执行SQL语句"><a href="#6、执行SQL语句" class="headerlink" title="6、执行SQL语句"></a>6、执行SQL语句</h3><pre class="line-numbers language-none"><code class="language-none">stmt.executeUpdate(sql);  
+&#x2F;&#x2F;此方法会执行sql语句并返回受影响的行数。可以用
+int count &#x3D; stmt.executeUpdate(sql)接受返回值;</code></pre>
+
+<h3 id="7、处理返回结果"><a href="#7、处理返回结果" class="headerlink" title="7、处理返回结果"></a>7、处理返回结果</h3><h3 id="8、释放资源"><a href="#8、释放资源" class="headerlink" title="8、释放资源"></a>8、释放资源</h3><pre class="line-numbers language-none"><code class="language-none">stmt.close();
+conn.cloes();</code></pre>
+
+<h3 id="例"><a href="#例" class="headerlink" title="例"></a>例</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507161018.png"></p>
+<h1 id="API详解"><a href="#API详解" class="headerlink" title="API详解"></a>API详解</h1><h2 id="1、DriverManager"><a href="#1、DriverManager" class="headerlink" title="1、DriverManager"></a>1、DriverManager</h2><h3 id="1、注册驱动"><a href="#1、注册驱动" class="headerlink" title="1、注册驱动"></a>1、注册驱动</h3><p>*** MYSQL 5之后的驱动包，可以省略注册驱动的步骤***</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507220942.png"></p>
+<p>这个方法可以完成驱动的注册，但是实际开发中一般不会使用这个方法完成驱动的注册</p>
+<p>原因：</p>
+<p>如果需要注册驱动，就会使用，DriverManager.registerDriver(new Driver()); ,但是查看源代码发现，在代码中一段静态代码块，静态代码块已经调用了注册驱动的方法。</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507221217.png"></p>
+<p>如果再手动调用该方法注册驱动，就会导致驱动被注册两次。实际开发中一般户次爱用;</p>
+<pre class="line-numbers language-none"><code class="language-none">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</code></pre>
+
+<h3 id="2、获得与数据库的连接"><a href="#2、获得与数据库的连接" class="headerlink" title="2、获得与数据库的连接"></a>2、获得与数据库的连接</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507221414.png"></p>
+<p>这个方法就是用来获得与数据库连接的方法，这个方法中的三个参数为 与数据库连接的路径(url)，与数据库连接的用户名(user)，与数据库连接的密码(password)。</p>
+<p>主要是url的写法：</p>
+<pre class="line-numbers language-none"><code class="language-none">jdbc:mysql:&#x2F;&#x2F;127.0.0.1:3306&#x2F;db1</code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">jdbc:mysql:&#x2F;&#x2F;ip地址:端口号&#x2F;数据库名称?参数键值对1&amp;参数键值对2...</code></pre>
+
+<p>localhost           :连接的MySQL数据库服务器的主机ip地址。（连接是本机就可以写成localhost），如果连接不是本机的，就需要写上连接主机的IP地址。</p>
+<p>url如果连接的是本机的路径，可以简化为如下格式：</p>
+<p>jdbc:mysql:&#x2F;&#x2F;&#x2F;db1</p>
+<p><em><strong>配置useSSL &#x3D; false 参数，禁用安全连接方式，解决警告提示</strong></em></p>
+<h2 id="2、Connection"><a href="#2、Connection" class="headerlink" title="2、Connection"></a>2、Connection</h2><h3 id="1、获取执行SQL对象"><a href="#1、获取执行SQL对象" class="headerlink" title="1、获取执行SQL对象"></a>1、获取执行SQL对象</h3><p>普通执行SQL对象</p>
+<pre class="line-numbers language-none"><code class="language-none">Statement createStatement();</code></pre>
+
+<p> 预编译SQL的执行SQL对象；防止SQL注入</p>
+<pre class="line-numbers language-none"><code class="language-none">PreparedStatement prepareStatement(sql);</code></pre>
+
+<p>执行存储过程的对象</p>
+<pre class="line-numbers language-none"><code class="language-none">CallableStatement prepareCall(sql)</code></pre>
+
+<h3 id="2、事务管理"><a href="#2、事务管理" class="headerlink" title="2、事务管理"></a>2、事务管理</h3><h4 id="MYSQL事务管理"><a href="#MYSQL事务管理" class="headerlink" title="MYSQL事务管理"></a>MYSQL事务管理</h4><pre class="line-numbers language-none"><code class="language-none">开启事务：  begin;&#x2F;start transaction;
+提交事务：  commit;
+回滚事务：  rollback;
+
+MYSQL默认自动提交事务</code></pre>
+
+<h4 id="JDBC事务管理"><a href="#JDBC事务管理" class="headerlink" title="JDBC事务管理"></a>JDBC事务管理</h4><p>Connection接口中定义了3个对应的方法</p>
+<pre class="line-numbers language-none"><code class="language-none">开启事务：setAutoCommit(bollean autoCommit): true为自动提交事务；false为手动提交事务，即为开启事务
+提交事务：commit()
+回滚事务：rollback()</code></pre>
+
+<p>例：</p>
+<pre class="line-numbers language-none"><code class="language-none">package com.itheima.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+&#x2F;**
+ * JDBC API 详解：Connection
+ *&#x2F;
+public class JDBCDemo3_Connection &#123;
+
+    public static void main(String[] args) throws Exception &#123;
+        &#x2F;&#x2F;1. 注册驱动
+        &#x2F;&#x2F;Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
+        &#x2F;&#x2F;2. 获取连接：如果连接的是本机mysql并且端口是默认的 3306 可以简化书写
+        String url &#x3D; &quot;jdbc:mysql:&#x2F;&#x2F;&#x2F;db1?useSSL&#x3D;false&quot;;
+        String username &#x3D; &quot;root&quot;;
+        String password &#x3D; &quot;1234&quot;;
+        Connection conn &#x3D; DriverManager.getConnection(url, username, password);
+        &#x2F;&#x2F;3. 定义sql
+        String sql1 &#x3D; &quot;update account set money &#x3D; 3000 where id &#x3D; 1&quot;;
+        String sql2 &#x3D; &quot;update account set money &#x3D; 3000 where id &#x3D; 2&quot;;
+        &#x2F;&#x2F;4. 获取执行sql的对象 Statement
+        Statement stmt &#x3D; conn.createStatement();
+
+        try &#123;
+            &#x2F;&#x2F; 开启事务
+            conn.setAutoCommit(false);
+            &#x2F;&#x2F;5. 执行sql
+            int count1 &#x3D; stmt.executeUpdate(sql1);&#x2F;&#x2F;受影响的行数
+            &#x2F;&#x2F;6. 处理结果
+            System.out.println(count1);
+            int i &#x3D; 3&#x2F;0;
+            &#x2F;&#x2F;5. 执行sql
+            int count2 &#x3D; stmt.executeUpdate(sql2);&#x2F;&#x2F;受影响的行数
+            &#x2F;&#x2F;6. 处理结果
+            System.out.println(count2);
+
+            &#x2F;&#x2F; 提交事务
+            conn.commit();
+        &#125; catch (Exception throwables) &#123;
+            &#x2F;&#x2F; 回滚事务
+            conn.rollback();
+            throwables.printStackTrace();
+        &#125;
+
+
+
+        &#x2F;&#x2F;7. 释放资源
+        stmt.close();
+        conn.close();
+    &#125;
+&#125;</code></pre>
+
+<h2 id="3、Statement"><a href="#3、Statement" class="headerlink" title="3、Statement"></a>3、Statement</h2><h3 id="1、执行SQL语句"><a href="#1、执行SQL语句" class="headerlink" title="1、执行SQL语句"></a>1、执行SQL语句</h3><pre class="line-numbers language-none"><code class="language-none">int executeUpdate(sql):执行DML、DDL语句
+返回值（1）DML语句影响的行数（2）DDL语句执行后，执行成功也可能返回0</code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">ResultSet executeQuery(sql):执行DQL语句
+返回值：Result结果集对象</code></pre>
+
+<h2 id="4、ResultSet"><a href="#4、ResultSet" class="headerlink" title="4、ResultSet"></a>4、ResultSet</h2><h3 id="封装了DQL查询语句的结果"><a href="#封装了DQL查询语句的结果" class="headerlink" title="封装了DQL查询语句的结果"></a>封装了DQL查询语句的结果</h3><pre class="line-numbers language-none"><code class="language-none">ResultSet stmt.executeQuery(sql); 执行DQL语句，返回ResultSet对象</code></pre>
+
+<h3 id="获取查询结果"><a href="#获取查询结果" class="headerlink" title="获取查询结果"></a>获取查询结果</h3><pre class="line-numbers language-none"><code class="language-none">boolean next(): (1)将光标从当前位置向前移动一行 (2)判断当前行是否为有效行
+返回值 true：有效行，当前行有数据   false：无效行，当前行没有数据</code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">xxx getXxx(参数):获取数据
+xxx：数据类型，如 ： int getInt(参数) String getString(参数)
+参数：int： 列的编号，从1开始
+	 string：列的名称</code></pre>
+
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><p>1、游标向下移动一行，并判断该行是否有数据：next()</p>
+<p>2 、获取数据：getXxx(参数)</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;循环判断游标是否是最后一行末尾
+while(rs.next())
+&#123;
+	&#x2F;&#x2F;获取数据
+	rs.getXxx(参数);
+&#125;</code></pre>
+
+<h2 id="5、PreparedStatement"><a href="#5、PreparedStatement" class="headerlink" title="5、PreparedStatement"></a>5、PreparedStatement</h2><h3 id="作用：预编译SQL语句并执行，防止SQL注入问题"><a href="#作用：预编译SQL语句并执行，防止SQL注入问题" class="headerlink" title="作用：预编译SQL语句并执行，防止SQL注入问题"></a>作用：预编译SQL语句并执行，防止SQL注入问题</h3><p>如：用户名随便写，密码写成’ or ‘ 1 ‘ &#x3D; ‘1</p>
+<h3 id="用法："><a href="#用法：" class="headerlink" title="用法："></a>用法：</h3><h4 id="1、获取PreparedStatement对象"><a href="#1、获取PreparedStatement对象" class="headerlink" title="1、获取PreparedStatement对象"></a>1、获取PreparedStatement对象</h4><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;SQL语句中的参数值，使用？占位符替代
+String sql &#x3D; &quot;select * from user where username &#x3D; ? and password &#x3D; ？&quot;;
+&#x2F;&#x2F;通过Connection对象获取，并传入对应的SQL语句
+PreparedStatement pstmt &#x3D; conn.prepareStatement(sql);</code></pre>
+
+<h4 id="2、设置参数值"><a href="#2、设置参数值" class="headerlink" title="2、设置参数值"></a>2、设置参数值</h4><pre class="line-numbers language-none"><code class="language-none">PreparedStatement对象:setXxx(参数1,参数2):给？赋值
+Xxx:数据类型，如setInt(参数1,参数2)
+参数：
+参数1：？的位置编号，从1开始
+参数2：？的值</code></pre>
+
+<h4 id="3、执行SQL"><a href="#3、执行SQL" class="headerlink" title="3、执行SQL"></a>3、执行SQL</h4><pre class="line-numbers language-none"><code class="language-none">executeUpdate();&#x2F;executeQuery(); :不需要再传递sql</code></pre>
+
+
+
+<h4 id="例-1"><a href="#例-1" class="headerlink" title="例"></a>例</h4><pre class="line-numbers language-none"><code class="language-none">public class JDBCDemo7_PreparedStatement &#123;
+
+    @Test
+    public void testPreparedStatement() throws  Exception &#123;
+       &#x2F;&#x2F;2. 获取连接：如果连接的是本机mysql并且端口是默认的 3306 可以简化书写
+       String url &#x3D; &quot;jdbc:mysql:&#x2F;&#x2F;&#x2F;db1?useSSL&#x3D;false&quot;;
+       String username &#x3D; &quot;root&quot;;
+       String password &#x3D; &quot;1234&quot;;
+       Connection conn &#x3D; DriverManager.getConnection(url, username, password);
+
+       &#x2F;&#x2F; 接收用户输入 用户名和密码
+        String name &#x3D; &quot;zhangsan&quot;;
+        String pwd &#x3D; &quot;&#39; or &#39;1&#39; &#x3D; &#39;1&quot;;
+
+        &#x2F;&#x2F; 定义sql
+        String sql &#x3D; &quot;select * from tb_user where username &#x3D; ? and password &#x3D; ?&quot;;
+
+        &#x2F;&#x2F; 获取pstmt对象
+        PreparedStatement pstmt &#x3D; conn.prepareStatement(sql);
+
+        &#x2F;&#x2F; 设置？的值
+        pstmt.setString(1,name);
+        pstmt.setString(2,pwd);
+
+        &#x2F;&#x2F; 执行sql
+        ResultSet rs &#x3D; pstmt.executeQuery();
+
+        &#x2F;&#x2F; 判断登录是否成功
+        if(rs.next())&#123;
+            System.out.println(&quot;登录成功~&quot;);
+        &#125;else&#123;
+            System.out.println(&quot;登录失败~&quot;);
+        &#125;
+
+        &#x2F;&#x2F;7. 释放资源
+        rs.close();
+        pstmt.close();
+        conn.close();
+    &#125;</code></pre>
+
+<h3 id="好处："><a href="#好处：" class="headerlink" title="好处："></a>好处：</h3><p>1、预编译SQL，性能更高</p>
+<p>2、防止SQL注入，将敏感字符进行转义</p>
+<p>PreparedStatement预编译功能开启：useServerPrepStmts&#x3D;true</p>
+<p>（参数键值对）应加在URL最后</p>
+<p>配置MySQL执行日志（重启mysql服务后生效）</p>
+<pre class="line-numbers language-none"><code class="language-none">log-output&#x3D;FILE
+general-log&#x3D;1
+general_log_file&#x3D;&quot;D:\mysql.log&quot;
+slow-query-log&#x3D;1
+slow_query_log_file&#x3D;&quot;D:\mysql_slow.log&quot;
+long_query_time&#x3D;2</code></pre>
+
+<h3 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h3><p>1、在获取PreparedStatement对象时，将sql语句发送给mysql服务器进行检查，编译（这些步骤很耗时）</p>
+<p>2、执行时就不用再进行这些步骤了，速度更快</p>
+<p>3、如果sql模板一样，则只需要进行一次检查编译</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220513112641.png"></p>
+<h1 id="数据库连接池"><a href="#数据库连接池" class="headerlink" title="数据库连接池"></a>数据库连接池</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
+<li><p>数据库连接池是个容器，负责分配，，管理数据库连接</p>
+</li>
+<li><p>它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个</p>
+</li>
+<li><p>释放空闲时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏</p>
+</li>
+<li><p>好处：</p>
+<ul>
+<li><p>资源重用</p>
+</li>
+<li><p>提升系统响应速度</p>
+</li>
+<li><p>避免数据库连接遗漏</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据库连接池实现"><a href="#数据库连接池实现" class="headerlink" title="数据库连接池实现"></a>数据库连接池实现</h2><h3 id="标准接口"><a href="#标准接口" class="headerlink" title="标准接口"></a>标准接口</h3><ul>
+<li>官方（SUN）提供的数据库连接池标准接口，由第三方组织实现此接口。</li>
+<li>功能：获取连接</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">Connection getConnection()</code></pre>
+
+<h3 id="常见的数据库连接池："><a href="#常见的数据库连接池：" class="headerlink" title="常见的数据库连接池："></a>常见的数据库连接池：</h3><ul>
+<li>DBCP</li>
+<li>C3P0</li>
+<li>Druid</li>
+</ul>
+<h3 id="Druid（德鲁伊）"><a href="#Druid（德鲁伊）" class="headerlink" title="Druid（德鲁伊）"></a>Druid（德鲁伊）</h3><ul>
+<li>Druid连接池是阿里巴巴开源的数据库连接池项目</li>
+<li>功能强大，性能优秀，是Java语言最好的数据库连接池之一</li>
+</ul>
+
+        </div>
+
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/post/Maven.html"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Maven</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/post/SQL%E6%80%BB%E7%BB%93.html"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">SQL总结</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
+</html>

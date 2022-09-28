@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+            面试精选问题 |
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"2295237514.github.io","root":"/","language":"en"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">面试精选问题</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Keep Team</span>
+                        
+                            <span class="author-label">Lv2</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-09-26 16:13:25</span>
+        <span class="mobile">2022-09-26 16:13</span>
+    </span>
+    
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><h2 id="1-一道关于Integer的面试题"><a href="#1-一道关于Integer的面试题" class="headerlink" title="1.一道关于Integer的面试题"></a>1.一道关于Integer的面试题</h2><p>1，来，先来一道考题，你看做对了吗？</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">Integer i1 &#x3D; new Integer(66);
+Integer i2 &#x3D; new Integer(66);
+System.out.println(i1 &#x3D;&#x3D; i2);
+Integer i3 &#x3D; 66;
+Integer i4 &#x3D; 66;
+int i5 &#x3D; 66;
+System.out.println(i3 &#x3D;&#x3D; i4);
+System.out.println(i3 &#x3D;&#x3D; i5);
+
+Integer i6 &#x3D; 128;
+Integer i7 &#x3D; 128;
+int i8 &#x3D; 128;
+System.out.println(i6 &#x3D;&#x3D; i7);
+System.out.println(i6 &#x3D;&#x3D; i8);</code></pre>
+<p>大家可以猜测下结果，然后将程序运行起来，验证自己的答案是否正确</p>
+<p>这道题主要考查大家对Integer实现原理的掌握程度</p>
+<p>下面，我给大家对这里的关键原理做解读，相信理解之后，你心中自然有答案了</p>
+<p>答案揭晓</p>
+<p>分情况来比较</p>
+<ul>
+<li>都定义为Integer的比较：</li>
+</ul>
+<p>new：一旦new，就是开辟一块新内存，结果肯定是false<br>不new：<br>看范围<br>Integer做了缓存，-128至127，当你取值在这个范围的时候，会采用缓存的对象，所以会相等<br>当不在这个范围，内部创建新的对象，此时不相等</p>
+<ul>
+<li>Integer和int的比较：</li>
+</ul>
+<p>实际比较的是数值，Integer会做拆箱的动作，来跟基本数据类型做比较<br>此时跟是否在缓存范围内或是否new都没关系</p>
+<hr>
+<p>源码分析：</p>
+<p>当我们写Integer i &#x3D; 126,实际上做了自动装箱：Integer i &#x3D; Integer.valueOf(126);<br>分析这段源码</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static Integer valueOf(int i) &#123;
+    if (i &gt;&#x3D; IntegerCache.low &amp;&amp; i &lt;&#x3D; IntegerCache.high)
+        return IntegerCache.cache[i + (-IntegerCache.low)];
+    return new Integer(i);
+&#125;
+&#x2F;&#x2F;IntegerCache是Integer的内部类
+private static class IntegerCache &#123;
+    static final int low &#x3D; -128;
+    static final int high;
+    static final Integer cache[];
+    static &#123;
+        &#x2F;&#x2F; high value may be configured by property
+        int h &#x3D; 127;
+    &#x2F;&#x2F;...
+&#125;</code></pre>
+
+<h2 id="2-StringBuffer，StringBuilder开发中如何做选择？"><a href="#2-StringBuffer，StringBuilder开发中如何做选择？" class="headerlink" title="2.StringBuffer，StringBuilder开发中如何做选择？"></a>2.StringBuffer，StringBuilder开发中如何做选择？</h2><ul>
+<li>String是final类型，每次声明的都是不可变的对象，</li>
+<li>所以每次操作都会产生新的String对象，然后将指针指向新的String对象。</li>
+<li>StringBuffer，StringBuilder都是在原有对象上进行操作</li>
+</ul>
+<p>所以，如果需要经常改变字符串内容，则建议采用StringBuffer 和 StringBuilder</p>
+<p><strong>StringBuffer是线程安全的，StringBuilder是线程不安全的。</strong><br>线程不安全的StringBuilder性能更高，所以在开发中，优先采用StringBuilder.<br><em>StringBuilder &gt; StringBuffer &gt; String</em><br>注意：</p>
+<p>我们在开发中为什么会选择StringBuilder？</p>
+<p>这个要看场景，有同学说可以为了性能放弃安全，这是不对的。</p>
+<p>大家想想，什么情况下需要考虑线程安全的问题？</p>
+<ul>
+<li><em>有一个前提条件就是：多线程访问同一个资源，且有更新操作</em></li>
+</ul>
+<p>所以，只要不是这样的场景，我们就可以放心使用StringBuilder</p>
+<p><em>而我们在开发中，通常使用StringBuilder在方法内来创建对象和拼接信息，而这种情况是一个线程对应一个StringBuilder对象</em></p>
+
+        </div>
+
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/post/JVM.html"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">JVM</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
+</html>
