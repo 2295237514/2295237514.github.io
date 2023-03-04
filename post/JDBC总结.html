@@ -1,2 +1,761 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><link href="/static/css/chunk-libs.eebac533.css" rel="stylesheet"><link href="/static/css/app.0d31776f.css" rel="stylesheet"><!-- hexo injector head_end start --><script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/components/prism-core.js" data-manual></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/themes/prism.min.css"/><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"/><link rel="stylesheet" href="https://fonts.loli.net/css?family=Rubik" /><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.2/gitalk.min.js"></script><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.2/gitalk.min.css"/><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head><body id="body-container"><noscript><strong>We're sorry but Aurora Blog doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>(function(e){function t(t){for(var a,n,u=t[0],i=t[1],c=t[2],l=0,p=[];l<u.length;l++)n=u[l],Object.prototype.hasOwnProperty.call(o,n)&&o[n]&&p.push(o[n][0]),o[n]=0;for(a in i)Object.prototype.hasOwnProperty.call(i,a)&&(e[a]=i[a]);f&&f(t);while(p.length)p.shift()();return s.push.apply(s,c||[]),r()}function r(){for(var e,t=0;t<s.length;t++){for(var r=s[t],a=!0,n=1;n<r.length;n++){var u=r[n];0!==o[u]&&(a=!1)}a&&(s.splice(t--,1),e=i(i.s=r[0]))}return e}var a={},n={runtime:0},o={runtime:0},s=[];function u(e){return i.p+"static/js/"+({404:"404",about:"about",archives:"archives",categories:"categories",page:"page",post:"post",result:"result",tags:"tags"}[e]||e)+"."+{404:"00d640a8",about:"024aacd1",archives:"574ac664",categories:"90aa5475",page:"a02618ad",post:"cebfbaa4",result:"39470350",tags:"2ad613f5"}[e]+".js"}function i(t){if(a[t])return a[t].exports;var r=a[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.e=function(e){var t=[],r={404:1,about:1,archives:1,categories:1,page:1,post:1,result:1,tags:1};n[e]?t.push(n[e]):0!==n[e]&&r[e]&&t.push(n[e]=new Promise((function(t,r){for(var a="static/css/"+({404:"404",about:"about",archives:"archives",categories:"categories",page:"page",post:"post",result:"result",tags:"tags"}[e]||e)+"."+{404:"1a6cd5bd",about:"32dfa3b0",archives:"c0d49bd5",categories:"10e2be12",page:"749ad047",post:"9f951a60",result:"10e2be12",tags:"10e2be12"}[e]+".css",o=i.p+a,s=document.getElementsByTagName("link"),u=0;u<s.length;u++){var c=s[u],l=c.getAttribute("data-href")||c.getAttribute("href");if("stylesheet"===c.rel&&(l===a||l===o))return t()}var p=document.getElementsByTagName("style");for(u=0;u<p.length;u++){c=p[u],l=c.getAttribute("data-href");if(l===a||l===o)return t()}var f=document.createElement("link");f.rel="stylesheet",f.type="text/css",f.onload=t,f.onerror=function(t){var a=t&&t.target&&t.target.src||o,s=new Error("Loading CSS chunk "+e+" failed.\n("+a+")");s.code="CSS_CHUNK_LOAD_FAILED",s.request=a,delete n[e],f.parentNode.removeChild(f),r(s)},f.href=o;var d=document.getElementsByTagName("head")[0];d.appendChild(f)})).then((function(){n[e]=0})));var a=o[e];if(0!==a)if(a)t.push(a[2]);else{var s=new Promise((function(t,r){a=o[e]=[t,r]}));t.push(a[2]=s);var c,l=document.createElement("script");l.charset="utf-8",l.timeout=120,i.nc&&l.setAttribute("nonce",i.nc),l.src=u(e);var p=new Error;c=function(t){l.onerror=l.onload=null,clearTimeout(f);var r=o[e];if(0!==r){if(r){var a=t&&("load"===t.type?"missing":t.type),n=t&&t.target&&t.target.src;p.message="Loading chunk "+e+" failed.\n("+a+": "+n+")",p.name="ChunkLoadError",p.type=a,p.request=n,r[1](p)}o[e]=void 0}};var f=setTimeout((function(){c({type:"timeout",target:l})}),12e4);l.onerror=l.onload=c,document.head.appendChild(l)}return Promise.all(t)},i.m=e,i.c=a,i.d=function(e,t,r){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},i.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"===typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(i.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)i.d(r,a,function(t){return e[t]}.bind(null,a));return r},i.n=function(e){var t=e&&e.__esModule?function(){return e["default"]}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="/",i.oe=function(e){throw console.error(e),e};var c=window["webpackJsonp"]=window["webpackJsonp"]||[],l=c.push.bind(c);c.push=t,c=c.slice();for(var p=0;p<c.length;p++)t(c[p]);var f=l;r()})([]);</script><script src="/static/js/chunk-libs.dc6146cd.js"></script><script src="/static/js/app.6d2c358d.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>JDBC总结 | Hexo</title>
+  <meta name="author" content="GLK" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="JDBC快速入门	(JDBC.pdf)1、编写代码步骤1、创建工程,导入驱动jar包  jar包 2、注册驱动Class.forName(&quot;com.mysql.jdbc.Driver&quot;);  3、获取连接Connection conn &#x3D; DriverMannager.getConnection(url,username,password);  4、定义SQL语句St">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JDBC总结">
+<meta property="og:url" content="https://2295237514.github.io/post/JDBC%E6%80%BB%E7%BB%93.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="JDBC快速入门	(JDBC.pdf)1、编写代码步骤1、创建工程,导入驱动jar包  jar包 2、注册驱动Class.forName(&quot;com.mysql.jdbc.Driver&quot;);  3、获取连接Connection conn &#x3D; DriverMannager.getConnection(url,username,password);  4、定义SQL语句St">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220507155303.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220507161018.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220507220942.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220507221217.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220507221414.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220513112641.png">
+<meta property="article:published_time" content="2022-05-07T02:47:07.000Z">
+<meta property="article:modified_time" content="2022-05-23T15:00:59.686Z">
+<meta property="article:author" content="GLK">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220507155303.png">
+  <link rel="alternate" href="atom.xml" type="application/atom+xml">
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Hexo</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Hexo</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://2295237514.github.io/post/JDBC%E6%80%BB%E7%BB%93.html">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">JDBC总结</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2022-05-07T02:47:07.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-05-07</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">GLK</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        ~6.58K
+                    
+                    字
+                </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1653318059686"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><h1 id="JDBC快速入门-JDBC-pdf"><a href="#JDBC快速入门-JDBC-pdf" class="headerlink" title="JDBC快速入门	(JDBC.pdf)"></a>JDBC快速入门	<a target="_blank" href="\doc\JDBC.pdf ">(JDBC.pdf)</h1><h2 id="1、编写代码步骤"><a href="#1、编写代码步骤" class="headerlink" title="1、编写代码步骤"></a>1、编写代码步骤</h2><h3 id="1、创建工程-导入驱动jar包"><a href="#1、创建工程-导入驱动jar包" class="headerlink" title="1、创建工程,导入驱动jar包"></a>1、创建工程,导入驱动jar包</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507155303.png"></p>
+<p><a target = "_blank" href = "\doc\mysql-connector-java-5.1.48.jar"> <em><strong>jar包</strong></em></p>
+<h3 id="2、注册驱动"><a href="#2、注册驱动" class="headerlink" title="2、注册驱动"></a>2、注册驱动</h3><pre class="line-numbers language-none"><code class="language-none">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</code></pre>
+
+<h3 id="3、获取连接"><a href="#3、获取连接" class="headerlink" title="3、获取连接"></a>3、获取连接</h3><pre class="line-numbers language-none"><code class="language-none">Connection conn &#x3D; DriverMannager.getConnection(url,username,password);</code></pre>
+
+<h3 id="4、定义SQL语句"><a href="#4、定义SQL语句" class="headerlink" title="4、定义SQL语句"></a>4、定义SQL语句</h3><pre class="line-numbers language-none"><code class="language-none">String sql &#x3D; &quot;&quot;;</code></pre>
+
+<h3 id="5、获取执行SQL的对象"><a href="#5、获取执行SQL的对象" class="headerlink" title="5、获取执行SQL的对象"></a>5、获取执行SQL的对象</h3><pre class="line-numbers language-none"><code class="language-none">Statement stmt &#x3D; conn.createStatement();</code></pre>
+
+<h3 id="6、执行SQL语句"><a href="#6、执行SQL语句" class="headerlink" title="6、执行SQL语句"></a>6、执行SQL语句</h3><pre class="line-numbers language-none"><code class="language-none">stmt.executeUpdate(sql);  
+&#x2F;&#x2F;此方法会执行sql语句并返回受影响的行数。可以用
+int count &#x3D; stmt.executeUpdate(sql)接受返回值;</code></pre>
+
+<h3 id="7、处理返回结果"><a href="#7、处理返回结果" class="headerlink" title="7、处理返回结果"></a>7、处理返回结果</h3><h3 id="8、释放资源"><a href="#8、释放资源" class="headerlink" title="8、释放资源"></a>8、释放资源</h3><pre class="line-numbers language-none"><code class="language-none">stmt.close();
+conn.cloes();</code></pre>
+
+<h3 id="例"><a href="#例" class="headerlink" title="例"></a>例</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507161018.png"></p>
+<h1 id="API详解"><a href="#API详解" class="headerlink" title="API详解"></a>API详解</h1><h2 id="1、DriverManager"><a href="#1、DriverManager" class="headerlink" title="1、DriverManager"></a>1、DriverManager</h2><h3 id="1、注册驱动"><a href="#1、注册驱动" class="headerlink" title="1、注册驱动"></a>1、注册驱动</h3><p>*** MYSQL 5之后的驱动包，可以省略注册驱动的步骤***</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507220942.png"></p>
+<p>这个方法可以完成驱动的注册，但是实际开发中一般不会使用这个方法完成驱动的注册</p>
+<p>原因：</p>
+<p>如果需要注册驱动，就会使用，DriverManager.registerDriver(new Driver()); ,但是查看源代码发现，在代码中一段静态代码块，静态代码块已经调用了注册驱动的方法。</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507221217.png"></p>
+<p>如果再手动调用该方法注册驱动，就会导致驱动被注册两次。实际开发中一般户次爱用;</p>
+<pre class="line-numbers language-none"><code class="language-none">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</code></pre>
+
+<h3 id="2、获得与数据库的连接"><a href="#2、获得与数据库的连接" class="headerlink" title="2、获得与数据库的连接"></a>2、获得与数据库的连接</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220507221414.png"></p>
+<p>这个方法就是用来获得与数据库连接的方法，这个方法中的三个参数为 与数据库连接的路径(url)，与数据库连接的用户名(user)，与数据库连接的密码(password)。</p>
+<p>主要是url的写法：</p>
+<pre class="line-numbers language-none"><code class="language-none">jdbc:mysql:&#x2F;&#x2F;127.0.0.1:3306&#x2F;db1</code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">jdbc:mysql:&#x2F;&#x2F;ip地址:端口号&#x2F;数据库名称?参数键值对1&amp;参数键值对2...</code></pre>
+
+<p>localhost           :连接的MySQL数据库服务器的主机ip地址。（连接是本机就可以写成localhost），如果连接不是本机的，就需要写上连接主机的IP地址。</p>
+<p>url如果连接的是本机的路径，可以简化为如下格式：</p>
+<p>jdbc:mysql:&#x2F;&#x2F;&#x2F;db1</p>
+<p><em><strong>配置useSSL &#x3D; false 参数，禁用安全连接方式，解决警告提示</strong></em></p>
+<h2 id="2、Connection"><a href="#2、Connection" class="headerlink" title="2、Connection"></a>2、Connection</h2><h3 id="1、获取执行SQL对象"><a href="#1、获取执行SQL对象" class="headerlink" title="1、获取执行SQL对象"></a>1、获取执行SQL对象</h3><p>普通执行SQL对象</p>
+<pre class="line-numbers language-none"><code class="language-none">Statement createStatement();</code></pre>
+
+<p> 预编译SQL的执行SQL对象；防止SQL注入</p>
+<pre class="line-numbers language-none"><code class="language-none">PreparedStatement prepareStatement(sql);</code></pre>
+
+<p>执行存储过程的对象</p>
+<pre class="line-numbers language-none"><code class="language-none">CallableStatement prepareCall(sql)</code></pre>
+
+<h3 id="2、事务管理"><a href="#2、事务管理" class="headerlink" title="2、事务管理"></a>2、事务管理</h3><h4 id="MYSQL事务管理"><a href="#MYSQL事务管理" class="headerlink" title="MYSQL事务管理"></a>MYSQL事务管理</h4><pre class="line-numbers language-none"><code class="language-none">开启事务：  begin;&#x2F;start transaction;
+提交事务：  commit;
+回滚事务：  rollback;
+
+MYSQL默认自动提交事务</code></pre>
+
+<h4 id="JDBC事务管理"><a href="#JDBC事务管理" class="headerlink" title="JDBC事务管理"></a>JDBC事务管理</h4><p>Connection接口中定义了3个对应的方法</p>
+<pre class="line-numbers language-none"><code class="language-none">开启事务：setAutoCommit(bollean autoCommit): true为自动提交事务；false为手动提交事务，即为开启事务
+提交事务：commit()
+回滚事务：rollback()</code></pre>
+
+<p>例：</p>
+<pre class="line-numbers language-none"><code class="language-none">package com.itheima.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+&#x2F;**
+ * JDBC API 详解：Connection
+ *&#x2F;
+public class JDBCDemo3_Connection &#123;
+
+    public static void main(String[] args) throws Exception &#123;
+        &#x2F;&#x2F;1. 注册驱动
+        &#x2F;&#x2F;Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
+        &#x2F;&#x2F;2. 获取连接：如果连接的是本机mysql并且端口是默认的 3306 可以简化书写
+        String url &#x3D; &quot;jdbc:mysql:&#x2F;&#x2F;&#x2F;db1?useSSL&#x3D;false&quot;;
+        String username &#x3D; &quot;root&quot;;
+        String password &#x3D; &quot;1234&quot;;
+        Connection conn &#x3D; DriverManager.getConnection(url, username, password);
+        &#x2F;&#x2F;3. 定义sql
+        String sql1 &#x3D; &quot;update account set money &#x3D; 3000 where id &#x3D; 1&quot;;
+        String sql2 &#x3D; &quot;update account set money &#x3D; 3000 where id &#x3D; 2&quot;;
+        &#x2F;&#x2F;4. 获取执行sql的对象 Statement
+        Statement stmt &#x3D; conn.createStatement();
+
+        try &#123;
+            &#x2F;&#x2F; 开启事务
+            conn.setAutoCommit(false);
+            &#x2F;&#x2F;5. 执行sql
+            int count1 &#x3D; stmt.executeUpdate(sql1);&#x2F;&#x2F;受影响的行数
+            &#x2F;&#x2F;6. 处理结果
+            System.out.println(count1);
+            int i &#x3D; 3&#x2F;0;
+            &#x2F;&#x2F;5. 执行sql
+            int count2 &#x3D; stmt.executeUpdate(sql2);&#x2F;&#x2F;受影响的行数
+            &#x2F;&#x2F;6. 处理结果
+            System.out.println(count2);
+
+            &#x2F;&#x2F; 提交事务
+            conn.commit();
+        &#125; catch (Exception throwables) &#123;
+            &#x2F;&#x2F; 回滚事务
+            conn.rollback();
+            throwables.printStackTrace();
+        &#125;
+
+
+
+        &#x2F;&#x2F;7. 释放资源
+        stmt.close();
+        conn.close();
+    &#125;
+&#125;</code></pre>
+
+<h2 id="3、Statement"><a href="#3、Statement" class="headerlink" title="3、Statement"></a>3、Statement</h2><h3 id="1、执行SQL语句"><a href="#1、执行SQL语句" class="headerlink" title="1、执行SQL语句"></a>1、执行SQL语句</h3><pre class="line-numbers language-none"><code class="language-none">int executeUpdate(sql):执行DML、DDL语句
+返回值（1）DML语句影响的行数（2）DDL语句执行后，执行成功也可能返回0</code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">ResultSet executeQuery(sql):执行DQL语句
+返回值：Result结果集对象</code></pre>
+
+<h2 id="4、ResultSet"><a href="#4、ResultSet" class="headerlink" title="4、ResultSet"></a>4、ResultSet</h2><h3 id="封装了DQL查询语句的结果"><a href="#封装了DQL查询语句的结果" class="headerlink" title="封装了DQL查询语句的结果"></a>封装了DQL查询语句的结果</h3><pre class="line-numbers language-none"><code class="language-none">ResultSet stmt.executeQuery(sql); 执行DQL语句，返回ResultSet对象</code></pre>
+
+<h3 id="获取查询结果"><a href="#获取查询结果" class="headerlink" title="获取查询结果"></a>获取查询结果</h3><pre class="line-numbers language-none"><code class="language-none">boolean next(): (1)将光标从当前位置向前移动一行 (2)判断当前行是否为有效行
+返回值 true：有效行，当前行有数据   false：无效行，当前行没有数据</code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">xxx getXxx(参数):获取数据
+xxx：数据类型，如 ： int getInt(参数) String getString(参数)
+参数：int： 列的编号，从1开始
+	 string：列的名称</code></pre>
+
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><p>1、游标向下移动一行，并判断该行是否有数据：next()</p>
+<p>2 、获取数据：getXxx(参数)</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;循环判断游标是否是最后一行末尾
+while(rs.next())
+&#123;
+	&#x2F;&#x2F;获取数据
+	rs.getXxx(参数);
+&#125;</code></pre>
+
+<h2 id="5、PreparedStatement"><a href="#5、PreparedStatement" class="headerlink" title="5、PreparedStatement"></a>5、PreparedStatement</h2><h3 id="作用：预编译SQL语句并执行，防止SQL注入问题"><a href="#作用：预编译SQL语句并执行，防止SQL注入问题" class="headerlink" title="作用：预编译SQL语句并执行，防止SQL注入问题"></a>作用：预编译SQL语句并执行，防止SQL注入问题</h3><p>如：用户名随便写，密码写成’ or ‘ 1 ‘ &#x3D; ‘1</p>
+<h3 id="用法："><a href="#用法：" class="headerlink" title="用法："></a>用法：</h3><h4 id="1、获取PreparedStatement对象"><a href="#1、获取PreparedStatement对象" class="headerlink" title="1、获取PreparedStatement对象"></a>1、获取PreparedStatement对象</h4><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;SQL语句中的参数值，使用？占位符替代
+String sql &#x3D; &quot;select * from user where username &#x3D; ? and password &#x3D; ？&quot;;
+&#x2F;&#x2F;通过Connection对象获取，并传入对应的SQL语句
+PreparedStatement pstmt &#x3D; conn.prepareStatement(sql);</code></pre>
+
+<h4 id="2、设置参数值"><a href="#2、设置参数值" class="headerlink" title="2、设置参数值"></a>2、设置参数值</h4><pre class="line-numbers language-none"><code class="language-none">PreparedStatement对象:setXxx(参数1,参数2):给？赋值
+Xxx:数据类型，如setInt(参数1,参数2)
+参数：
+参数1：？的位置编号，从1开始
+参数2：？的值</code></pre>
+
+<h4 id="3、执行SQL"><a href="#3、执行SQL" class="headerlink" title="3、执行SQL"></a>3、执行SQL</h4><pre class="line-numbers language-none"><code class="language-none">executeUpdate();&#x2F;executeQuery(); :不需要再传递sql</code></pre>
+
+
+
+<h4 id="例-1"><a href="#例-1" class="headerlink" title="例"></a>例</h4><pre class="line-numbers language-none"><code class="language-none">public class JDBCDemo7_PreparedStatement &#123;
+
+    @Test
+    public void testPreparedStatement() throws  Exception &#123;
+       &#x2F;&#x2F;2. 获取连接：如果连接的是本机mysql并且端口是默认的 3306 可以简化书写
+       String url &#x3D; &quot;jdbc:mysql:&#x2F;&#x2F;&#x2F;db1?useSSL&#x3D;false&quot;;
+       String username &#x3D; &quot;root&quot;;
+       String password &#x3D; &quot;1234&quot;;
+       Connection conn &#x3D; DriverManager.getConnection(url, username, password);
+
+       &#x2F;&#x2F; 接收用户输入 用户名和密码
+        String name &#x3D; &quot;zhangsan&quot;;
+        String pwd &#x3D; &quot;&#39; or &#39;1&#39; &#x3D; &#39;1&quot;;
+
+        &#x2F;&#x2F; 定义sql
+        String sql &#x3D; &quot;select * from tb_user where username &#x3D; ? and password &#x3D; ?&quot;;
+
+        &#x2F;&#x2F; 获取pstmt对象
+        PreparedStatement pstmt &#x3D; conn.prepareStatement(sql);
+
+        &#x2F;&#x2F; 设置？的值
+        pstmt.setString(1,name);
+        pstmt.setString(2,pwd);
+
+        &#x2F;&#x2F; 执行sql
+        ResultSet rs &#x3D; pstmt.executeQuery();
+
+        &#x2F;&#x2F; 判断登录是否成功
+        if(rs.next())&#123;
+            System.out.println(&quot;登录成功~&quot;);
+        &#125;else&#123;
+            System.out.println(&quot;登录失败~&quot;);
+        &#125;
+
+        &#x2F;&#x2F;7. 释放资源
+        rs.close();
+        pstmt.close();
+        conn.close();
+    &#125;</code></pre>
+
+<h3 id="好处："><a href="#好处：" class="headerlink" title="好处："></a>好处：</h3><p>1、预编译SQL，性能更高</p>
+<p>2、防止SQL注入，将敏感字符进行转义</p>
+<p>PreparedStatement预编译功能开启：useServerPrepStmts&#x3D;true</p>
+<p>（参数键值对）应加在URL最后</p>
+<p>配置MySQL执行日志（重启mysql服务后生效）</p>
+<pre class="line-numbers language-none"><code class="language-none">log-output&#x3D;FILE
+general-log&#x3D;1
+general_log_file&#x3D;&quot;D:\mysql.log&quot;
+slow-query-log&#x3D;1
+slow_query_log_file&#x3D;&quot;D:\mysql_slow.log&quot;
+long_query_time&#x3D;2</code></pre>
+
+<h3 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h3><p>1、在获取PreparedStatement对象时，将sql语句发送给mysql服务器进行检查，编译（这些步骤很耗时）</p>
+<p>2、执行时就不用再进行这些步骤了，速度更快</p>
+<p>3、如果sql模板一样，则只需要进行一次检查编译</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220513112641.png"></p>
+<h1 id="数据库连接池"><a href="#数据库连接池" class="headerlink" title="数据库连接池"></a>数据库连接池</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
+<li><p>数据库连接池是个容器，负责分配，，管理数据库连接</p>
+</li>
+<li><p>它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个</p>
+</li>
+<li><p>释放空闲时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏</p>
+</li>
+<li><p>好处：</p>
+<ul>
+<li><p>资源重用</p>
+</li>
+<li><p>提升系统响应速度</p>
+</li>
+<li><p>避免数据库连接遗漏</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据库连接池实现"><a href="#数据库连接池实现" class="headerlink" title="数据库连接池实现"></a>数据库连接池实现</h2><h3 id="标准接口"><a href="#标准接口" class="headerlink" title="标准接口"></a>标准接口</h3><ul>
+<li>官方（SUN）提供的数据库连接池标准接口，由第三方组织实现此接口。</li>
+<li>功能：获取连接</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">Connection getConnection()</code></pre>
+
+<h3 id="常见的数据库连接池："><a href="#常见的数据库连接池：" class="headerlink" title="常见的数据库连接池："></a>常见的数据库连接池：</h3><ul>
+<li>DBCP</li>
+<li>C3P0</li>
+<li>Druid</li>
+</ul>
+<h3 id="Druid（德鲁伊）"><a href="#Druid（德鲁伊）" class="headerlink" title="Druid（德鲁伊）"></a>Druid（德鲁伊）</h3><ul>
+<li>Druid连接池是阿里巴巴开源的数据库连接池项目</li>
+<li>功能强大，性能优秀，是Java语言最好的数据库连接池之一</li>
+</ul>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://2295237514.github.io/post/JDBC%E6%80%BB%E7%BB%93.html",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://2295237514.github.io/post/JDBC%E6%80%BB%E7%BB%93.html";
+            const title         = "「JDBC总结」";
+            const excerpt       = `JDBC快速入门	(JDBC.pdf)1、编写代码步骤1、创建工程,导入驱动jar包
+ jar包
+2、注册驱动Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
+
+3、获取连接Conne...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    
+                </div>
+                <div class="pull-date">
+                    <time datetime="2022-05-23T15:00:59.686Z" itemprop="dateModified">最后编辑：2022-05-23</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" SQL总结" target="_blank" rel="noopener" href="//post/SQL总结.html">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" Maven" target="_blank" rel="noopener" href="//post/Maven.html">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                16
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                4
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/JavaWeb/" style="font-size: 0.6em;">JavaWeb</a> <a href="/tags/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 0.6em;">java基础知识</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 0.6em;">前端</a> <a href="/tags/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 0.8em;">算法与数据结构</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/post/Mysql%E8%BF%9B%E9%98%B6%E7%AF%87.html"><i class="fa  fa-book"></i> Mysql进阶篇</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/post/Redis%E5%85%A5%E9%97%A8.html"><i class="fa  fa-book"></i> Redis入门</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/post/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.html"><i class="fa  fa-book"></i> Java集合框架</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/post/%E9%9D%A2%E8%AF%95%E7%B2%BE%E9%80%89%E9%97%AE%E9%A2%98.html"><i class="fa  fa-book"></i> 面试精选问题</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/post/JVM.html"><i class="fa  fa-book"></i> JVM</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2023 Hexo 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by GLK.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>

@@ -1,2 +1,3429 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><link href="/static/css/chunk-libs.eebac533.css" rel="stylesheet"><link href="/static/css/app.0d31776f.css" rel="stylesheet"><!-- hexo injector head_end start --><script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/components/prism-core.js" data-manual></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/themes/prism.min.css"/><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"/><link rel="stylesheet" href="https://fonts.loli.net/css?family=Rubik" /><script rel="preload" src="https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.2/gitalk.min.js"></script><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.2/gitalk.min.css"/><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head><body id="body-container"><noscript><strong>We're sorry but Aurora Blog doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>(function(e){function t(t){for(var a,n,u=t[0],i=t[1],c=t[2],l=0,p=[];l<u.length;l++)n=u[l],Object.prototype.hasOwnProperty.call(o,n)&&o[n]&&p.push(o[n][0]),o[n]=0;for(a in i)Object.prototype.hasOwnProperty.call(i,a)&&(e[a]=i[a]);f&&f(t);while(p.length)p.shift()();return s.push.apply(s,c||[]),r()}function r(){for(var e,t=0;t<s.length;t++){for(var r=s[t],a=!0,n=1;n<r.length;n++){var u=r[n];0!==o[u]&&(a=!1)}a&&(s.splice(t--,1),e=i(i.s=r[0]))}return e}var a={},n={runtime:0},o={runtime:0},s=[];function u(e){return i.p+"static/js/"+({404:"404",about:"about",archives:"archives",categories:"categories",page:"page",post:"post",result:"result",tags:"tags"}[e]||e)+"."+{404:"00d640a8",about:"024aacd1",archives:"574ac664",categories:"90aa5475",page:"a02618ad",post:"cebfbaa4",result:"39470350",tags:"2ad613f5"}[e]+".js"}function i(t){if(a[t])return a[t].exports;var r=a[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.e=function(e){var t=[],r={404:1,about:1,archives:1,categories:1,page:1,post:1,result:1,tags:1};n[e]?t.push(n[e]):0!==n[e]&&r[e]&&t.push(n[e]=new Promise((function(t,r){for(var a="static/css/"+({404:"404",about:"about",archives:"archives",categories:"categories",page:"page",post:"post",result:"result",tags:"tags"}[e]||e)+"."+{404:"1a6cd5bd",about:"32dfa3b0",archives:"c0d49bd5",categories:"10e2be12",page:"749ad047",post:"9f951a60",result:"10e2be12",tags:"10e2be12"}[e]+".css",o=i.p+a,s=document.getElementsByTagName("link"),u=0;u<s.length;u++){var c=s[u],l=c.getAttribute("data-href")||c.getAttribute("href");if("stylesheet"===c.rel&&(l===a||l===o))return t()}var p=document.getElementsByTagName("style");for(u=0;u<p.length;u++){c=p[u],l=c.getAttribute("data-href");if(l===a||l===o)return t()}var f=document.createElement("link");f.rel="stylesheet",f.type="text/css",f.onload=t,f.onerror=function(t){var a=t&&t.target&&t.target.src||o,s=new Error("Loading CSS chunk "+e+" failed.\n("+a+")");s.code="CSS_CHUNK_LOAD_FAILED",s.request=a,delete n[e],f.parentNode.removeChild(f),r(s)},f.href=o;var d=document.getElementsByTagName("head")[0];d.appendChild(f)})).then((function(){n[e]=0})));var a=o[e];if(0!==a)if(a)t.push(a[2]);else{var s=new Promise((function(t,r){a=o[e]=[t,r]}));t.push(a[2]=s);var c,l=document.createElement("script");l.charset="utf-8",l.timeout=120,i.nc&&l.setAttribute("nonce",i.nc),l.src=u(e);var p=new Error;c=function(t){l.onerror=l.onload=null,clearTimeout(f);var r=o[e];if(0!==r){if(r){var a=t&&("load"===t.type?"missing":t.type),n=t&&t.target&&t.target.src;p.message="Loading chunk "+e+" failed.\n("+a+": "+n+")",p.name="ChunkLoadError",p.type=a,p.request=n,r[1](p)}o[e]=void 0}};var f=setTimeout((function(){c({type:"timeout",target:l})}),12e4);l.onerror=l.onload=c,document.head.appendChild(l)}return Promise.all(t)},i.m=e,i.c=a,i.d=function(e,t,r){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},i.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"===typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(i.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)i.d(r,a,function(t){return e[t]}.bind(null,a));return r},i.n=function(e){var t=e&&e.__esModule?function(){return e["default"]}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="/",i.oe=function(e){throw console.error(e),e};var c=window["webpackJsonp"]=window["webpackJsonp"]||[],l=c.push.bind(c);c.push=t,c=c.slice();for(var p=0;p<c.length;p++)t(c[p]);var f=l;r()})([]);</script><script src="/static/js/chunk-libs.dc6146cd.js"></script><script src="/static/js/app.6d2c358d.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>SSM | Hexo</title>
+  <meta name="author" content="GLK" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="spring官网 Spring Spring Framework是Spring生态圈中最基础的项目，是其他项目的根基   学习路线 核心容器的核心概念 代码书写现状  代码耦合度高   解决方案  使用对象时，在程序中不要主动使用new产生对象，转换为由外部提供对象   IoC(Inversion of Control) 控制反转  对象的创建控制权由程序转移到外部，这种思想称为控制反转 目标：解">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSM">
+<meta property="og:url" content="https://2295237514.github.io/post/SSM.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="spring官网 Spring Spring Framework是Spring生态圈中最基础的项目，是其他项目的根基   学习路线 核心容器的核心概念 代码书写现状  代码耦合度高   解决方案  使用对象时，在程序中不要主动使用new产生对象，转换为由外部提供对象   IoC(Inversion of Control) 控制反转  对象的创建控制权由程序转移到外部，这种思想称为控制反转 目标：解">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220726165418.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220726165701.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730095635.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730114100.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730114017.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730130510.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730133209.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730133605.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730140922.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730140856.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730163208.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220730163117.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731085314.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731110143.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731114926.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731115010.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731131448.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731131508.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731132707.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731132729.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731140547.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731140608.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731161957.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731162026.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220731163956.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220802102910.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220802103421.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220802153323.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220802153412.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220803103702.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220803150303.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220803174820.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220809095445.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220809095515.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220809095551.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220810100955.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220810103946.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220811093412.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220812162630.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220812162724.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220813105417.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220813105817.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220813101224.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220813101309.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220814093052.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220814173947.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220814174014.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220814174046.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220922125322.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220929110633.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220929110725.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220929111359.png">
+<meta property="og:image" content="c:/Users/22952/AppData/Typora/typora-user-images/image-20220929111414119.png">
+<meta property="og:image" content="c:/Users/22952/AppData/Typora/typora-user-images/image-20220929111432619.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221007132727.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221007132837.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221007132912.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221015102221.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221015214614.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221015214646.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221016124406.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221016131742.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221024103904.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221025100957.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221027102330.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221027102430.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221027103743.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221027103843.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221027103951.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20221027104021.png">
+<meta property="article:published_time" content="2022-07-26T08:33:15.000Z">
+<meta property="article:modified_time" content="2022-10-28T09:22:15.033Z">
+<meta property="article:author" content="GLK">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/2295237514/image/main/20220726165418.png">
+  <link rel="alternate" href="atom.xml" type="application/atom+xml">
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Hexo</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Hexo</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://2295237514.github.io/post/SSM.html">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">SSM</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2022-07-26T08:33:15.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-07-26</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">GLK</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        ~67.60K
+                    
+                    字
+                </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1666948935033"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><p><a target="_blank" rel="noopener" href="https://spring.io/">spring官网</a></p>
+<h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><ul>
+<li>Spring Framework是Spring生态圈中最基础的项目，是其他项目的根基</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220726165418.png"></p>
+<h2 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h2><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220726165701.png"></p>
+<h2 id="核心容器的核心概念"><a href="#核心容器的核心概念" class="headerlink" title="核心容器的核心概念"></a>核心容器的核心概念</h2><ul>
+<li><p>代码书写现状</p>
+<ul>
+<li>代码耦合度高</li>
+</ul>
+</li>
+<li><p>解决方案</p>
+<ul>
+<li>使用对象时，在程序中不要主动使用new产生对象，转换为由<em>外部</em>提供对象</li>
+</ul>
+</li>
+<li><p><strong>IoC(Inversion of Control) 控制反转</strong></p>
+<ul>
+<li>对象的创建控制权由程序转移到<em>外部</em>，这种思想称为控制反转</li>
+<li>目标：解耦</li>
+</ul>
+</li>
+<li><p>Spring技术对IoC思想进行了实现</p>
+<ul>
+<li>Spring提供了一个容器，称为IoC容器，用来充当IoC思想的<em>外部</em></li>
+<li>IoC容器负责对象的创建、初始化等一系列工作，被创建或被管理的对象在IoC容器中统称为Bean</li>
+</ul>
+</li>
+<li><p><strong>DI(Dependency Injection)依赖注入</strong></p>
+<ul>
+<li>在容器中建立bean与bean之间的依赖关系的整个过程，称为依赖注入</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>本节总结：</strong></p>
+<ul>
+<li><strong>目标：充分解耦</strong><ul>
+<li><strong>在IoC容器中管理bean（IoC）</strong></li>
+<li><strong>在IoC容器内将有依赖关系的bean进行关系绑定（DI）</strong></li>
+</ul>
+</li>
+<li><strong>最终效果</strong><ul>
+<li><strong>使用对象时不仅可以直接从IoC容器中获取，并且获取的bean已经绑定了所有的依赖关系</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="IoC入门案例思路分析"><a href="#IoC入门案例思路分析" class="headerlink" title="IoC入门案例思路分析"></a>IoC入门案例思路分析</h2><p> 1.管理什么？(Service与Dao)</p>
+<p>2.如何将被管理的对象告知IoC容器？(配置)</p>
+<p>3.被管理的对象交给IoC容器，如何获取到IoC容器？(接口)</p>
+<p>4.IoC容器得到后，如何从容器中获取bean？(接口方法)</p>
+<p>5.使用Spring时怎么导入坐标(pom.xml)</p>
+<p>使用步骤：</p>
+<p>1.导jar包</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;spring-context&lt;&#x2F;artifactId&gt;
+    &lt;version&gt;5.2.10.RELEASE&lt;&#x2F;version&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+
+<p>2.定义spring管理的类（接口）</p>
+<p>3.创建Spirng配置文件，配置对应类作为Spring管理的bean</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&quot;
+       xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;
+       xsi:schemaLocation&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&#x2F;spring-beans.xsd&quot;&gt;
+
+    &lt;bean id&#x3D;&quot;bookDaoBean&quot; class&#x3D;&quot;com.itheima.dao.impl.BookDaoImpl&quot;&#x2F;&gt;
+    &lt;bean id&#x3D;&quot;bookServiceBean&quot; class&#x3D;&quot;com.itheima.service.impl.BookServiceImpl&quot;&#x2F;&gt;
+&lt;&#x2F;beans&gt;</code></pre>
+
+<p>注意事项：bean定义式id属性在同一个上下文中不能重复</p>
+<p>4.初始化IoC容器，通过容器获取bean</p>
+<pre class="line-numbers language-none"><code class="language-none">ApplicationContext applicationContext &#x3D; new ClassPathXmlApplicationContext(&quot;applicationContext.xml&quot;);
+
+需要获取的对象的类型 bookDao &#x3D; (需要获取的对象类型)applicationContext.getBean(&quot;bookDaoBean&quot;);</code></pre>
+
+<p>applicationContext.getBean(“”)获取的是一个Object类型的对象，应对其进行强制类型转换</p>
+<h2 id="DI入门案例"><a href="#DI入门案例" class="headerlink" title="DI入门案例"></a>DI入门案例</h2><p>1.基于IoC管理bean</p>
+<p>2.Service中使用new形式创建的Dao对象是否保留？(否)</p>
+<p>3.Service中需要的Dao对象如何进入到Service中？(提供方法)</p>
+<p>4.Service与Dao间的关系如何描述？(配置)</p>
+<p>使用步骤：</p>
+<p>1.删除使用new的形式创建对象的代码</p>
+<p>private BookDao bookDao <del>&#x3D; new BookDaoImpl()</del>;</p>
+<p>public void save(){<br>    System.out.println(“book service 。。。”);<br>    bookDao.save();<br>}</p>
+<p>2.提供依赖对象对应的setter方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class BookServiceImpl implements BookService &#123;
+
+    private BookDao bookDao;
+
+    public void save()&#123;
+        System.out.println(&quot;book service 。。。。。。&quot;);
+        bookDao.save();
+    &#125;
+
+    public void setBookDao(BookDao bookDao) &#123;
+        this.bookDao &#x3D; bookDao;
+    &#125;
+&#125;</code></pre>
+
+<p>3.配置service与dao之间的关系</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;bean id&#x3D;&quot;bookServiceBean&quot; class&#x3D;&quot;com.itheima.service.impl.BookServiceImpl&quot;&gt;
+        &lt;property name&#x3D;&quot;bookDao&quot; ref&#x3D;&quot;bookDaoBean&quot;&#x2F;&gt;
+&lt;&#x2F;bean&gt;
+&#x2F;&#x2F; property 标签中 name是 id&#x3D;&quot;bookServiceBean&quot;对象里属性的名称   ref则是bean对象的名称</code></pre>
+
+<h2 id="bean基础配置"><a href="#bean基础配置" class="headerlink" title="bean基础配置"></a>bean基础配置</h2><h3 id="别名配置"><a href="#别名配置" class="headerlink" title="别名配置"></a>别名配置</h3><p>姓名：name</p>
+<p>类型：属性</p>
+<p>所属：bean标签</p>
+<p>范例</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;bean id&#x3D;&quot;bookServiceBean&quot; name&#x3D;&quot;FirstBean,SecondBean&quot; class&#x3D;&quot;com.itheima.service.impl.BookServiceImpl&quot;&gt;
+        &lt;property name&#x3D;&quot;bookDao&quot; ref&#x3D;&quot;bookDaoBean&quot;&#x2F;&gt;
+    &lt;&#x2F;bean&gt;</code></pre>
+
+<p><strong>注意事项</strong></p>
+<p>获取bean无论是通过id还是name获取，如果无法获取到，将抛出异常NoSuchBeanDefinitionException</p>
+<p>NoSuchBeanDefinitionException: No bean named ‘bookServiceImpl’ available</p>
+<h3 id="bean作用范围说明"><a href="#bean作用范围说明" class="headerlink" title="bean作用范围说明"></a>bean作用范围说明</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730095635.png"></p>
+<p>可见，Spring默认给我们创建的bean是一个单例模式，</p>
+<p>我们可以通过在 bean标签中设置属性 scope&#x3D;”prototype”来讲bean设置成非单例</p>
+<ul>
+<li>适合交给容器进行管理的bean<ul>
+<li>表现层对象</li>
+<li>业务层对象</li>
+<li>数据层对象</li>
+<li>工具对象</li>
+</ul>
+</li>
+<li>不适合交给容器进行管理的bean<ul>
+<li>封装实体的域对象</li>
+</ul>
+</li>
+</ul>
+<h3 id="单例bean与原型bean的区别"><a href="#单例bean与原型bean的区别" class="headerlink" title="单例bean与原型bean的区别"></a>单例bean与原型bean的区别</h3><p><em>单例bean：如果一个bean被声明为单例的时候，在处理多次请求的时候在Spring容器里只实例化出一个bean，后续的请求都公用这个对象，这个对象会保存在一个map里面。<br>当有请求来的时候会先从缓存(map)里查看有没有，有的话直接使用这个对象，没有的话才实例化一个新的对象，所以这是个单例的。（ThreadLocal ）创建完后，后面都会复用这个bean</em></p>
+<p><em>原型(prototype)bean来说当每次请求来的时候直接实例化新的bean，没有缓存以及从缓存查的过程。</em></p>
+<p>结论：</p>
+<p><em>单例的bean只有第一次创建新的bean 后面都会复用该bean，所以不会频繁创建对象。</em></p>
+<p><em>原型的bean每次都会新创建</em></p>
+<p>单例bean的优势<br>由于不会每次都新创建新对象所以有一下几个性能上的优势：</p>
+<p><strong>1.减少了新生成实例的消耗</strong><br>新生成实例消耗包括两方面，第一，Spring会通过反射或者cglib来生成bean实例这都是耗性能的操作，其次给对象分配内存也会涉及复杂算法。</p>
+<p><strong>2.减少jvm垃圾回收</strong><br>由于不会给每个请求都新生成bean实例，所以自然回收的对象少了。</p>
+<p><strong>3.可以快速获取到bean</strong><br>因为单例的获取bean操作除了第一次生成之外其余的都是从缓存里获取的所以很快。</p>
+<p><em><strong>单例bean的劣势</strong></em><br>单例的bean一个很大的劣势就是他不能做到线程安全！！！尤其是高并发情况下。</p>
+<p>由于所有请求都共享一个bean实例，所以这个bean要是有状态的一个bean的话可能在并发场景下出现问题，而原型的bean则不会有这样问题（但也有例外，比如他被单例bean依赖），因为给每个请求都新创建实例。</p>
+<h2 id="bean实例化的三种方式"><a href="#bean实例化的三种方式" class="headerlink" title="bean实例化的三种方式"></a>bean实例化的三种方式</h2><h3 id="构造方法（常用）"><a href="#构造方法（常用）" class="headerlink" title="构造方法（常用）"></a>构造方法（常用）</h3><ul>
+<li>bean本质上就是对象，创建bean使用构造方法完成</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class BookDaoImpl implements BookDao &#123;
+
+&#x2F;&#x2F;    private BookDaoImpl()&#123;
+&#x2F;&#x2F;        System.out.println(&quot;book dao struct is running......&quot;);
+&#x2F;&#x2F;    &#125;
+    public void save() &#123;
+        System.out.println(&quot;BookDao 我他吗来啦&quot;);
+    &#125;
+&#125;</code></pre>
+
+
+
+<ul>
+<li>提供可访问的构造方法</li>
+</ul>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;bean id&#x3D;&quot;bookDaoBean&quot; class&#x3D;&quot;com.itheima.dao.impl.BookDaoImpl&quot;&#x2F;&gt;</code></pre>
+
+<h3 id="静态工厂（了解）"><a href="#静态工厂（了解）" class="headerlink" title="静态工厂（了解）"></a>静态工厂（了解）</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730114100.png"></p>
+<h3 id="实例工厂"><a href="#实例工厂" class="headerlink" title="实例工厂"></a>实例工厂</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730114017.png"></p>
+<h3 id="FactoryBean（实用）"><a href="#FactoryBean（实用）" class="headerlink" title="FactoryBean（实用）"></a>FactoryBean（实用）</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730130510.png"></p>
+<h2 id="bean生命周期"><a href="#bean生命周期" class="headerlink" title="bean生命周期"></a>bean生命周期</h2><ul>
+<li>生命周期：从创建到销毁的完整过程</li>
+<li>bean生命周期控制：在bean创建后到销毁前做一些事情</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730133209.png"></p>
+<p>接口控制（了解）</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730133605.png"></p>
+<h3 id="bean生命周期-1"><a href="#bean生命周期-1" class="headerlink" title="bean生命周期"></a>bean生命周期</h3><ul>
+<li><p>初始化容器</p>
+<p>1.创建对象（内存分配）</p>
+<p>2.执行构造方法</p>
+<p>3.执行属性注入（set操作）</p>
+<p>4.执行bean初始化方法</p>
+</li>
+<li><p>使用bean</p>
+<p>1.执行业务操作</p>
+</li>
+<li><p>关闭&#x2F;销毁容器</p>
+<p>1.执行bean销毁方法</p>
+</li>
+</ul>
+<h3 id="bean销毁时机"><a href="#bean销毁时机" class="headerlink" title="bean销毁时机"></a>bean销毁时机</h3><ul>
+<li><p>容器关闭前触发bean的销毁</p>
+</li>
+<li><p>关闭容器方式：</p>
+<ul>
+<li><p>手工关闭容器</p>
+<p>ConfigurableApplicationContext接口close（）方法</p>
+</li>
+<li><p>注册关闭钩子，在虚拟机退出前先关闭容器再退出虚拟机</p>
+<p>ConfigurableApplicationContext接口registerShutdownHook（）操作</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="依赖注入方式"><a href="#依赖注入方式" class="headerlink" title="依赖注入方式"></a>依赖注入方式</h2><ul>
+<li><p>思考：向一个类中传递数据的方式有几种？</p>
+<ul>
+<li>普通方法（set方法）</li>
+<li>构造方法</li>
+</ul>
+</li>
+<li><p>思考：依赖注入描述了在容器中简历bean与bean之间依赖关系的过程，如果bean运行需要的是数据或字符串呢？</p>
+</li>
+<li><p>setter注入</p>
+<ul>
+<li><p>简单类型</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730140922.png"></p>
+</li>
+<li><p>引用类型</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730140856.png"></p>
+</li>
+</ul>
+</li>
+<li><p>构造器注入</p>
+<ul>
+<li><p>简单类型</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730163208.png"></p>
+</li>
+<li><p>引用类型</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220730163117.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="依赖注入方式选择"><a href="#依赖注入方式选择" class="headerlink" title="依赖注入方式选择"></a>依赖注入方式选择</h3><p>1.强制依赖使用构造器进行，使用setter注入有概率不进行注入导致null对象出现</p>
+<p>2.可选依赖使用setter注入进行，灵活性强</p>
+<p>3.Spring框架倡导使用构造器，第三方框架内部大多数采用构造器注入的形式进行数据初始化，相对严谨</p>
+<p>4.如果有必要可以两者同时使用，使用构造器注入完成强制依赖的注入，使用setter注入完成可选依赖的注入</p>
+<p>5.实际开发过程中还要根据实际情况分析，如果受控对象没有提供setter方法就必须使用构造器注入</p>
+<p><strong>6.自己开发的模块推荐使用setter注入</strong></p>
+<h3 id="自动装配"><a href="#自动装配" class="headerlink" title="自动装配"></a>自动装配</h3><ul>
+<li><p>IoC容器根据bean所以来的资源在容器中自动查找并注入到bean中的过程称为自动装配</p>
+</li>
+<li><p>自动装配方式</p>
+<ul>
+<li>按类型（常用）</li>
+<li>按名称</li>
+<li>按构造方法</li>
+<li>不启用自动装配</li>
+</ul>
+</li>
+<li><p>配种中使用bean标签autowire</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731085314.png"></p>
+<ul>
+<li>自动装配用于引用类型依赖注入，不能对简单类型进行操作</li>
+<li>使用按类型装配时(byType)必须保障容器中想同类型的bean唯一，推荐使用</li>
+<li>使用按名称装配时(byName)必须保障容器中具有指定名称的bean，因变量名与配置耦合，不推荐使用</li>
+<li>自动装配优先级低于setter注入与构造器注入，同时出现时自动装配配置失效</li>
+</ul>
+<h3 id="集合注入"><a href="#集合注入" class="headerlink" title="集合注入"></a>集合注入</h3><p><em>数组，List，Set，Map,Properties</em></p>
+<p><strong>bean所依赖的实现类</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class BookDaoImpl implements BookDao &#123;
+
+    private int[] array;
+
+    private List&lt;String&gt; list;
+
+    private Set&lt;String&gt; set;
+
+    private Map&lt;String,String&gt; map;
+
+    private Properties properties;
+
+
+
+
+    public void setArray(int[] array) &#123;
+        this.array &#x3D; array;
+    &#125;
+
+    public void setList(List&lt;String&gt; list) &#123;
+        this.list &#x3D; list;
+    &#125;
+
+    public void setSet(Set&lt;String&gt; set) &#123;
+        this.set &#x3D; set;
+    &#125;
+
+    public void setMap(Map&lt;String, String&gt; map) &#123;
+        this.map &#x3D; map;
+    &#125;
+
+    public void setProperties(Properties properties) &#123;
+        this.properties &#x3D; properties;
+    &#125;
+
+
+
+
+    public void save() &#123;
+        System.out.println(&quot;book dao save ...&quot;);
+
+        System.out.println(&quot;遍历数组:&quot; + Arrays.toString(array));
+
+        System.out.println(&quot;遍历List&quot; + list);
+
+        System.out.println(&quot;遍历Set&quot; + set);
+
+        System.out.println(&quot;遍历Map&quot; + map);
+
+        System.out.println(&quot;遍历Properties&quot; + properties);
+    &#125;
+&#125;</code></pre>
+
+<p>applicationContext.xml</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&quot;
+       xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;
+       xsi:schemaLocation&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&#x2F;spring-beans.xsd&quot;&gt;
+    &lt;bean id&#x3D;&quot;bookDao&quot; class&#x3D;&quot;com.itheima.dao.impl.BookDaoImpl&quot;&gt;
+        &lt;!--数组注入--&gt;
+        &lt;property name&#x3D;&quot;array&quot;&gt;
+            &lt;array&gt;
+                &lt;value&gt;100&lt;&#x2F;value&gt;
+                &lt;value&gt;200&lt;&#x2F;value&gt;
+                &lt;value&gt;300&lt;&#x2F;value&gt;
+            &lt;&#x2F;array&gt;
+        &lt;&#x2F;property&gt;
+        &lt;!--list集合注入--&gt;
+        &lt;property name&#x3D;&quot;list&quot;&gt;
+            &lt;list&gt;
+                &lt;value&gt;itcast&lt;&#x2F;value&gt;
+                &lt;value&gt;itheima&lt;&#x2F;value&gt;
+                &lt;value&gt;boxuegu&lt;&#x2F;value&gt;
+                &lt;value&gt;chuanzhihui&lt;&#x2F;value&gt;
+            &lt;&#x2F;list&gt;
+        &lt;&#x2F;property&gt;
+        &lt;!--set集合注入--&gt;
+        &lt;property name&#x3D;&quot;set&quot;&gt;
+            &lt;set&gt;
+                &lt;value&gt;itcast&lt;&#x2F;value&gt;
+                &lt;value&gt;itheima&lt;&#x2F;value&gt;
+                &lt;value&gt;boxuegu&lt;&#x2F;value&gt;
+                &lt;value&gt;boxuegu&lt;&#x2F;value&gt;
+            &lt;&#x2F;set&gt;
+        &lt;&#x2F;property&gt;
+        &lt;!--map集合注入--&gt;
+        &lt;property name&#x3D;&quot;map&quot;&gt;
+            &lt;map&gt;
+                &lt;entry key&#x3D;&quot;country&quot; value&#x3D;&quot;china&quot;&#x2F;&gt;
+                &lt;entry key&#x3D;&quot;province&quot; value&#x3D;&quot;henan&quot;&#x2F;&gt;
+                &lt;entry key&#x3D;&quot;city&quot; value&#x3D;&quot;kaifeng&quot;&#x2F;&gt;
+            &lt;&#x2F;map&gt;
+        &lt;&#x2F;property&gt;
+        &lt;!--Properties注入--&gt;
+        &lt;property name&#x3D;&quot;properties&quot;&gt;
+            &lt;props&gt;
+                &lt;prop key&#x3D;&quot;country&quot;&gt;china&lt;&#x2F;prop&gt;
+                &lt;prop key&#x3D;&quot;province&quot;&gt;henan&lt;&#x2F;prop&gt;
+                &lt;prop key&#x3D;&quot;city&quot;&gt;kaifeng&lt;&#x2F;prop&gt;
+            &lt;&#x2F;props&gt;
+        &lt;&#x2F;property&gt;
+    &lt;&#x2F;bean&gt;
+&lt;&#x2F;beans&gt;
+</code></pre>
+
+<h2 id="第三方资源配置管理"><a href="#第三方资源配置管理" class="headerlink" title="第三方资源配置管理"></a>第三方资源配置管理</h2><ul>
+<li><p>导入druid坐标</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+            &lt;groupId&gt;com.alibaba&lt;&#x2F;groupId&gt;
+            &lt;artifactId&gt;druid&lt;&#x2F;artifactId&gt;
+            &lt;version&gt;1.1.16&lt;&#x2F;version&gt;
+        &lt;&#x2F;dependency&gt;</code></pre>
+</li>
+<li><p>配置数据源对象作为spring管理的bean</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;bean class&#x3D;&quot;com.alibaba.druid.pool.DruidDataSource&quot;&gt;
+        &lt;property name&#x3D;&quot;driverClassName&quot; value&#x3D;&quot;com.mysql.jdbc.Driver&quot;&#x2F;&gt;
+        &lt;property name&#x3D;&quot;url&quot; value&#x3D;&quot;jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;spring_db&quot;&#x2F;&gt;
+        &lt;property name&#x3D;&quot;username&quot; value&#x3D;&quot;&quot;&#x2F;&gt;
+        &lt;property name&#x3D;&quot;password&quot; value&#x3D;&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;bean&gt;</code></pre></li>
+</ul>
+<h2 id="加载properties文件"><a href="#加载properties文件" class="headerlink" title="加载properties文件"></a>加载properties文件</h2><p>由于上次学习将数据库的用户名，密码，全配置在applicationContext.xml之中，非常的危险，故应该使用properties文件记录数据库信息</p>
+<p>1.开启context命名空间</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&quot;
+       xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;
+       xmlns:context&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;context&quot;
+       xsi:schemaLocation&#x3D;&quot;
+            http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans
+            http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&#x2F;spring-beans.xsd
+            http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;context
+            http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;context&#x2F;spring-context.xsd
+            &quot;&gt;
+    &lt;!--  将含有beans的代码复制一份并用context替换beans--&gt;</code></pre>
+
+
+
+<p>2.使用context空间加载properties文件</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;context:property-placeholder location&#x3D;&quot;classpath*:*.properties&quot; system-properties-mode&#x3D;&quot;NEVER&quot;&#x2F;&gt;</code></pre>
+
+
+
+<ol start="3">
+<li>使用属性占位符${}读取properties文件中的属性</li>
+</ol>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;bean class&#x3D;&quot;com.alibaba.druid.pool.DruidDataSource&quot;&gt;
+        &lt;property name&#x3D;&quot;driverClassName&quot; value&#x3D;&quot;$&#123;jdbc.Driver&#125;&quot;&#x2F;&gt;
+        &lt;property name&#x3D;&quot;url&quot; value&#x3D;&quot;$&#123;jdbc.url&#125;&quot;&#x2F;&gt;
+        &lt;property name&#x3D;&quot;username&quot; value&#x3D;&quot;$&#123;jdbc.username&#125;&quot;&#x2F;&gt;
+        &lt;property name&#x3D;&quot;password&quot; value&#x3D;&quot;$&#123;jdbc.password&#125;&quot;&#x2F;&gt;
+&lt;&#x2F;bean&gt;</code></pre>
+
+<p>4.自己配置的 jdbc.properties文件内容</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">jdbc.driver&#x3D;com.mysql.jdbc.Driver
+jdbc.url&#x3D;jdbc:mysql:&#x2F;&#x2F;127.0.0.1:3306&#x2F;spring_db
+jdbc.username&#x3D;root
+jdbc.password&#x3D;root</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731110143.png"></p>
+<h2 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h2><h3 id="创建容器"><a href="#创建容器" class="headerlink" title="创建容器"></a>创建容器</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731114926.png"></p>
+<h3 id="获取bean"><a href="#获取bean" class="headerlink" title="获取bean"></a>获取bean</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731115010.png"></p>
+<h3 id="容器类结构层次"><a href="#容器类结构层次" class="headerlink" title="容器类结构层次"></a>容器类结构层次</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731131448.png"></p>
+<h3 id="BeanFactory"><a href="#BeanFactory" class="headerlink" title="BeanFactory"></a>BeanFactory</h3><ul>
+<li>类路径加载配置文件</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731131508.png"></p>
+<h2 id="核心容器总结"><a href="#核心容器总结" class="headerlink" title="核心容器总结"></a>核心容器总结</h2><ul>
+<li>BeanFactory是IoC容器的顶层接口，初始化BeanFactory对象时，加载的bean延迟加载</li>
+<li>ApplicationContext接口是Spring容器的核心接口，初始化时bean立即加载</li>
+<li>ApplicationContext接口提供基础的bean操作相关方法，通过其他接口扩展其功能</li>
+<li>ApplicationContext接口常用初始化类<ul>
+<li>ClassPathXmlApplicationContext</li>
+<li>FileSystemXmlApplicationContext</li>
+</ul>
+</li>
+</ul>
+<h3 id="bean相关"><a href="#bean相关" class="headerlink" title="bean相关"></a>bean相关</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731132707.png"></p>
+<h3 id="依赖注入相关"><a href="#依赖注入相关" class="headerlink" title="依赖注入相关"></a>依赖注入相关</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731132729.png"></p>
+<h2 id="注解开发"><a href="#注解开发" class="headerlink" title="注解开发"></a>注解开发</h2><h3 id="注解开发定义bean"><a href="#注解开发定义bean" class="headerlink" title="注解开发定义bean"></a>注解开发定义bean</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731140547.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731140608.png"></p>
+<p><strong>同时这几个注解后面也可以添加一些参数，比如比较常用的一个是注解的括号中加value属性，来表示这个组件在容器中的ID，如果不设置value值时，默认的ID是类名的全称（第一个字母小写）。</strong></p>
+<p><strong>在这里有一点需要注意：事实上Spring并没有能力识别一个组件到底是不是它所标记的类型，</strong>即使将@Respository注解用在一个表述层控制器组件上面也不会产生任何错误，所以@Respository、@Service、@Controller这几个注解仅仅是为了让开发人员自己明确当前的组件扮演的角色。方便将组件加入到容器中去。</p>
+<h3 id="纯注解开发"><a href="#纯注解开发" class="headerlink" title="纯注解开发"></a>纯注解开发</h3><ul>
+<li><p>Spring3.0升级了纯注解开发模式，使用java类替代配置文件，开启了Spring快速开发赛道</p>
+</li>
+<li><p>读取Spring核心配置文件初始化容器对象切换为读取Java配置类初始化容器对象</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;加载配置文件初始化容器
+ApplicationContext ctx &#x3D; new ClassPathXmlApplicationContext(&quot;applicationContext.xml&quot;);
+&#x2F;&#x2F;加载配置类初始化容器    
+ApplicationContext ctx &#x3D; new AnnotationConfigApplicationContext(SpringConfig.class);</code></pre>
+
+
+
+
+
+
+</li>
+<li><p>Java类替代Spring核心配置文件</p>
+</li>
+</ul>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&quot;
+       xmlns:context&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;context&quot;
+       xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;
+       xsi:schemaLocation&#x3D;&quot;
+        http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&#x2F;spring-beans.xsd
+        http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;context http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;context&#x2F;spring-context.xsd&quot;&gt;
+
+    &lt;context:component-scan base-package&#x3D;&quot;com.itheima&quot;&#x2F;&gt;
+
+&lt;&#x2F;beans&gt;
+
+
+&#x2F;&#x2F;配置文件被替换为
+
+
+&#x2F;&#x2F;声明当前类为Spring配置类
+@Configuration
+&#x2F;&#x2F;设置bean扫描路径，多个路径书写为字符串数组格式
+@ComponentScan(&#123;&quot;com.itheima.service&quot;,&quot;com.itheima.dao&quot;&#125;)
+public class SpringConfig &#123;
+&#125;
+</code></pre>
+
+<ul>
+<li><p>@Configuration注解用于设定当前类为配置类</p>
+</li>
+<li><p>@ComponentScan注解用于设定扫描路径，次注解只能添加一次，多个数据请用数组格式</p>
+<pre class="line-numbers language-none"><code class="language-none">@ComponentScan(&#123;&quot;com.itheima.service&quot;,&quot;com.itheima.dao&quot;&#125;)</code></pre></li>
+</ul>
+<h3 id="注解开发小结"><a href="#注解开发小结" class="headerlink" title="注解开发小结"></a>注解开发小结</h3><p>1.定义bean</p>
+<ul>
+<li>@Component<ul>
+<li>@Controller</li>
+<li>@Service</li>
+<li>@Repository</li>
+</ul>
+</li>
+<li>&lt;context:component-scan&#x2F;&gt;</li>
+</ul>
+<p>2.纯注解开发</p>
+<ul>
+<li>@Configuration</li>
+<li>@ComponentScan</li>
+<li>AnnotationConfigApplicationContext</li>
+</ul>
+<h3 id="bean作用范围与生命周期管理"><a href="#bean作用范围与生命周期管理" class="headerlink" title="bean作用范围与生命周期管理"></a>bean作用范围与生命周期管理</h3><ul>
+<li>使用@Scope定义bean作用范围</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Repository
+@Scope(&quot;singleton&quot;)
+public class BookDaoImpl implements BookDao&#123;
+&#125;</code></pre>
+
+<p>使用@PostConstruct、@PreDestroy定义bean生命周期</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Repository
+@Scope(&quot;singleton&quot;)
+public class BookDaoImpl implements BookDao&#123;
+	public BookDaoImpl()&#123;
+		System.out.println(&quot;book dao constructor ...&quot;);
+	&#125;
+    @PostConstruct
+    public void init()&#123;
+        System.out.println(&quot;book init ...&quot;);
+    &#125;
+    @PreDestroy
+    public void destroy()&#123;
+        System.out.println(&quot;book destroy ...&quot;)
+    &#125;
+&#125;</code></pre>
+
+<h3 id="依赖注入"><a href="#依赖注入" class="headerlink" title="依赖注入"></a>依赖注入</h3><ul>
+<li>使用@Autowired注解开发自动装配模式(按类型)</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Service
+public class bookServiceImpl implements BookService&#123;
+	@Autowired
+	private BookDao bookDao;
+	
+	public void save()&#123;
+		System.out.println(&quot;book service save ...&quot;);
+		bookDao.save();
+	&#125;
+&#125;</code></pre>
+
+<ul>
+<li>注意：自动装配基于反射设计创建对象并暴力反射对应属性为私有属性初始化数据，隐藏无需提供setter方法</li>
+<li>注意：自动装配建议使用无参构造方法创建对象(默认)，如果不提供对应构造对象，请提供唯一的构造方法</li>
+</ul>
+<hr>
+<ul>
+<li>使用@Qualifier注解开启指定名称装配bean</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Service
+public class BookServiceImpl implements BookService &#123;
+    &#x2F;&#x2F;@Autowired：注入引用类型，自动装配模式，默认按类型装配
+    @Autowired
+    &#x2F;&#x2F;@Qualifier：自动装配bean时按bean名称装配
+    @Qualifier(&quot;bookDao&quot;)
+    private BookDao bookDao;
+
+    public void save() &#123;
+        System.out.println(&quot;book service save ...&quot;);
+        bookDao.save();
+    &#125;
+&#125;</code></pre>
+
+<ul>
+<li>注意：@Qualifier注解无法单独使用，必须配合@Autowired注解使用</li>
+</ul>
+<hr>
+<ul>
+<li>使用@Value实现简单类型注入</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Repository(&quot;bookDao&quot;)
+public class BookDaoImpl implements BookDao &#123;
+    &#x2F;&#x2F;@Value：注入简单类型（无需提供set方法）
+    @Value(&quot;Hello World&quot;)
+    private String name;
+
+    public void save() &#123;
+        System.out.println(&quot;book dao save ...&quot; + name);
+    &#125;
+&#125;</code></pre>
+
+<hr>
+<h4 id="加载properties文件-1"><a href="#加载properties文件-1" class="headerlink" title="加载properties文件"></a>加载properties文件</h4><ul>
+<li>使用@PropertySource注解加载properties文件</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&quot;com.itheima&quot;)
+@PropertySource(&quot;classpath:jdbc.properties&quot;)
+public class SpringConfig&#123;
+&#125;</code></pre>
+
+<ul>
+<li>注意：路径仅支持单一文件配置，多文件请使用数组格式配置，不允许使用通配符*</li>
+</ul>
+<h3 id="第三方bean"><a href="#第三方bean" class="headerlink" title="第三方bean"></a>第三方bean</h3><h4 id="第三方bean管理"><a href="#第三方bean管理" class="headerlink" title="第三方bean管理"></a>第三方bean管理</h4><ul>
+<li>使用@bean配置第三方bean</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+public class SpringConfig &#123;
+
+    @Bean
+    public DataSource dataSource()&#123;
+        DruidDataSource ds &#x3D; new DruidDataSource();
+        ds.setDriverClassName(&quot;com.mysql.jdbc.Driver&quot;);
+      	ds.setUrl(&quot;jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;spring_db&quot;);
+        ds.setUsername(&quot;root&quot;);
+        ds.setPassword(&quot;1234&quot;);
+        return ds;
+    &#125;
+&#125;</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731161957.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731162026.png"></p>
+<p><strong>建议使用方式一，因为方式二看不出你用过哪些配置类</strong></p>
+<h4 id="第三方bean依赖注入"><a href="#第三方bean依赖注入" class="headerlink" title="第三方bean依赖注入"></a>第三方bean依赖注入</h4><ul>
+<li>简单类型依赖注入</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class JdbcConfig &#123;
+    &#x2F;&#x2F;1.定义一个方法获得要管理的对象
+    @Value(&quot;com.mysql.jdbc.Driver&quot;)
+    private String driver;
+    @Value(&quot;jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;spring_db&quot;)
+    private String url;
+    @Value(&quot;root&quot;)
+    private String userName;
+    @Value(&quot;root&quot;)
+    private String password;
+    &#x2F;&#x2F;2.添加@Bean，表示当前方法的返回值是一个bean
+    &#x2F;&#x2F;@Bean修饰的方法，形参根据类型自动装配
+    @Bean
+    public DataSource dataSource(BookDao bookDao)&#123;
+        System.out.println(bookDao);
+        DruidDataSource ds &#x3D; new DruidDataSource();
+        ds.setDriverClassName(driver);
+        ds.setUrl(url);
+        ds.setUsername(userName);
+        ds.setPassword(password);
+        return ds;
+    &#125;
+&#125;</code></pre>
+
+<ul>
+<li>引用类型依赖注入</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Bean
+   public DataSource dataSource(BookDao bookDao)&#123;
+       System.out.println(bookDao);
+       DruidDataSource ds &#x3D; new DruidDataSource();
+       ds.setDriverClassName(&quot;com.mysql.jdbc.Driver&quot;);
+       ds.setUrl(&quot;jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;spring_db&quot;);
+       ds.setUsername(&quot;root&quot;);
+       ds.setPassword(&quot;1234&quot;);
+       return ds;
+   &#125;</code></pre>
+
+<p><strong>引用类型注入只需要为bean定义方法设置形参即可，容器会根据类型自动装配对象</strong></p>
+<h2 id="注解开发总结"><a href="#注解开发总结" class="headerlink" title="注解开发总结"></a>注解开发总结</h2><h3 id="XML配置对比注解配置"><a href="#XML配置对比注解配置" class="headerlink" title="XML配置对比注解配置"></a>XML配置对比注解配置</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220731163956.png"></p>
+<h2 id="Spring整合mybatis"><a href="#Spring整合mybatis" class="headerlink" title="Spring整合mybatis"></a>Spring整合mybatis</h2><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220802102910.png"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/2295237514/image/main/20220802102956.png">https://raw.githubusercontent.com/2295237514/image/main/20220802102956.png</a></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220802103421.png"></p>
+<p><strong>Spring应该管理的bean是SqlsessionFactory</strong></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220802153323.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220802153412.png"></p>
+<h2 id="Spring整合junit"><a href="#Spring整合junit" class="headerlink" title="Spring整合junit"></a>Spring整合junit</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;设置类运行器
+@RunWith(SpringJUnit4ClassRunner.class)
+&#x2F;&#x2F;设置Spring环境对应的配置类
+@ContextConfiguration(classes &#x3D; SpringConfig.class)
+public class AccountServiceTest &#123;
+    &#x2F;&#x2F;支持自动装配注入bean
+    @Autowired
+    private AccountService accountService;
+    @Test
+    public void testFindById()&#123;
+        System.out.println(accountService.findById(1));
+
+    &#125;
+&#125;</code></pre>
+
+<h2 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h2><ul>
+<li><p>AOP(Aspect Oriented Programming)面向切面编程，一种编程范式，指导开发者如何组织程序结构</p>
+<ul>
+<li>OOP（Object Oriented Programming）面向对象编程</li>
+</ul>
+</li>
+<li><p>作用：在<em>不惊动原始设计的基础上</em>为其进行<em>功能增强</em></p>
+</li>
+<li><p>Spring理念：无入侵式&#x2F;无侵入式</p>
+</li>
+</ul>
+<h3 id="AOP核心概念"><a href="#AOP核心概念" class="headerlink" title="AOP核心概念"></a>AOP核心概念</h3><ul>
+<li>连接点(JoinPoint):程序执行过程中的任意位置，粒度为执行方法、抛出异常、设置变量等<ul>
+<li>在SpringAop中，理解为方法的执行</li>
+</ul>
+</li>
+<li>切入点（Pointcut）：匹配连接点的式子<ul>
+<li>在SpringAOP中，一个切入点可以只描述一个具体方法，也可以匹配多个方法<ul>
+<li>一个具体方法</li>
+<li>匹配多个方法：所有的save方法，所有的get开头的方法，所有以D奥结尾的接口中的任意方法，所有带有一个参数的方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>通知（Advice）：在切入点处执行的操作，也就是共性功能<ul>
+<li>在SpringAOP中，功能最终以方法的形式呈现</li>
+</ul>
+</li>
+<li>通知类：定义通知的类</li>
+<li>切面(Aspect)：描述通知与切入点的对应关系</li>
+<li>目标对象（Target）：原始功能去掉共性功能对应的类产生的对象，这种对象是无法完成最终工作的</li>
+<li>代理（Proxy）：目标对象无法直接完成工作，需要对其进行功能回填，通过原始对象的代理对象实现</li>
+</ul>
+<h3 id="AOP入门案例思路分析"><a href="#AOP入门案例思路分析" class="headerlink" title="AOP入门案例思路分析"></a>AOP入门案例思路分析</h3><p>开发模式：XML 或 <strong>注解</strong></p>
+<p>思路分析：</p>
+<p>1.导入坐标（pom.xml）</p>
+<p>2.制作连接点方法（原始操作，Dao接口与实现类）</p>
+<p>3.制作共性功能（通知类与通知）</p>
+<p>4.定义切入点</p>
+<p>5.绑定切入点与通知关系（切面）</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>1.导入aop相关坐标</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+      &lt;groupId&gt;org.aspectj&lt;&#x2F;groupId&gt;
+      &lt;artifactId&gt;aspectjweaver&lt;&#x2F;artifactId&gt;
+      &lt;version&gt;1.9.4&lt;&#x2F;version&gt;
+    &lt;&#x2F;dependency&gt;</code></pre>
+
+<p>2.定义dao接口与实现类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public interface BookDao &#123;
+    public void save();
+    public void update();
+&#125;</code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Repository
+public class BookDaoImpl implements BookDao &#123;
+
+    public void save() &#123;
+        System.out.println(System.currentTimeMillis());
+        System.out.println(&quot;book dao save ...&quot;);
+    &#125;
+
+    public void update()&#123;
+        System.out.println(&quot;book dao update ...&quot;);
+    &#125;
+&#125;</code></pre>
+
+<p>3.定义通知类和切入点</p>
+<p><strong>说明：切入点定义依托一个不具有实际意义的方法进行，即无参数，无返回值，方法体无实际逻辑</strong>,</p>
+<p>4.最后绑定切入点与通知关系，并指定通知添加到原始连接点的具体执行位置</p>
+<p>5.定义通知类受Spring容器管理，并定义当前类为切面类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Component
+&#x2F;&#x2F;设置当前类为切面类类
+@Aspect
+public class MyAdvice &#123;
+    &#x2F;&#x2F;设置切入点，要求配置在方法上方
+    @Pointcut(&quot;execution(void com.itheima.dao.BookDao.update())&quot;)
+    private void pt()&#123;&#125;
+
+    &#x2F;&#x2F;设置在切入点pt()的前面运行当前操作（前置通知）
+    &#x2F;&#x2F; @Before(&quot;pt()&quot;)
+    public void method()&#123;
+        System.out.println(System.currentTimeMillis());
+    &#125;
+&#125;</code></pre>
+
+<p>6.开启Spring对AOP注解驱动支持</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&quot;com.itheima&quot;)
+&#x2F;&#x2F;开启注解开发AOP功能
+@EnableAspectJAutoProxy
+public class SpringConfig &#123;
+&#125;</code></pre>
+
+<h3 id="AOP工作流程"><a href="#AOP工作流程" class="headerlink" title="AOP工作流程"></a>AOP工作流程</h3><p>1.Spring容器启动</p>
+<p>2.读取所有切面配置中的切入点</p>
+<p>3.初始化bean，判定bean对应的类中的方法是否匹配到任意切入点</p>
+<ul>
+<li>匹配失败，创建对象</li>
+<li>匹配成功，创建原始对象(目标对象)的代理对象</li>
+</ul>
+<p>4.获取bean执行方法</p>
+<ul>
+<li>获取bean，调用方法并执行，完成操作</li>
+<li>获取的bean是代理对象时，根据代理对象的运行模式运行原始方法与增强的内容，完成操作</li>
+</ul>
+<h3 id="AOP切入点表达式"><a href="#AOP切入点表达式" class="headerlink" title="AOP切入点表达式"></a>AOP切入点表达式</h3><ul>
+<li>切入点：要进行增强的方法</li>
+<li>切入点表达式：要进行增强的方法的描述方法</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220803103702.png"></p>
+<ul>
+<li>切入点表达式标准格式：动作关键字(访问修饰符 返回值 包名.类&#x2F;接口名.方法名(参数)异常名)</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">execution(public User com.itheima.service.UserService.findById(int))</code></pre>
+
+<ul>
+<li>动作关键字：描述切入点的行为动作，例如execution表示执行到指定切入点</li>
+<li>访问修饰符：public，private等，可以省略</li>
+<li>返回值</li>
+<li>包名</li>
+<li>类&#x2F;接口名</li>
+<li>方法名</li>
+<li>参数</li>
+<li>异常名：方法定义中抛出指定异常，可以省略</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220803150303.png"></p>
+<p>*****：必有最少一个</p>
+<p><strong>..</strong>:可以没有，也可以有任意个</p>
+<h4 id="书写技巧"><a href="#书写技巧" class="headerlink" title="书写技巧"></a>书写技巧</h4><ul>
+<li><p>所有代码按照规范标准开发，否则以下技巧全部失效</p>
+</li>
+<li><p>描述切入点<strong>通常描述接口</strong>，而不描述实现类</p>
+</li>
+<li><p>访问控制修饰符针对接口开发均采用public描述(<strong>可省略访问控制修饰符描述</strong>)</p>
+</li>
+<li><p>返回值类型对于增删改类使用精准类型加速匹配，对于查询类使用*通配快速描述</p>
+</li>
+<li><p><strong>包名</strong>书写尽量不使用**..*<em>匹配，效率过低，常用</em>做单个包描述匹配，或精准匹配</p>
+</li>
+<li><p><strong>接口名</strong>&#x2F;类型书写名称与模块相关的<strong>采用*匹配</strong>，例如UserService书写成*Service，绑定业务层接口</p>
+</li>
+<li><p><strong>方法名</strong>书写以<strong>动词</strong>进行<strong>精准匹配</strong>，名次采用*匹配，例如getById书写成getBy*</p>
+</li>
+<li><p>参数规则较为复杂，根据业务方法灵活调整</p>
+</li>
+<li><p>通常不适用异常作为匹配规则</p>
+</li>
+</ul>
+<h3 id="AOP通知类型"><a href="#AOP通知类型" class="headerlink" title="AOP通知类型"></a>AOP通知类型</h3><ul>
+<li><p>AOP通知描述了抽取的共性功能，根据共性功能抽取的位置不同，最终运行代码时要将其加入到合理的位置</p>
+</li>
+<li><p>AOP通知共分为5种类型</p>
+<ul>
+<li>前置通知 @Before</li>
+<li>后置通知 @After</li>
+<li>环绕通知（重点） @Around</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220803174820.png"></p>
+<ul>
+<li>返回后通知（了解）@AfterReturning</li>
+<li>抛出异常后通知（了解）@AfterThrowing</li>
+</ul>
+</li>
+</ul>
+<h3 id="案例：测量业务层接口执行效率"><a href="#案例：测量业务层接口执行效率" class="headerlink" title="案例：测量业务层接口执行效率"></a>案例：测量业务层接口执行效率</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">@Component
+@Aspect
+public class ProjectAdvice &#123;
+    &#x2F;&#x2F;匹配业务层的所有方法
+    @Pointcut(&quot;execution(* com.itheima.service.*Service.*(..))&quot;)
+    private void servicePt()&#123;&#125;
+
+    &#x2F;&#x2F;设置环绕通知，在原始操作的运行前后记录执行时间
+    @Around(&quot;ProjectAdvice.servicePt()&quot;)
+    public void runSpeed(ProceedingJoinPoint pjp) throws Throwable &#123;
+        &#x2F;&#x2F;获取执行的签名对象
+        Signature signature &#x3D; pjp.getSignature();
+        String className &#x3D; signature.getDeclaringTypeName();
+        String methodName &#x3D; signature.getName();
+
+        long start &#x3D; System.currentTimeMillis();
+        for (int i &#x3D; 0; i &lt; 10000; i++) &#123;
+           pjp.proceed();
+        &#125;
+        long end &#x3D; System.currentTimeMillis();
+        System.out.println(&quot;万次执行：&quot;+ className+&quot;.&quot;+methodName+&quot;----&gt;&quot; +(end-start) + &quot;ms&quot;);
+    &#125;
+&#125;</code></pre>
+
+<h3 id="AOP通知获取数据"><a href="#AOP通知获取数据" class="headerlink" title="AOP通知获取数据"></a>AOP通知获取数据</h3><ul>
+<li>获取切入点方法的参数、<ul>
+<li>JoinPoint：适用于前置、后置、返回后、抛出异常后通知</li>
+<li>ProceedJoinPoint：适用于环绕通知</li>
+<li><img src="https://raw.githubusercontent.com/2295237514/image/main/20220809095445.png"></li>
+</ul>
+</li>
+<li>获取切入点方法返回值<ul>
+<li>返回后通知</li>
+<li>环绕通知</li>
+<li><img src="https://raw.githubusercontent.com/2295237514/image/main/20220809095515.png"></li>
+</ul>
+</li>
+<li>获取切入点方法运行异常信息<ul>
+<li>抛出异常后通知</li>
+<li>环绕通知</li>
+<li><img src="https://raw.githubusercontent.com/2295237514/image/main/20220809095551.png"></li>
+</ul>
+</li>
+</ul>
+<h3 id="AOP总结"><a href="#AOP总结" class="headerlink" title="AOP总结"></a>AOP总结</h3><ul>
+<li><p>概念：AOP面向切面编程，一种编程范式</p>
+</li>
+<li><p>作用：在不惊动原始设计的基础上为方法进行功能增强</p>
+</li>
+<li><p>核心概念：</p>
+<ul>
+<li><p>代理：SpringAOP的核心本质是采用代理模式实现的</p>
+</li>
+<li><p>连接点：在SpringAOP中，理解为任意方法的执行</p>
+</li>
+<li><p>切入点：匹配连接点的式子，也是具有共性功能的方法描述</p>
+<ul>
+<li><p>切入点表达式标准格式：动作关键字（访问修饰符  返回值  包名.类&#x2F;接口名.方法名（参数）异常名）</p>
+<ul>
+<li>execution(* com.itheima.service.*Service.*(..))</li>
+</ul>
+</li>
+<li><p>切入点表达式描述通配符：</p>
+<ul>
+<li>作用：用于快速描述，范围描述</li>
+<li>*：匹配任意符号（常用）</li>
+<li>..：匹配多个连续的任意符号(常用)</li>
+<li>+：匹配子类类型</li>
+</ul>
+</li>
+<li><p>切入点表达式书写技巧</p>
+<p>1.按标准规范开发</p>
+<p>2.查询操作的返回值建议使用*匹配</p>
+<p>3.减少使用..的形式描述包</p>
+<p>4.对接口进行描述，使用*表示模块名，例如UserService的匹配描述为*Service</p>
+<p>5.方法名书写保留动词，例如get,使用*表示名词，例如getById匹配描述为*getBy*</p>
+<p>6.参数根据实际情况灵活调整</p>
+</li>
+</ul>
+</li>
+<li><p>通知：若干个方法的共性功能，在切入点处执行，具体体现为一个方法</p>
+<ul>
+<li>环绕通知：<ul>
+<li>环绕通知依赖形参ProceedingJoinPoint才能实现对原始方法的调用</li>
+<li>环绕通知可以隔离原始方法的调用执行</li>
+<li>环绕通知返回值设置为Object类型</li>
+<li>环绕通知中可以对原始方法调用过程中出现的异常进行处理</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>切面：描述通知与切入点的对应关系</p>
+</li>
+<li><p>目标对象：被代理的原始对象称为目标对象</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><ul>
+<li>Spirng事务作用：在数据层或业务层保障一系列的数据库操作同成功同失败</li>
+</ul>
+<h3 id="案例：银行账户转账"><a href="#案例：银行账户转账" class="headerlink" title="案例：银行账户转账"></a>案例：银行账户转账</h3><p>1.在业务层接口上添加Spring事务管理</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public interface AccountService&#123;
+	@Transactional
+	public void transfer(String out,String in,Double money);
+&#125;</code></pre>
+
+<p><strong>注意事项</strong></p>
+<ul>
+<li><p><em>Spring注解式事务通常添加在业务层接口中而不会添加到业务层实现类中，降低耦合</em></p>
+</li>
+<li><p><em>注解式事务可以添加到业务方法上表示当前方法开启事务，也可以添加到接口上表示当前接口所有方法开启事务</em></p>
+</li>
+</ul>
+<p>2.设置事务管理器</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Bean
+public PlatformTransactionManager transactionManager(DataSource dataSource)&#123;
+	DataSourceTransactionManager ptm &#x3D; new DataSourceTransactionManager();
+	ptm.setDataSource(dataSource);
+    return ptm;
+&#125;</code></pre>
+
+<p><strong>注意事项</strong></p>
+<ul>
+<li><p><em>事务管理器要根据实现技术进行选择</em></p>
+</li>
+<li><p><em>MyBatis框架使用的是JDBC事务</em></p>
+</li>
+</ul>
+<p>3.开启注解式事务驱动</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&quot;com.itheima&quot;)
+@PropertySource(&quot;classpath:jdbc.properties&quot;)
+@Import(&#123;JdbcConfig.class,MybatisConfig.class&#125;)
+&#x2F;&#x2F;开启注解式事务驱动
+@EnableTransactionManagement
+public class SpringConfig &#123;
+&#125;</code></pre>
+
+<h3 id="Spring事务角色"><a href="#Spring事务角色" class="headerlink" title="Spring事务角色"></a>Spring事务角色</h3><ul>
+<li>事务管理员：发起事务方，在Spring中通常指代业务层开启事务的方法</li>
+<li>事务协调员：加入事务方，在Spring中通常代指数据层方法，也可以是业务层方法</li>
+</ul>
+<h3 id="事务相关配置"><a href="#事务相关配置" class="headerlink" title="事务相关配置"></a>事务相关配置</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220810100955.png"></p>
+<p>有些异常默认事务不回滚，如<em>IOEXCEPTION</em>需手动设置	<strong>roolbackFor</strong>属性</p>
+<h3 id="案例：转账业务追加日志"><a href="#案例：转账业务追加日志" class="headerlink" title="案例：转账业务追加日志"></a>案例：转账业务追加日志</h3><p>1.在业务层接口上添加Spring事务，设置事务传播行为REQUIRES_NEW(需要新事物)</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Service
+public class LogServiceImpl implements LogService &#123;
+
+    @Autowired
+    private LogDao logDao;
+	
+    @Transactional(propagation &#x3D; Propagation.REQUIRES_NEW)
+    public void log(String out,String in,Double money ) &#123;
+        logDao.log(&quot;转账操作由&quot;+out+&quot;到&quot;+in+&quot;,金额：&quot;+money);
+    &#125;
+&#125;</code></pre>
+
+<h3 id="事务传播行为"><a href="#事务传播行为" class="headerlink" title="事务传播行为"></a>事务传播行为</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220810103946.png"></p>
+<h1 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h1><ul>
+<li>SpringMVC技术与Servlet技术功能等同，均属于web层开发技术</li>
+<li>SpringMVC是一种基于java实现MVC模型的轻量级Web框架</li>
+<li>优点<ul>
+<li>使用简单，开发便捷（相比于Servlet）</li>
+<li>灵活性强</li>
+</ul>
+</li>
+</ul>
+<p><em>学习目标：</em></p>
+<p><strong>1.掌握基于SpringMVC获取请求参数与响应json数据操作</strong></p>
+<p><strong>2.熟练应用基于REST风格的请求路径设置与参数传递</strong></p>
+<p>3.能够根据实际业务简历前后端开发通讯协议并进行实现</p>
+<p><strong>4.基于SSM整合技术开发任意业务模块功能</strong></p>
+<h2 id="SpringMVC入门案例"><a href="#SpringMVC入门案例" class="headerlink" title="SpringMVC入门案例"></a>SpringMVC入门案例</h2><p>1.使用SpringMVC技术需要先导入SpringMVC坐标与Servlet坐标</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+      &lt;groupId&gt;javax.servlet&lt;&#x2F;groupId&gt;
+      &lt;artifactId&gt;javax.servlet-api&lt;&#x2F;artifactId&gt;
+      &lt;version&gt;3.1.0&lt;&#x2F;version&gt;
+      &lt;scope&gt;provided&lt;&#x2F;scope&gt;
+&lt;&#x2F;dependency&gt;
+&lt;dependency&gt;
+      &lt;groupId&gt;org.springframework&lt;&#x2F;groupId&gt;
+      &lt;artifactId&gt;spring-webmvc&lt;&#x2F;artifactId&gt;
+      &lt;version&gt;5.2.10.RELEASE&lt;&#x2F;version&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+
+<p>2.创建SpringMVC控制器类（等同于Servlet功能）</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Controller
+public class UserController &#123;
+
+    @RequestMapping(&quot;&#x2F;save&quot;)
+    @ResponseBody
+    public String save()&#123;
+        System.out.println(&quot;user save ...&quot;);
+        return &quot;&#123;&#39;info&#39;:&#39;springmvc&#39;&#125;&quot;;
+    &#125;
+&#125;</code></pre>
+
+<p>3.初始化SpringMVC环境（同Spring环境），设定SpringMVC加载对应的bean</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&quot;com.itheima.controller&quot;)
+public class SpringMvcConfig&#123;
+
+&#125;</code></pre>
+
+<ul>
+<li>知识点1：@Controller</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@Controller</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>类注解</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>SpringMVC控制器类定义上方</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>设定SpringMVC的核心控制器bean</td>
+</tr>
+</tbody></table>
+<ul>
+<li>知识点2：@RequestMapping</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@RequestMapping</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>类注解或方法注解</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>SpringMVC控制器类或方法定义上方</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>设置当前控制器方法请求访问路径</td>
+</tr>
+<tr>
+<td>相关属性</td>
+<td>value(默认)，请求访问路径</td>
+</tr>
+</tbody></table>
+<ul>
+<li>知识点3：@ResponseBody</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@ResponseBody</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>类注解或方法注解</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>SpringMVC控制器类或方法定义上方</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>设置当前控制器方法响应内容为当前返回值，无需解析</td>
+</tr>
+</tbody></table>
+<p><strong>注意事项</strong></p>
+<ul>
+<li>SpringMVC是基于Spring的，在pom.xml只导入了<code>spring-webmvc</code>jar包的原因是它会自动依赖spring相关坐标</li>
+<li>AbstractDispatcherServletInitializer类是SpringMVC提供的快速初始化Web3.0容器的抽象类</li>
+<li>AbstractDispatcherServletInitializer提供了三个接口方法供用户实现<ul>
+<li>createServletApplicationContext方法，创建Servlet容器时，加载SpringMVC对应的bean并放入WebApplicationContext对象范围中，而WebApplicationContext的作用范围为ServletContext范围，即整个web容器范围</li>
+<li>getServletMappings方法，设定SpringMVC对应的请求映射路径，即SpringMVC拦截哪些请求</li>
+<li>createRootApplicationContext方法，如果创建Servlet容器时需要加载非SpringMVC对应的bean,使用当前方法进行，使用方式和createServletApplicationContext相同。</li>
+<li>createServletApplicationContext用来加载SpringMVC环境</li>
+<li>createRootApplicationContext用来加载Spring环境</li>
+</ul>
+</li>
+</ul>
+<h2 id="入门案例工作流程分析"><a href="#入门案例工作流程分析" class="headerlink" title="入门案例工作流程分析"></a>入门案例工作流程分析</h2><ul>
+<li><p>启动服务器初始化过程</p>
+<p>1.服务器启动，执行ServletContainerInitConfig类，初始化web容器</p>
+<p>2.执行createServletApplicationContext方法，创建了WebApplicationContext对象</p>
+<p>3.加载SpringMvcConfig</p>
+<p>4.执行@ComponentScan加载对应的bean</p>
+<p>5.加载UserController，每个@RequestMapping的名称对应一个具体的方法</p>
+<p>6.执行getServletMappings方法，定义所有的请求都通过SpringMVC</p>
+</li>
+<li><p>单次请求过程</p>
+<p>1.发送请求localhost&#x2F;save</p>
+<p>2.web容器发现所有请求都经过SpringMVC，将请求交给SpringMVC处理</p>
+<p>3.解析请求路径&#x2F;save</p>
+<p>4.由&#x2F;save匹配执行对应的方法save()</p>
+<p>5.执行save()</p>
+<p>6.检测到有@ResponseBody直接将save()方法的返回值作为响应体返回给请求方</p>
+</li>
+</ul>
+<h3 id="bean加载控制"><a href="#bean加载控制" class="headerlink" title="bean加载控制"></a>bean加载控制</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220811093412.png"></p>
+<p>方式一:修改Spring配置类，设定扫描范围为精准范围。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&#123;&quot;com.itheima.service&quot;,&quot;comitheima.dao&quot;&#125;)
+public class SpringConfig &#123;
+&#125;</code></pre>
+
+<p>方式二:修改Spring配置类，设定扫描范围为com.itheima,排除掉controller包中的bean</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(value&#x3D;&quot;com.itheima&quot;,
+    excludeFilters&#x3D;@ComponentScan.Filter(
+    	type &#x3D; FilterType.ANNOTATION,
+        classes &#x3D; Controller.class
+    )
+)
+public class SpringConfig &#123;
+&#125;</code></pre>
+
+<ul>
+<li>excludeFilters属性：设置扫描加载bean时，排除的过滤规则</li>
+</ul>
+<hr>
+<p>bean的加载格式：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class ServletContainersInitConfig extends AbstractDispatcherServletInitializer &#123;
+    protected WebApplicationContext createServletApplicationContext() &#123;
+        AnnotationConfigWebApplicationContext ctx &#x3D; new AnnotationConfigWebApplicationContext();
+        ctx.register(SpringMvcConfig.class);
+        return ctx;
+    &#125;
+    protected String[] getServletMappings() &#123;
+        return new String[]&#123;&quot;&#x2F;&quot;&#125;;
+    &#125;
+    protected WebApplicationContext createRootApplicationContext() &#123;
+      AnnotationConfigWebApplicationContext ctx &#x3D; new AnnotationConfigWebApplicationContext();
+        ctx.register(SpringConfig.class);
+        return ctx;
+    &#125;
+&#125;</code></pre>
+
+<p>对于上述的配置方式，Spring还提供了一种更简单的配置方式，可以不用再去创建<code>AnnotationConfigWebApplicationContext</code>对象，不用手动<code>register</code>对应的配置类，如何实现?</p>
+<p><strong>简化开发的格式</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer &#123;
+
+    protected Class&lt;?&gt;[] getRootConfigClasses() &#123;
+        return new Class[]&#123;SpringConfig.class&#125;;
+    &#125;
+
+    protected Class&lt;?&gt;[] getServletConfigClasses() &#123;
+        return new Class[]&#123;SpringMvcConfig.class&#125;;
+    &#125;
+
+    protected String[] getServletMappings() &#123;
+        return new String[]&#123;&quot;&#x2F;&quot;&#125;;
+    &#125;
+&#125;</code></pre>
+
+<h2 id="请求与响应"><a href="#请求与响应" class="headerlink" title="请求与响应"></a>请求与响应</h2><h3 id="请求映射路径"><a href="#请求映射路径" class="headerlink" title="请求映射路径"></a>请求映射路径</h3><p><strong>优化映射路径</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Controller
+@RequestMapping(&quot;&#x2F;user&quot;)
+public class UserController &#123;
+
+    @RequestMapping(&quot;&#x2F;save&quot;)
+    @ResponseBody
+    public String save()&#123;
+        System.out.println(&quot;user save ...&quot;);
+        return &quot;&#123;&#39;module&#39;:&#39;user save&#39;&#125;&quot;;
+    &#125;
+    
+    @RequestMapping(&quot;&#x2F;delete&quot;)
+    @ResponseBody
+    public String save()&#123;
+        System.out.println(&quot;user delete ...&quot;);
+        return &quot;&#123;&#39;module&#39;:&#39;user delete&#39;&#125;&quot;;
+    &#125;
+&#125;
+
+@Controller
+@RequestMapping(&quot;&#x2F;book&quot;)
+public class BookController &#123;
+
+    @RequestMapping(&quot;&#x2F;save&quot;)
+    @ResponseBody
+    public String save()&#123;
+        System.out.println(&quot;book save ...&quot;);
+        return &quot;&#123;&#39;module&#39;:&#39;book save&#39;&#125;&quot;;
+    &#125;
+&#125;</code></pre>
+
+<p><strong>注意:</strong></p>
+<ul>
+<li>当类上和方法上都添加了<code>@RequestMapping</code>注解，前端发送请求的时候，要和两个注解的value值相加匹配才能访问到。</li>
+<li>@RequestMapping注解value属性前面加不加<code>/</code>都可以</li>
+</ul>
+<h3 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h3><ul>
+<li>Get请求</li>
+<li>Post请求</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220812162630.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220812162724.png"></p>
+<p><em>Post请求中文乱码处理</em></p>
+<ul>
+<li>为web容器添加过滤器并指定字符集，Spring-web包中提供了专用的字符过滤器</li>
+</ul>
+<p>解决方法：配置过滤器</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer &#123;
+    protected Class&lt;?&gt;[] getRootConfigClasses() &#123;
+        return new Class[0];
+    &#125;
+
+    protected Class&lt;?&gt;[] getServletConfigClasses() &#123;
+        return new Class[]&#123;SpringMvcConfig.class&#125;;
+    &#125;
+
+    protected String[] getServletMappings() &#123;
+        return new String[]&#123;&quot;&#x2F;&quot;&#125;;
+    &#125;
+
+    &#x2F;&#x2F;乱码处理
+    @Override
+    protected Filter[] getServletFilters() &#123;
+        CharacterEncodingFilter filter &#x3D; new CharacterEncodingFilter();
+        filter.setEncoding(&quot;UTF-8&quot;);
+        return new Filter[]&#123;filter&#125;;
+    &#125;
+&#125;</code></pre>
+
+<hr>
+<p>发送请求与参数:</p>
+<pre class="line-numbers language-none"><code class="language-none">http:&#x2F;&#x2F;localhost&#x2F;commonParamDifferentName?name&#x3D;张三&amp;age&#x3D;18</code></pre>
+
+<p>后台接收参数:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@RequestMapping(&quot;&#x2F;commonParamDifferentName&quot;)
+@ResponseBody
+public String commonParamDifferentName(String userName , int age)&#123;
+    System.out.println(&quot;普通参数传递 userName &#x3D;&#x3D;&gt; &quot;+userName);
+    System.out.println(&quot;普通参数传递 age &#x3D;&#x3D;&gt; &quot;+age);
+    return &quot;&#123;&#39;module&#39;:&#39;common param different name&#39;&#125;&quot;;
+&#125;</code></pre>
+
+<p>因为前端给的是<code>name</code>,后台接收使用的是<code>userName</code>,两个名称对不上，导致接收数据失败:</p>
+<p>解决方案:使用@RequestParam注解</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@RequestMapping(&quot;&#x2F;commonParamDifferentName&quot;)
+    @ResponseBody
+    public String commonParamDifferentName(@RequestPaam(&quot;name&quot;) String userName , int age)&#123;
+        System.out.println(&quot;普通参数传递 userName &#x3D;&#x3D;&gt; &quot;+userName);
+        System.out.println(&quot;普通参数传递 age &#x3D;&#x3D;&gt; &quot;+age);
+        return &quot;&#123;&#39;module&#39;:&#39;common param different name&#39;&#125;&quot;;
+    &#125;</code></pre>
+
+<p><strong>用集合接收前台参数也需要@RequestParam注解</strong></p>
+<hr>
+<h3 id="日期类型参数传递"><a href="#日期类型参数传递" class="headerlink" title="日期类型参数传递"></a>日期类型参数传递</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220813105417.png"></p>
+<h3 id="类型转换器"><a href="#类型转换器" class="headerlink" title="类型转换器"></a>类型转换器</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220813105817.png"></p>
+<h3 id="json数据"><a href="#json数据" class="headerlink" title="json数据"></a>json数据</h3><h4 id="接受请求中json数据"><a href="#接受请求中json数据" class="headerlink" title="接受请求中json数据"></a>接受请求中json数据</h4><p>1.添加json数据转换相关坐标</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;dependency&gt;
+    &lt;groupId&gt;com.fasterxml.jackson.core&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;jackson-databind&lt;&#x2F;artifactId&gt;
+    &lt;version&gt;2.9.0&lt;&#x2F;version&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+
+<p>2.设置发送json数据(请求body中添加json数据)</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220813101224.png"></p>
+<p>3.开启自动转换json数据的支持</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220813101309.png"></p>
+<p>4.设置接收json数据</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;使用@RequestBody注解将外部传递的json数组数据映射到形参的集合对象中作为数据
+    @RequestMapping(&quot;&#x2F;listParamForJson&quot;)
+    @ResponseBody
+    public String listParamForJson(@RequestBody List&lt;String&gt; likes)&#123;
+        System.out.println(&quot;list common(json)参数传递 list &#x3D;&#x3D;&gt; &quot;+likes);
+        return &quot;&#123;&#39;module&#39;:&#39;list common for json param&#39;&#125;&quot;;
+    &#125;</code></pre>
+
+<p><strong>@RequestBody一个处理器方法只能使用一次</strong></p>
+<hr>
+<p>@RequestBody与@RequestParam区别</p>
+<ul>
+<li>区别<ul>
+<li>@RequestParam用于接收url地址传参，表单传参</li>
+<li>@RequestBody用于接收json数据</li>
+</ul>
+</li>
+<li>应用<ul>
+<li>后期开发中，发送json格式数据为主，@RequestBody应用较广</li>
+<li>如果发送非json格式数据，选用@RequestParam接收请求参数</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@ResponseBody</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>&#x3D;&#x3D;方法\类注解&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>SpringMVC控制器方法定义上方和控制类上</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>设置当前控制器返回值作为响应体,<br/>写在类上，该类的所有方法都有该注解功能</td>
+</tr>
+<tr>
+<td>相关属性</td>
+<td>pattern：指定日期时间格式字符串</td>
+</tr>
+</tbody></table>
+<p><strong>说明:</strong></p>
+<ul>
+<li>该注解可以写在类上或者方法上</li>
+<li>写在类上就是该类下的所有方法都有@ReponseBody功能</li>
+<li>当方法上有@ReponseBody注解后<ul>
+<li>方法的返回值为字符串，会将其作为文本内容直接响应给前端</li>
+<li>方法的返回值为对象，会将对象转换成JSON响应给前端</li>
+</ul>
+</li>
+</ul>
+<p>此处又使用到了类型转换，内部还是通过Converter接口的实现类完成的，所以Converter除了前面所说的功能外，它还可以实现:</p>
+<ul>
+<li>对象转Json数据(POJO -&gt; json)</li>
+<li>集合转Json数据(Collection -&gt; json)</li>
+</ul>
+<h2 id="Rest"><a href="#Rest" class="headerlink" title="Rest"></a>Rest</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>REST（Representational State Transfer），表现形式状态转换</li>
+</ul>
+<p>当我们想表示一个网络资源的时候，可以使用两种方式:</p>
+<ul>
+<li>传统风格资源描述形式<ul>
+<li><code>http://localhost/user/getById?id=1</code> 查询id为1的用户信息</li>
+<li><code>http://localhost/user/saveUser</code> 保存用户信息</li>
+</ul>
+</li>
+<li>REST风格描述形式<ul>
+<li><code>http://localhost/user/1</code> </li>
+<li><code>http://localhost/user</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>优点：<ul>
+<li>隐藏资源的访问行为，无法通过地址得知对资源是何种操作</li>
+<li>书写简化</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>按照REST风格访问资源时使用&#x3D;&#x3D;行为动作&#x3D;&#x3D;区分对资源进行了何种操作<ul>
+<li><code>http://localhost/users</code>	查询全部用户信息 GET（查询）</li>
+<li><code>http://localhost/users/1</code>  查询指定用户信息 GET（查询）</li>
+<li><code>http://localhost/users</code>    添加用户信息    POST（新增&#x2F;保存）</li>
+<li><code>http://localhost/users</code>    修改用户信息    PUT（修改&#x2F;更新）</li>
+<li><code>http://localhost/users/1</code>  删除用户信息    DELETE（删除）</li>
+</ul>
+</li>
+<li>根据REST风格对资源进行访问称为RESTful</li>
+</ul>
+<p>请求的方式比较多，但是比较常用的就4种，分别是<code>GET</code>,<code>POST</code>,<code>PUT</code>,<code>DELETE</code>。</p>
+<p>按照不同的请求方式代表不同的操作类型。</p>
+<ul>
+<li>发送GET请求是用来做查询</li>
+<li>发送POST请求是用来做新增</li>
+<li>发送PUT请求是用来做修改</li>
+<li>发送DELETE请求是用来做删除</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">注意事项：
+上述行为是约定方式，约定不是规范，可以打破，所以称REST风格，而不是REST规范
+描述模块的名字通常使用负数，也就是可以加s的格式描述，表示此类资源，而非单个资源，例如：users、books、account......</code></pre>
+
+<h3 id="入门案例"><a href="#入门案例" class="headerlink" title="入门案例"></a>入门案例</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220814093052.png"></p>
+<p>(2)如果有多个参数需要传递该如何编写?</p>
+<p>前端发送请求的时候使用:<code>http://localhost/users/1/tom</code>,路径中的<code>1</code>和<code>tom</code>就是我们想要传递的两个参数。</p>
+<p>后端获取参数，需要做如下修改:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Controller
+public class UserController &#123;
+    &#x2F;&#x2F;设置当前请求方法为DELETE，表示REST风格中的删除操作
+	@RequestMapping(value &#x3D; &quot;&#x2F;users&#x2F;&#123;id&#125;&#x2F;&#123;name&#125;&quot;,method &#x3D; RequestMethod.DELETE)
+    @ResponseBody
+    public String delete(@PathVariable Integer id,@PathVariable String name) &#123;
+        System.out.println(&quot;user delete...&quot; + id+&quot;,&quot;+name);
+        return &quot;&#123;&#39;module&#39;:&#39;user delete&#39;&#125;&quot;;
+    &#125;
+&#125;</code></pre>
+
+<hr>
+<p>关于接收参数，我们学过三个注解<code>@RequestBody</code>、<code>@RequestParam</code>、<code>@PathVariable</code>,这三个注解之间的区别和应用分别是什么?</p>
+<ul>
+<li>区别<ul>
+<li>@RequestParam用于接收url地址传参或表单传参</li>
+<li>@RequestBody用于接收json数据</li>
+<li>@PathVariable用于接收路径参数，使用{参数名称}描述路径参数</li>
+</ul>
+</li>
+<li>应用<ul>
+<li>后期开发中，发送请求参数超过1个时，以json格式为主，@RequestBody应用较广</li>
+<li>如果发送非json格式数据，选用@RequestParam接收请求参数</li>
+<li>采用RESTful进行开发，当参数数量较少时，例如1个，可以采用@PathVariable接收请求路径变量，通常用于传递id值</li>
+</ul>
+</li>
+</ul>
+<h3 id="RESTful快速开发"><a href="#RESTful快速开发" class="headerlink" title="RESTful快速开发"></a>RESTful快速开发</h3><p>问题1：每个方法的@RequestMapping注解中都定义了访问路径&#x2F;books，重复性太高。</p>
+<p>问题2：每个方法的@RequestMapping注解中都要使用method属性定义请求方式，重复性太高。</p>
+<p>问题3：每个方法响应json都需要加上@ResponseBody注解，重复性太高。</p>
+<p><em>对于刚才的问题，我们都有对应的解决方案：</em></p>
+<p>问题1：每个方法的@RequestMapping注解中都定义了访问路径&#x2F;books，重复性太高。</p>
+<pre class="line-numbers language-none"><code class="language-none">将@RequestMapping提到类上面，用来定义所有方法共同的访问路径。</code></pre>
+
+<p>问题2：每个方法的@RequestMapping注解中都要使用method属性定义请求方式，重复性太高。</p>
+<pre class="line-numbers language-none"><code class="language-none">使用@GetMapping  @PostMapping  @PutMapping  @DeleteMapping代替</code></pre>
+
+<p>问题3：每个方法响应json都需要加上@ResponseBody注解，重复性太高。</p>
+<pre class="line-numbers language-none"><code class="language-none">1.将ResponseBody提到类上面，让所有的方法都有@ResponseBody的功能
+2.使用@RestController注解替换@Controller与@ResponseBody注解，简化书写</code></pre>
+
+<h4 id="知识点1：-RestController"><a href="#知识点1：-RestController" class="headerlink" title="知识点1：@RestController"></a>知识点1：@RestController</h4><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@RestController</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>&#x3D;&#x3D;类注解&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>基于SpringMVC的RESTful开发控制器类定义上方</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>设置当前控制器类为RESTful风格，<br/>等同于@Controller与@ResponseBody两个注解组合功能</td>
+</tr>
+</tbody></table>
+<h4 id="知识点2：-GetMapping-PostMapping-PutMapping-DeleteMapping"><a href="#知识点2：-GetMapping-PostMapping-PutMapping-DeleteMapping" class="headerlink" title="知识点2：@GetMapping @PostMapping @PutMapping @DeleteMapping"></a>知识点2：@GetMapping @PostMapping @PutMapping @DeleteMapping</h4><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@GetMapping @PostMapping @PutMapping @DeleteMapping</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>&#x3D;&#x3D;方法注解&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>基于SpringMVC的RESTful开发控制器方法定义上方</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>设置当前控制器方法请求访问路径与请求动作，每种对应一个请求动作，<br/>例如@GetMapping对应GET请求</td>
+</tr>
+<tr>
+<td>相关属性</td>
+<td>value（默认）：请求访问路径</td>
+</tr>
+</tbody></table>
+<h3 id="案例：基于RESTful页面数据交互"><a href="#案例：基于RESTful页面数据交互" class="headerlink" title="案例：基于RESTful页面数据交互"></a>案例：基于RESTful页面数据交互</h3><h5 id="编写Controller类并使用RESTful进行配置"><a href="#编写Controller类并使用RESTful进行配置" class="headerlink" title="编写Controller类并使用RESTful进行配置"></a>编写Controller类并使用RESTful进行配置</h5><pre class="line-numbers language-java" data-language="java"><code class="language-java">@RestController
+@RequestMapping(&quot;&#x2F;books&quot;)
+public class BookController &#123;
+
+    @PostMapping
+    public String save(@RequestBody Book book)&#123;
+        System.out.println(&quot;book save &#x3D;&#x3D;&gt; &quot;+ book);
+        return &quot;&#123;&#39;module&#39;:&#39;book save success&#39;&#125;&quot;;
+    &#125;
+
+ 	@GetMapping
+    public List&lt;Book&gt; getAll()&#123;
+        System.out.println(&quot;book getAll is running ...&quot;);
+        List&lt;Book&gt; bookList &#x3D; new ArrayList&lt;Book&gt;();
+
+        Book book1 &#x3D; new Book();
+        book1.setType(&quot;计算机&quot;);
+        book1.setName(&quot;SpringMVC入门教程&quot;);
+        book1.setDescription(&quot;小试牛刀&quot;);
+        bookList.add(book1);
+
+        Book book2 &#x3D; new Book();
+        book2.setType(&quot;计算机&quot;);
+        book2.setName(&quot;SpringMVC实战教程&quot;);
+        book2.setDescription(&quot;一代宗师&quot;);
+        bookList.add(book2);
+
+
+        return bookList;
+    &#125;
+
+&#125;</code></pre>
+
+<ul>
+<li>SpringMVC需要将静态资源进行放行。</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+public class SpringMvcSupport extends WebMvcConfigurationSupport &#123;
+    &#x2F;&#x2F;设置静态资源访问过滤，当前类需要设置为配置类，并被扫描加载
+    @Override
+    protected void addResourceHandlers(ResourceHandlerRegistry registry) &#123;
+        &#x2F;&#x2F;当访问&#x2F;pages&#x2F;????时候，从&#x2F;pages目录下查找内容
+        registry.addResourceHandler(&quot;&#x2F;pages&#x2F;**&quot;).addResourceLocations(&quot;&#x2F;pages&#x2F;&quot;);
+        registry.addResourceHandler(&quot;&#x2F;js&#x2F;**&quot;).addResourceLocations(&quot;&#x2F;js&#x2F;&quot;);
+        registry.addResourceHandler(&quot;&#x2F;css&#x2F;**&quot;).addResourceLocations(&quot;&#x2F;css&#x2F;&quot;);
+        registry.addResourceHandler(&quot;&#x2F;plugins&#x2F;**&quot;).addResourceLocations(&quot;&#x2F;plugins&#x2F;&quot;);
+    &#125;
+&#125;
+</code></pre>
+
+<ul>
+<li>该配置类是在config目录下，SpringMVC扫描的是controller包，所以该配置类还未生效，要想生效需要将SpringMvcConfig配置类进行修改</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&#123;&quot;com.itheima.controller&quot;,&quot;com.itheima.config&quot;&#125;)
+@EnableWebMvc
+public class SpringMvcConfig &#123;
+&#125;
+
+或者
+
+@Configuration
+@ComponentScan(&quot;com.itheima&quot;)
+@EnableWebMvc
+public class SpringMvcConfig &#123;
+&#125;</code></pre>
+
+<h3 id="SSM整合"><a href="#SSM整合" class="headerlink" title="SSM整合"></a>SSM整合</h3><p>1.创建工程</p>
+<p>2.SSM整合</p>
+<ul>
+<li><p>Spring</p>
+<ul>
+<li>SpringConfig</li>
+</ul>
+</li>
+<li><p>MyBatis</p>
+<ul>
+<li><p>MybatisConfig</p>
+</li>
+<li><p>JdbcConfig</p>
+</li>
+<li><p>jdbc.properties</p>
+</li>
+</ul>
+</li>
+<li><p>SpringMVC</p>
+<ul>
+<li>ServletConfig</li>
+<li>SpirngMvcConfig</li>
+</ul>
+</li>
+</ul>
+<p>3.功能模块</p>
+<ul>
+<li>表与实现类</li>
+<li>dao(接口+自动代理)</li>
+<li>service(接口+实现类)<ul>
+<li>业务层接口测试(整合JUnit)</li>
+</ul>
+</li>
+<li>controller<ul>
+<li>表现层接口测试(PostMan)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220814173947.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220814174014.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220814174046.png"></p>
+<h4 id="异常处理器"><a href="#异常处理器" class="headerlink" title="异常处理器"></a>异常处理器</h4><ul>
+<li><p>出现异常现象的常见位置与常见诱因如下：</p>
+<ul>
+<li>框架内部抛出的异常：因使用不合规导致</li>
+<li>数据层抛出的异常：因外部服务器故障导致（例如：服务器访问超时）</li>
+<li>业务层抛出的异常：因业务逻辑书写失败导致（例如：遍历业务书写操作，导致索引异常等）</li>
+<li>表现层抛出的异常：因数据收集、校验等规则导致（例如：不匹配的数据类型间导致异常）</li>
+<li>工具类抛出的异常：因工具类书写不严谨不够健壮导致（例如：必要释放的连接长期未释放导致等）</li>
+</ul>
+</li>
+<li><p><strong>所有异常均抛出到表现层处理</strong></p>
+</li>
+<li><p>对于上面这些问题及解决方案，SpringMVC已经为我们提供了一套解决方案:</p>
+<ul>
+<li><p>对于上面这些问题及解决方案，SpringMVC已经为我们提供了一套解决方案:</p>
+<ul>
+<li><strong>异常处理器:</strong><ul>
+<li>集中的、统一的处理项目中出现的异常。</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@RestControllerAdvice
+public class ProjectExceptionAdvice &#123;
+    @ExceptionHandler(Exception.class)
+    public void doException(Exception ex)&#123;
+        System.out.println(&quot;出现异常了&quot;);
+    &#125;
+&#125;</code></pre></li>
+</ul>
+</li>
+</ul>
+<p>知识点1：@RestControllerAdvice</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@RestControllerAdvice</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>&#x3D;&#x3D;类注解&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>Rest风格开发的控制器增强类定义上方</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>为Rest风格开发的控制器类做增强</td>
+</tr>
+</tbody></table>
+<p>**说明:**此注解自带@ResponseBody注解与@Component注解，具备对应的功能</p>
+<hr>
+<p>知识点2：@ExceptionHandler</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@ExceptionHandler</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>&#x3D;&#x3D;方法注解&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>专用于异常处理的控制器方法上方</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>设置指定异常的处理方案，功能等同于控制器方法，<br/>出现异常后终止原始控制器执行,并转入当前方法执行</td>
+</tr>
+</tbody></table>
+<p><strong>说明：</strong>此类方法可以根据处理的异常不同，制作多个方法分别处理对应的异常</p>
+<h4 id="项目异常分类及处理"><a href="#项目异常分类及处理" class="headerlink" title="项目异常分类及处理"></a>项目异常分类及处理</h4><p><strong>项目异常分类</strong></p>
+<ul>
+<li><p>业务异常（BusinessException）</p>
+<ul>
+<li><p>规范的用户行为产生的异常</p>
+<ul>
+<li>用户在页面输入内容的时候未按照指定格式进行数据填写，如在年龄框输入的是字符串</li>
+</ul>
+</li>
+<li><p>不规范的用户行为操作产生的异常</p>
+<ul>
+<li>如用户故意传递错误数据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>系统异常（SystemException）</p>
+<ul>
+<li>项目运行过程中可预计但无法避免的异常<ul>
+<li>比如数据库或服务器宕机</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>其他异常（Exception）</p>
+<ul>
+<li>编程人员未预期到的异常，如:用到的文件不存在</li>
+</ul>
+</li>
+</ul>
+<p><strong>处理方案</strong></p>
+<ul>
+<li>业务异常（BusinessException）<ul>
+<li>发送对应消息传递给用户，提醒规范操作<ul>
+<li>大家常见的就是提示用户名已存在或密码格式不正确等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>系统异常（SystemException）<ul>
+<li>发送固定消息传递给用户，安抚用户<ul>
+<li>系统繁忙，请稍后再试</li>
+<li>系统正在维护升级，请稍后再试</li>
+<li>系统出问题，请联系系统管理员等</li>
+</ul>
+</li>
+<li>发送特定消息给运维人员，提醒维护<ul>
+<li>可以发送短信、邮箱或者是公司内部通信软件</li>
+</ul>
+</li>
+<li>记录日志<ul>
+<li>发消息和记录日志对用户来说是不可见的，属于后台程序</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>其他异常（Exception）<ul>
+<li>发送固定消息传递给用户，安抚用户</li>
+<li>发送特定消息给编程人员，提醒维护（纳入预期范围内）<ul>
+<li>一般是程序没有考虑全，比如未做非空校验等</li>
+</ul>
+</li>
+<li>记录日志</li>
+</ul>
+</li>
+</ul>
+<h3 id="拦截器"><a href="#拦截器" class="headerlink" title="拦截器"></a>拦截器</h3><ul>
+<li>拦截器是一种动态拦截方法调用的机制，在SpirngMVC中动态拦截控制器方法的执行</li>
+<li>作用：<ul>
+<li>在指定的方法调用前后执行预先设定的代码</li>
+<li>阻止原始方法的执行</li>
+</ul>
+</li>
+</ul>
+<h4 id="拦截器和过滤器区别"><a href="#拦截器和过滤器区别" class="headerlink" title="拦截器和过滤器区别"></a>拦截器和过滤器区别</h4><ul>
+<li>归属不同：Filter输入Servlet技术，Interceptor呼入SpringMVC技术</li>
+<li>拦截内容不同：Filter对所有访问进行增强，Interceptor仅针对SpringMVC的访问进行增强</li>
+</ul>
+<h4 id="拦截器入门案例"><a href="#拦截器入门案例" class="headerlink" title="拦截器入门案例"></a>拦截器入门案例</h4><ol>
+<li><p>创建拦截器类</p>
+<p>让类实现HandlerInterceptor接口，重写接口中的三个方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Component
+&#x2F;&#x2F;定义拦截器类，实现HandlerInterceptor接口
+&#x2F;&#x2F;注意当前类必须受Spring容器控制
+public class ProjectInterceptor implements HandlerInterceptor &#123;
+    @Override
+    &#x2F;&#x2F;原始方法调用前执行的内容
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception &#123;
+        System.out.println(&quot;preHandle...&quot;);
+        return true;
+    &#125;
+
+    @Override
+    &#x2F;&#x2F;原始方法调用后执行的内容
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception &#123;
+        System.out.println(&quot;postHandle...&quot;);
+    &#125;
+
+    @Override
+    &#x2F;&#x2F;原始方法调用完成后执行的内容
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception &#123;
+        System.out.println(&quot;afterCompletion...&quot;);
+    &#125;
+&#125;</code></pre>
+</li>
+<li><p>配置拦截器类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+public class SpringMvcSupport extends WebMvcConfigurationSupport &#123;
+    @Autowired
+    private ProjectInterceptor projectInterceptor;
+
+    @Override
+    protected void addResourceHandlers(ResourceHandlerRegistry registry) &#123;
+        registry.addResourceHandler(&quot;&#x2F;pages&#x2F;**&quot;).addResourceLocations(&quot;&#x2F;pages&#x2F;&quot;);
+    &#125;
+
+    @Override
+    protected void addInterceptors(InterceptorRegistry registry) &#123;
+        &#x2F;&#x2F;配置拦截器
+        registry.addInterceptor(projectInterceptor).addPathPatterns(&quot;&#x2F;books&quot; );
+    &#125;
+&#125;</code></pre>
+</li>
+<li><p>SpringMVC添加SpringMvcSupport包扫描</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&#123;&quot;com.itheima.controller&quot;,&quot;com.itheima.config&quot;&#125;)
+@EnableWebMvc
+public class SpringMvcConfig&#123;
+   
+&#125;</code></pre></li>
+</ol>
+<p><strong>简化SpringMvcSupport的编写</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&#123;&quot;com.itheima.controller&quot;&#125;)
+@EnableWebMvc
+&#x2F;&#x2F;实现WebMvcConfigurer接口可以简化开发，但具有一定的侵入性
+public class SpringMvcConfig implements WebMvcConfigurer &#123;
+    @Autowired
+    private ProjectInterceptor projectInterceptor;
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) &#123;
+        &#x2F;&#x2F;配置多拦截器
+        registry.addInterceptor(projectInterceptor).addPathPatterns(&quot;&#x2F;books&quot;,&quot;&#x2F;books&#x2F;*&quot;);
+    &#125;
+&#125;</code></pre>
+
+
+
+<p><strong>拦截器中的<code>preHandler</code>方法，如果返回true,则代表放行，会执行原始Controller类中要请求的方法，如果返回false，则代表拦截，后面的就不会再执行了。</strong></p>
+<p>当有拦截器后，请求会先进入preHandle方法，</p>
+<p>​	如果方法返回true，则放行继续执行后面的handle[controller的方法]和后面的方法</p>
+<p>​	如果返回false，则直接跳过后面方法的执行。</p>
+<h4 id="多拦截器执行顺序"><a href="#多拦截器执行顺序" class="headerlink" title="多拦截器执行顺序"></a>多拦截器执行顺序</h4><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220922125322.png"></p>
+<h1 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h1><h2 id="SpringBoot简介"><a href="#SpringBoot简介" class="headerlink" title="SpringBoot简介"></a>SpringBoot简介</h2><ul>
+<li>SpringBoot设计目的是用来简化Spring应用的初始搭建以及开发过程</li>
+</ul>
+<hr>
+<p>原始 <code>Spring</code> 环境搭建和开发存在以下问题：</p>
+<ul>
+<li>配置繁琐</li>
+<li>依赖设置繁琐</li>
+</ul>
+<p><code>SpringBoot</code> 程序优点恰巧就是针对 <code>Spring</code> 的缺点</p>
+<ul>
+<li>自动配置。这个是用来解决 <code>Spring</code> 程序配置繁琐的问题</li>
+<li>起步依赖。这个是用来解决 <code>Spring</code> 程序依赖设置繁琐的问题</li>
+<li>辅助功能（内置服务器,…）。我们在启动 <code>SpringBoot</code> 程序时既没有使用本地的 <code>tomcat</code> 也没有使用 <code>tomcat</code> 插件，而是使用 <code>SpringBoot</code> 内置的服务器。</li>
+</ul>
+<h3 id="创建SpringBoot项目流程"><a href="#创建SpringBoot项目流程" class="headerlink" title="创建SpringBoot项目流程"></a>创建SpringBoot项目流程</h3><ul>
+<li>创建新模块</li>
+</ul>
+<p>点击 <code>+</code> 选择 <code>New Module</code> 创建新模块</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220929110633.png"></p>
+<ul>
+<li>选择 <code>Spring Initializr</code> ，用来创建 <code>SpringBoot</code> 工程</li>
+</ul>
+<p>以前我们选择的是 <code>Maven</code> ，今天选择 <code>Spring Initializr</code> 来快速构建 <code>SpringBoot</code> 工程。而在 <code>Module SDK</code> 这一项选择我们安装的 <code>JDK</code> 版本。</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220929110725.png"></p>
+<ul>
+<li>对 <code>SpringBoot</code> 工程进行相关的设置</li>
+</ul>
+<p>我们使用这种方式构建的 <code>SpringBoot</code> 工程其实也是 <code>Maven</code> 工程，而该方式只是一种快速构建的方式而已。</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20220929111359.png"></p>
+<ul>
+<li><blockquote>
+<p>&#x3D;&#x3D;注意：打包方式这里需要设置为 <code>Jar</code>&#x3D;&#x3D;</p>
+</blockquote>
+</li>
+<li><p>选中 <code>Web</code>，然后勾选 <code>Spring Web</code></p>
+<p>由于我们需要开发一个 <code>web</code> 程序，使用到了 <code>SpringMVC</code> 技术，所以按照下图红框进行勾选</p>
+</li>
+</ul>
+<p><img src="C:/Users/22952/AppData/Typora/typora-user-images/image-20220929111414119.png" alt="image-20220929111414119"></p>
+<ul>
+<li>下图界面不需要任何修改，直接点击 <code>Finish</code> 完成 <code>SpringBoot</code> 工程的构建</li>
+</ul>
+<p><img src="C:/Users/22952/AppData/Typora/typora-user-images/image-20220929111432619.png" alt="image-20220929111432619"></p>
+<ul>
+<li>创建 Controller</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@RestController
+@RequestMapping(&quot;&#x2F;books&quot;)
+public class BookController &#123;
+
+    @GetMapping(&quot;&#x2F;&#123;id&#125;&quot;)
+    public String getById(@PathVariable Integer id)&#123;
+        System.out.println(&quot;id &#x3D;&#x3D;&gt; &quot;+id);
+        return &quot;hello , spring boot!&quot;;
+    &#125;
+&#125;</code></pre>
+
+<ul>
+<li>启动服务器</li>
+</ul>
+<p>运行Application类</p>
+<ul>
+<li>进行测试</li>
+</ul>
+<p>用Postman发送请求</p>
+<p><strong>也可以选择去官网<a target="_blank" rel="noopener" href="https://spring.io/projects/spring-boot%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE">https://spring.io/projects/spring-boot创建项目</a></strong></p>
+<h3 id="Spirng项目快速启动"><a href="#Spirng项目快速启动" class="headerlink" title="Spirng项目快速启动"></a>Spirng项目快速启动</h3><p>1.所以我们只需要使用 <code>Maven</code> 的 <code>package</code> 指令打包就会在 <code>target</code> 目录下生成对应的 <code>Jar</code> 包。</p>
+<p>2.进入 <code>jar</code> 包所在位置，在 <code>命令提示符</code> 中输入如下命令</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">jar -jar springboot_01_quickstart-0.0.1-SNAPSHOT.jar</code></pre>
+
+<h3 id="切换web服务器"><a href="#切换web服务器" class="headerlink" title="切换web服务器"></a>切换web服务器</h3><p>我们启动工程默认是<code>tomcat</code>服务器，那能不能不使用 <code>tomcat</code> 而使用 <code>jetty</code> 服务器?而要切换 <code>web</code> 服务器就需要将默认的 <code>tomcat</code> 服务器给排除掉，怎么排除呢？使用 <code>exclusion</code> 标签</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-web&lt;&#x2F;artifactId&gt;
+    &lt;exclusions&gt;
+        &lt;exclusion&gt;
+            &lt;artifactId&gt;spring-boot-starter-tomcat&lt;&#x2F;artifactId&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+        &lt;&#x2F;exclusion&gt;
+    &lt;&#x2F;exclusions&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+
+<p>添加<code>jetty</code>服务器</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-jetty&lt;&#x2F;artifactId&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+
+<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><h3 id="配置文件格式"><a href="#配置文件格式" class="headerlink" title="配置文件格式"></a>配置文件格式</h3><ul>
+<li><p>SpringBoot提供了多种属性配置方式</p>
+<ul>
+<li><p>application.properties</p>
+<pre class="line-numbers language-none"><code class="language-none">server.port&#x3D;80</code></pre>
+</li>
+<li><p>application.yml</p>
+<pre class="line-numbers language-none"><code class="language-none">server:
+  port: 81</code></pre>
+</li>
+<li><p>application.yaml</p>
+<pre class="line-numbers language-none"><code class="language-none">server:
+  port: 82</code></pre></li>
+</ul>
+</li>
+<li><p>SpringBoot配置文件加载顺序</p>
+<ul>
+<li>application.properties &gt; application.yml &gt; application.yaml</li>
+</ul>
+</li>
+</ul>
+<h4 id="yaml"><a href="#yaml" class="headerlink" title="yaml"></a>yaml</h4><ul>
+<li>YAML 一种数据序列化格式</li>
+<li>优点：<ul>
+<li>容易阅读</li>
+<li>容易与脚本语言交互</li>
+<li>以数据为核心，重数据轻格式</li>
+</ul>
+</li>
+<li>YAML文件扩展名<ul>
+<li>.yml(主流)</li>
+<li>.yaml</li>
+</ul>
+</li>
+</ul>
+<h4 id="yaml语法规则"><a href="#yaml语法规则" class="headerlink" title="yaml语法规则"></a>yaml语法规则</h4><hr>
+<p><strong>书写yaml文件应该严格遵守yaml语法规则，不然文件将不会被识别导致问题</strong></p>
+<hr>
+<ul>
+<li>大小写敏感</li>
+<li>属性层级关系使用多行描述，每行结尾使用冒号结束</li>
+<li>使用缩进表示层级关系，同层级左侧对齐，只允许使用空格（不允许使用Tab建）</li>
+<li>属性值前面添加空格（属性名与属性值之间使用冒号+空格作为分隔）</li>
+<li># 表示注释</li>
+</ul>
+<h4 id="yaml数据读取方式"><a href="#yaml数据读取方式" class="headerlink" title="yaml数据读取方式"></a>yaml数据读取方式</h4><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221007132727.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221007132837.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221007132912.png"></p>
+<p>在进行自定义对象封装数据被警告时，将依赖加入pom文件中</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;spring-boot-configuration-processor&lt;&#x2F;artifactId&gt;
+	&lt;optional&gt;true&lt;&#x2F;optional&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+
+<h4 id="多环境配置"><a href="#多环境配置" class="headerlink" title="多环境配置"></a>多环境配置</h4><h5 id="yml-和-yaml"><a href="#yml-和-yaml" class="headerlink" title="yml 和 yaml"></a>yml 和 yaml</h5><p><code>application.yml</code> 配置文件内容如下</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">#设置启用的环境
+spring:
+  profiles:
+    active: dev
+
+---
+#开发
+spring:
+  profiles: dev
+server:
+  port: 80
+---
+#生产
+spring:
+  profiles: pro
+server:
+  port: 81
+---
+#测试
+spring:
+  profiles: test
+server:
+  port: 82
+---</code></pre>
+
+<p>&#x3D;&#x3D;注意：&#x3D;&#x3D;</p>
+<p>在上面配置中给不同配置起名字的 <code>spring.profiles</code> 配置项已经过时。最新用来起名字的配置项是 </p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">#开发
+spring:
+  config:
+    activate:
+      on-profile: dev</code></pre>
+
+<hr>
+<h5 id="properties文件"><a href="#properties文件" class="headerlink" title="properties文件"></a>properties文件</h5><p><code>properties</code> 类型的配置文件配置多环境需要定义不同的配置文件</p>
+<ul>
+<li><p><code>application-dev.properties</code> 是开发环境的配置文件。我们在该文件中配置端口号为 <code>80</code></p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">server.port&#x3D;80</code></pre>
+</li>
+<li><p><code>application-test.properties</code> 是测试环境的配置文件。我们在该文件中配置端口号为 <code>81</code></p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">server.port&#x3D;81</code></pre>
+</li>
+<li><p><code>application-pro.properties</code> 是生产环境的配置文件。我们在该文件中配置端口号为 <code>82</code></p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">server.port&#x3D;82</code></pre></li>
+</ul>
+<p><code>SpringBoot</code> 只会默认加载名为 <code>application.properties</code> 的配置文件，所以需要在 <code>application.properties</code> 配置文件中设置启用哪个配置文件，配置如下:</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">spring.profiles.active&#x3D;pro</code></pre>
+
+<h5 id="命令行启动参数设置"><a href="#命令行启动参数设置" class="headerlink" title="命令行启动参数设置"></a>命令行启动参数设置</h5><p>使用 <code>SpringBoot</code> 开发的程序以后都是打成 <code>jar</code> 包，通过 <code>java -jar xxx.jar</code> 的方式启动服务的。那么就存在一个问题，如何切换环境呢？因为配置文件打到的jar包中了。</p>
+<p>我们知道 <code>jar</code> 包其实就是一个压缩包，可以解压缩，然后修改配置，最后再打成jar包就可以了。这种方式显然有点麻烦，而 <code>SpringBoot</code> 提供了在运行 <code>jar</code> 时设置开启指定的环境的方式，如下</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">java –jar xxx.jar –-spring.profiles.active&#x3D;test</code></pre>
+
+<p>那么这种方式能不能临时修改端口号呢？也是可以的，可以通过如下方式</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">java –jar xxx.jar –-server.port&#x3D;88</code></pre>
+
+<p>当然也可以同时设置多个配置，比如即指定启用哪个环境配置，又临时指定端口，如下</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">java –jar springboot.jar –-server.port&#x3D;88 –-spring.profiles.active&#x3D;test</code></pre>
+
+<p>大家进行测试后就会发现命令行设置的端口号优先级高（也就是使用的是命令行设置的端口号），配置的优先级其实 <code>SpringBoot</code> 官网已经进行了说明，参见 :</p>
+<pre class="line-numbers language-none"><code class="language-none">https:&#x2F;&#x2F;docs.spring.io&#x2F;spring-boot&#x2F;docs&#x2F;current&#x2F;reference&#x2F;html&#x2F;spring-boot-features.html#boot-features-external-config</code></pre>
+
+<h4 id="配置文件分类"><a href="#配置文件分类" class="headerlink" title="配置文件分类"></a>配置文件分类</h4><p>有这样的场景，我们开发完毕后需要测试人员进行测试，由于测试环境和开发环境的很多配置都不相同，所以测试人员在运行我们的工程时需要临时修改很多配置，如下</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">java –jar springboot.jar –-spring.profiles.active&#x3D;test --server.port&#x3D;85 --server.servlet.context-path&#x3D;&#x2F;heima --server.tomcat.connection-timeout&#x3D;-1 …… …… …… …… ……</code></pre>
+
+<p>针对这种情况，<code>SpringBoot</code> 定义了配置文件不同的放置的位置；而放在不同位置的优先级时不同的。</p>
+<p><code>SpringBoot</code> 中4级配置文件放置位置：</p>
+<ul>
+<li>1级：classpath：application.yml  </li>
+<li>2级：classpath：config&#x2F;application.yml</li>
+<li>3级：file ：application.yml</li>
+<li>4级：file ：config&#x2F;application.yml</li>
+</ul>
+<p>作用：</p>
+<ul>
+<li>1级与2级留作系统打包后设置通用属性</li>
+<li>3级与4级用于系统开发阶段设置通用属性</li>
+</ul>
+<h2 id="SpringBoot整合junit"><a href="#SpringBoot整合junit" class="headerlink" title="SpringBoot整合junit"></a>SpringBoot整合junit</h2><p>回顾 <code>Spring</code> 整合 <code>junit</code></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes &#x3D; SpringConfig.class)
+public class UserServiceTest &#123;
+    
+    @Autowired
+    private BookService bookService;
+    
+    @Test
+    public void testSave()&#123;
+        bookService.save();
+    &#125;
+&#125;</code></pre>
+
+<p>使用 <code>@RunWith</code> 注解指定运行器，使用 <code>@ContextConfiguration</code> 注解来指定配置类或者配置文件。而 <code>SpringBoot</code> 整合 <code>junit</code> 特别简单，分为以下三步完成</p>
+<ul>
+<li>在测试类上添加 <code>SpringBootTest</code> 注解</li>
+<li>使用 <code>@Autowired</code> 注入要测试的资源</li>
+<li>定义测试方法进行测试</li>
+</ul>
+<p>SpringBoot整合junit</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Springboot07TestApplicationTests &#123;
+
+    @Autowired
+    private BookService bookService;
+
+    @Test
+    public void save() &#123;
+        bookService.save();
+    &#125;
+&#125;</code></pre>
+
+<p>&#x3D;&#x3D;注意：&#x3D;&#x3D;这里的引导类所在包必须是测试类所在包及其子包。</p>
+<h2 id="SpringBoot整合Mybatis"><a href="#SpringBoot整合Mybatis" class="headerlink" title="SpringBoot整合Mybatis"></a>SpringBoot整合Mybatis</h2><h3 id="回顾Spring整合Mybatis"><a href="#回顾Spring整合Mybatis" class="headerlink" title="回顾Spring整合Mybatis"></a>回顾Spring整合Mybatis</h3><p><code>Spring</code> 整合 <code>Mybatis</code> 需要定义很多配置类</p>
+<ul>
+<li><p><code>SpringConfig</code> 配置类</p>
+<ul>
+<li><p>导入 <code>JdbcConfig</code> 配置类</p>
+</li>
+<li><p>导入 <code>MybatisConfig</code> 配置类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@ComponentScan(&quot;com.itheima&quot;)
+@PropertySource(&quot;classpath:jdbc.properties&quot;)
+@Import(&#123;JdbcConfig.class,MyBatisConfig.class&#125;)
+public class SpringConfig &#123;
+&#125;
+</code></pre></li>
+</ul>
+</li>
+<li><p><code>JdbcConfig</code> 配置类</p>
+<ul>
+<li><p>定义数据源（加载properties配置项：driver、url、username、password）</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class JdbcConfig &#123;
+    @Value(&quot;$&#123;jdbc.driver&#125;&quot;)
+    private String driver;
+    @Value(&quot;$&#123;jdbc.url&#125;&quot;)
+    private String url;
+    @Value(&quot;$&#123;jdbc.username&#125;&quot;)
+    private String userName;
+    @Value(&quot;$&#123;jdbc.password&#125;&quot;)
+    private String password;
+
+    @Bean
+    public DataSource getDataSource()&#123;
+        DruidDataSource ds &#x3D; new DruidDataSource();
+        ds.setDriverClassName(driver);
+        ds.setUrl(url);
+        ds.setUsername(userName);
+        ds.setPassword(password);
+        return ds;
+    &#125;
+&#125;</code></pre></li>
+</ul>
+</li>
+<li><p><code>MybatisConfig</code> 配置类</p>
+<ul>
+<li><p>定义 <code>SqlSessionFactoryBean</code></p>
+</li>
+<li><p>定义映射配置</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Bean
+public MapperScannerConfigurer getMapperScannerConfigurer()&#123;
+    MapperScannerConfigurer msc &#x3D; new MapperScannerConfigurer();
+    msc.setBasePackage(&quot;com.itheima.dao&quot;);
+    return msc;
+&#125;
+
+@Bean
+public SqlSessionFactoryBean getSqlSessionFactoryBean(DataSource dataSource)&#123;
+    SqlSessionFactoryBean ssfb &#x3D; new SqlSessionFactoryBean();
+    ssfb.setTypeAliasesPackage(&quot;com.itheima.domain&quot;);
+    ssfb.setDataSource(dataSource);
+    return ssfb;
+&#125;
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="SpringBoot整合Mybatis-1"><a href="#SpringBoot整合Mybatis-1" class="headerlink" title="SpringBoot整合Mybatis"></a>SpringBoot整合Mybatis</h3><ol>
+<li>创建新模块，选择Spirng初始化，并配置模块相关基础信息</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221015102221.png"></p>
+<ol start="2">
+<li><p>选择当前模块需要使用的技术集(MyBatis Mysql)</p>
+</li>
+<li><p>在配置文件中（application.yaml）设置数据源参数</p>
+</li>
+</ol>
+<p><code>注意事项</code></p>
+<pre class="line-numbers language-none"><code class="language-none">SpirngBoot版本低于2.4.3，Mysql驱动版本大于8时，需要在url连接串中配置时区
+jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ssm_db?serverTimezone&#x3D;UTC
+或在MySql数据库配置时区解决此问题</code></pre>
+
+<ol start="4">
+<li><p>定义数据层接口与映射配置</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Mapper
+public interface BookDao &#123;
+    @Select(&quot;select * from tbl_book where id &#x3D; #&#123;id&#125;&quot;)
+    public Book getById(Integer id);
+&#125;</code></pre>
+</li>
+<li><p>测试类中注入dao接口，测试功能</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Spring08MybatisApplicationTests &#123;
+    @Autowired
+    private BookDao bookDao;
+    @Test
+    void testGetById() &#123;
+        Book book &#x3D; bookDao.getById(2);
+        System.out.println(book);
+    &#125;
+&#125;</code></pre></li>
+</ol>
+<h2 id="SpringBoot整合ssm"><a href="#SpringBoot整合ssm" class="headerlink" title="SpringBoot整合ssm"></a>SpringBoot整合ssm</h2><ol>
+<li><p>pom.xml</p>
+<p>配置起步依赖，必要的资源坐标</p>
+</li>
+<li><p>aplication.yml</p>
+<p>设置数据源，端口</p>
+</li>
+<li><p>配置类</p>
+<p>全部删除</p>
+</li>
+<li><p>dao</p>
+<p>设置@Mapper</p>
+</li>
+<li><p>测试类</p>
+</li>
+<li><p>页面</p>
+<p>放置在resources目录下的static目录中</p>
+</li>
+</ol>
+<h1 id="MyBatis-Plus"><a href="#MyBatis-Plus" class="headerlink" title="MyBatis Plus"></a>MyBatis Plus</h1><h2 id="MyBatisPlus入门案例与简介"><a href="#MyBatisPlus入门案例与简介" class="headerlink" title="MyBatisPlus入门案例与简介"></a>MyBatisPlus入门案例与简介</h2><h3 id="入门案例-1"><a href="#入门案例-1" class="headerlink" title="入门案例"></a>入门案例</h3><ol>
+<li><p>创建新模块，选择Spring初始化，并配置模块相关基础信息</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221015214614.png"></p>
+</li>
+<li><p>选择当前模块需要使用的技术集（仅保留JDBC）</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221015214646.png"></p>
+</li>
+<li><p>手动添加MyBatisPlus起步依赖</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+	&lt;groupId&gt;com.baomidou&lt;&#x2F;groupId&gt;
+	&lt;artifactId&gt;mybatis-plus-boot-starter&lt;&#x2F;artifactId&gt;	
+    &lt;version&gt;3.4.1&lt;&#x2F;version&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+
+<p><code>由于MyBatisPlus并未被收录到idea的系统内置配置，无法直接选择加入</code></p>
+</li>
+<li><p>设置Jdbc参数(application.yml)</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ssm_db
+    username: 
+    password: </code></pre>
+
+<p><code>使用druid数据源，需要导入对应坐标</code></p>
+</li>
+<li><p>制作实体类与表结构（类名与表名对应，属性名与字段名对应） 如类名与表名不对应 可在实体类上方添加注释<code>@TableName(&quot;表名&quot;)</code></p>
+</li>
+<li><p>定义数据接口，继承BaseMapper&lt;实体类类名&gt;</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Mapper
+public interface BookDao extends BaseMapper&lt;Book&gt; &#123;
+&#125;</code></pre>
+</li>
+<li><p>测试类中注入dao接口，测试功能</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Mybatisplus001QuickstartApplicationTests &#123;
+
+    @Autowired
+    private BookDao bookDao;
+
+    @Test
+    void test() &#123;
+        List&lt;Book&gt; books &#x3D; bookDao.selectList(null);
+        System.out.println(books);
+    &#125;
+
+&#125;</code></pre></li>
+</ol>
+<h3 id="Mybatis简介"><a href="#Mybatis简介" class="headerlink" title="Mybatis简介"></a>Mybatis简介</h3><ul>
+<li>MP是基于Mybatis框架基础上开发的增强型工具，旨在简化开发，提升效率</li>
+<li>开发方式<ul>
+<li>基于MyBatis使用MyBatisPlus</li>
+<li>基于Spring使用MyBatisPlus</li>
+<li>基于SpringBoot使用MyBatisPlus</li>
+</ul>
+</li>
+<li>MyBatisPlus的官网为:<code>https://mp.baomidou.com/</code></li>
+</ul>
+<p>MyBatisPlus的特性:</p>
+<ul>
+<li>无侵入：只做增强不做改变，不会对现有工程产生影响</li>
+<li>强大的 CRUD 操作：内置通用 Mapper，少量配置即可实现单表CRUD 操作</li>
+<li>支持 Lambda：编写查询条件无需担心字段写错</li>
+<li>支持主键自动生成</li>
+<li>内置分页插件</li>
+<li>……</li>
+</ul>
+<h2 id="标准数据层开发"><a href="#标准数据层开发" class="headerlink" title="标准数据层开发"></a>标准数据层开发</h2><h3 id="标准CRUD使用"><a href="#标准CRUD使用" class="headerlink" title="标准CRUD使用"></a>标准CRUD使用</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221016124406.png"></p>
+<h3 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h3><p>在进行新增之前，我们可以分析下新增的方法:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">int insert (T t)</code></pre>
+
+<ul>
+<li><p>T:泛型，新增用来保存新增数据</p>
+</li>
+<li><p>int:返回值，新增成功后返回1，没有新增成功返回的是0</p>
+</li>
+</ul>
+<p>在测试类中进行新增操作:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Test
+void testSave()&#123;
+    Book book &#x3D; new Book();
+    book.setId(1);
+    book.setType(&quot;市场营销&quot;);
+    book.setName(&quot;零基础学python（全彩版）&quot;);
+    book.setDescription(&quot;黑马程序员，帮你成为python语言黑马&quot;);
+    bookDao.insert(book);
+&#125;</code></pre>
+
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">int deleteById (Serializable id)</code></pre>
+
+<p>Serializable：参数类型</p>
+<ul>
+<li><p>思考:参数类型为什么是一个序列化类?</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221016131742.png"></p>
+</li>
+<li><p>从这张图可以看出，</p>
+<ul>
+<li>String和Number是Serializable的子类，</li>
+<li>Number又是Float,Double,Integer等类的父类，</li>
+<li>能作为主键的数据类型都已经是Serializable的子类，</li>
+<li>MP使用Serializable作为参数类型，就好比我们可以用Object接收任何数据类型一样。</li>
+</ul>
+</li>
+<li><p>int:返回值类型，数据删除成功返回1，未删除数据返回0。</p>
+</li>
+</ul>
+<p>在测试类中进行新增操作:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"> @SpringBootTest
+class Mybatisplus01QuickstartApplicationTests &#123;
+
+    @Autowired
+    private UserDao userDao;
+
+    @Test
+    void testDelete() &#123;
+        userDao.deleteById(1401856123725713409L);
+    &#125;
+&#125;</code></pre>
+
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">int updateById(T t);</code></pre>
+
+<ul>
+<li><p>T:泛型，需要修改的数据内容，注意因为是根据ID进行修改，所以传入的对象中需要有ID属性值</p>
+</li>
+<li><p>int:返回值，修改成功后返回1，未修改数据返回0</p>
+</li>
+</ul>
+<p>在测试类中进行新增操作:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Mybatisplus01QuickstartApplicationTests &#123;
+
+    @Autowired
+    private UserDao userDao;
+
+    @Test
+    void testUpdate() &#123;
+        User user &#x3D; new User();
+        user.setId(1L);
+        user.setName(&quot;Tom888&quot;);
+        user.setPassword(&quot;tom888&quot;);
+        userDao.updateById(user);
+    &#125;
+&#125;</code></pre>
+
+<p>**说明:**修改的时候，只修改实体对象中有值的字段。</p>
+<h3 id="根据ID查询"><a href="#根据ID查询" class="headerlink" title="根据ID查询"></a>根据ID查询</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">T selectById (Serializable id)</code></pre>
+
+<ul>
+<li>Serializable：参数类型,主键ID的值</li>
+<li>T:根据ID查询只会返回一条数据</li>
+</ul>
+<p>在测试类中进行新增操作:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Mybatisplus01QuickstartApplicationTests &#123;
+
+    @Autowired
+    private UserDao userDao;
+    
+    @Test
+    void testGetById() &#123;
+        User user &#x3D; userDao.selectById(2L);
+        System.out.println(user);
+    &#125;
+&#125;</code></pre>
+
+<h3 id="查询所有"><a href="#查询所有" class="headerlink" title="查询所有"></a>查询所有</h3><p>在进行查询所有之前，我们可以分析下查询所有的方法:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">List&lt;T&gt; selectList(Wrapper&lt;T&gt; queryWrapper)</code></pre>
+
+<ul>
+<li>Wrapper：用来构建条件查询的条件，目前我们没有可直接传为Null</li>
+<li>List<T>:因为查询的是所有，所以返回的数据是一个集合</li>
+</ul>
+<p>在测试类中进行新增操作:</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Mybatisplus01QuickstartApplicationTests &#123;
+
+    @Autowired
+    private UserDao userDao;
+    
+    @Test
+    void testGetAll() &#123;
+        List&lt;User&gt; userList &#x3D; userDao.selectList(null);
+        System.out.println(userList);
+    &#125;
+&#125;</code></pre>
+
+<h3 id="Lombok"><a href="#Lombok" class="headerlink" title="Lombok"></a>Lombok</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><ul>
+<li><strong>Lombok，一个Java类库，提供了一组注解，简化POJO实体类开发。</strong></li>
+</ul>
+<h4 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h4><h5 id="步骤1-添加lombok依赖"><a href="#步骤1-添加lombok依赖" class="headerlink" title="步骤1:添加lombok依赖"></a>步骤1:添加lombok依赖</h5><pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.projectlombok&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;lombok&lt;&#x2F;artifactId&gt;
+    &lt;!--&lt;version&gt;1.18.12&lt;&#x2F;version&gt;--&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+
+<p><strong>注意：</strong>版本可以不用写，因为SpringBoot中已经管理了lombok的版本。</p>
+<h5 id="步骤2-安装Lombok的插件"><a href="#步骤2-安装Lombok的插件" class="headerlink" title="步骤2:安装Lombok的插件"></a>步骤2:安装Lombok的插件</h5><p>&#x3D;&#x3D;新版本IDEA已经内置了该插件，如果删除setter和getter方法程序有报红，则需要安装插件&#x3D;&#x3D;</p>
+<p>如果在IDEA中找不到lombok插件，可以访问如下网站</p>
+<p><code>https://plugins.jetbrains.com/plugin/6317-lombok/versions</code></p>
+<p>根据自己IDEA的版本下载对应的lombok插件，下载成功后，在IDEA中采用离线安装的方式进行安装。</p>
+<h5 id="步骤3-模型类上添加注解"><a href="#步骤3-模型类上添加注解" class="headerlink" title="步骤3:模型类上添加注解"></a>步骤3:模型类上添加注解</h5><p>Lombok常见的注解有:</p>
+<ul>
+<li>@Setter:为模型类的属性提供setter方法</li>
+<li>@Getter:为模型类的属性提供getter方法</li>
+<li>@ToString:为模型类的属性提供toString方法</li>
+<li>@EqualsAndHashCode:为模型类的属性提供equals和hashcode方法</li>
+<li>&#x3D;&#x3D;@Data:是个组合注解，包含上面的注解的功能&#x3D;&#x3D;</li>
+<li>&#x3D;&#x3D;@NoArgsConstructor:提供一个无参构造函数&#x3D;&#x3D;</li>
+<li>&#x3D;&#x3D;@AllArgsConstructor:提供一个包含所有参数的构造函数&#x3D;&#x3D;</li>
+</ul>
+<p>Lombok的注解还有很多，上面标红的三个是比较常用的，其他的大家后期用到了，再去补充学习。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class User &#123;
+    private Long id;
+    private String name;
+    private String password;
+    private Integer age;
+    private String tel;
+&#125;</code></pre>
+
+<p><strong>说明:</strong></p>
+<p>Lombok只是简化模型类的编写，我们之前的方法也能用，比如有人会问:我如果只想要有name和password的构造函数，该如何编写?</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class User &#123;
+    private Long id;
+    private String name;
+    private String password;
+    private Integer age;
+    private String tel;
+
+    public User(String name, String password) &#123;
+        this.name &#x3D; name;
+        this.password &#x3D; password;
+    &#125;
+&#125;</code></pre>
+
+<p>这种方式是被允许的。</p>
+<h3 id="分页功能"><a href="#分页功能" class="headerlink" title="分页功能"></a>分页功能</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">IPage&lt;T&gt; selectPage(IPage&lt;T&gt; page, Wrapper&lt;T&gt; queryWrapper)</code></pre>
+
+<ul>
+<li>IPage:用来构建分页查询条件</li>
+<li>Wrapper：用来构建条件查询的条件，目前我们没有可直接为Null</li>
+<li>IPage:返回值，你会发现构建分页条件和方法的返回值都是IPage</li>
+</ul>
+<p>IPage是一个接口，我们需要找到它的实现类来构建它，具体的实现类，可以进入到IPage类中按ctrl+h,会找到其有一个实现类为<code>Page</code>。</p>
+<h4 id="步骤1-调用方法传入参数获取返回值"><a href="#步骤1-调用方法传入参数获取返回值" class="headerlink" title="步骤1:调用方法传入参数获取返回值"></a>步骤1:调用方法传入参数获取返回值</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Mybatisplus01QuickstartApplicationTests &#123;
+
+    @Autowired
+    private UserDao userDao;
+    
+    &#x2F;&#x2F;分页查询
+    @Test
+    void testSelectPage()&#123;
+        &#x2F;&#x2F;1 创建IPage分页对象,设置分页参数,1为当前页码，3为每页显示的记录数
+        IPage&lt;User&gt; page&#x3D;new Page&lt;&gt;(1,3);
+        &#x2F;&#x2F;2 执行分页查询
+        userDao.selectPage(page,null);
+        &#x2F;&#x2F;3 获取分页结果
+        System.out.println(&quot;当前页码值：&quot;+page.getCurrent());
+        System.out.println(&quot;每页显示数：&quot;+page.getSize());
+        System.out.println(&quot;一共多少页：&quot;+page.getPages());
+        System.out.println(&quot;一共多少条数据：&quot;+page.getTotal());
+        System.out.println(&quot;数据：&quot;+page.getRecords());
+    &#125;
+&#125;</code></pre>
+
+<h4 id="步骤2-设置分页拦截器"><a href="#步骤2-设置分页拦截器" class="headerlink" title="步骤2:设置分页拦截器"></a>步骤2:设置分页拦截器</h4><p>这个拦截器MP已经为我们提供好了，我们只需要将其配置成Spring管理的bean对象即可。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+public class MybatisPlusConfig &#123;
+    
+    @Bean
+    public MybatisPlusInterceptor mybatisPlusInterceptor()&#123;
+        &#x2F;&#x2F;1 创建MybatisPlusInterceptor拦截器对象
+        MybatisPlusInterceptor mpInterceptor&#x3D;new MybatisPlusInterceptor();
+        &#x2F;&#x2F;2 添加分页拦截器
+        mpInterceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+        return mpInterceptor;
+    &#125;
+&#125;</code></pre>
+
+<p>**说明:**上面的代码记不住咋办呢?</p>
+<p>这些内容在MP的官方文档中有详细的说明，我们可以查看官方文档类配置</p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221024103904.png"></p>
+<h4 id="步骤3-运行测试程序"><a href="#步骤3-运行测试程序" class="headerlink" title="步骤3:运行测试程序"></a>步骤3:运行测试程序</h4><p>如果想查看MP执行的SQL语句，可以修改application.yml配置文件，</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印SQL日志到控制台</code></pre>
+
+<p>打开日志后，就可以在控制台打印出对应的SQL语句，开启日志功能性能就会受到影响，调试完后记得关闭。</p>
+<h2 id="DQL编程控制"><a href="#DQL编程控制" class="headerlink" title="DQL编程控制"></a>DQL编程控制</h2><h3 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h3><h4 id="多条件查询格式"><a href="#多条件查询格式" class="headerlink" title="多条件查询格式"></a>多条件查询格式</h4><p><em>需要： 查询年龄大于等于18，小于65岁的用户</em></p>
+<ol>
+<li><p>格式一：常规格式</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">QueryWrapper&lt;User&gt; qw &#x3D; new QueryWrapper&lt;User&gt;();
+qw.lt(&quot;age&quot;,65);
+qw.ge(&quot;age&quot;,18);
+List&lt;User&gt; userList &#x3D; userDao.selectList(qw);
+Systeam.out.println(userList);</code></pre>
+</li>
+<li><p>格式二：链式编程格式</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">QueryWrapper&lt;User&gt; qw &#x3D; new QueryWrapper&lt;User&gt;();
+qw.lt(&quot;age&quot;,65).ge(&quot;age&quot;,18);
+List&lt;User&gt; userList &#x3D; userDao.selectList(qw);
+Systeam.out.println(userList);</code></pre>
+</li>
+<li><p>格式三：lambda格式(推荐)</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">QueryWrapper&lt;User&gt; qw &#x3D; new QueryWrapper&lt;User&gt;();
+        qw.lambda().lt(User::getAge, 65).ge(User::getAge,18);&#x2F;&#x2F;添加条件
+        List&lt;User&gt; userList &#x3D; userDao.selectList(qw);
+        System.out.println(userList);</code></pre>
+</li>
+<li><p>格式四：lambda格式(推荐)</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">LambdaQueryWrapper&lt;User&gt; qw &#x3D; new LambdaQueryWrapper&lt;User&gt;();
+        qw.lt(User::getAge, 65).ge(User::getAge,18);&#x2F;&#x2F;添加条件
+        List&lt;User&gt; userList &#x3D; userDao.selectList(qw);
+        System.out.println(userList);</code></pre></li>
+</ol>
+<hr>
+<p>并且(and)</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">LambdaQueryWrapper&lt;User&gt; lqw &#x3D; new LambdaQueryWrapper&lt;User&gt;();
+lqw.lt(User::getAge, 30).gt(User::getAge, 10);
+List&lt;User&gt; userList &#x3D; userDao.selectList(lqw);
+System.out.println(userList);</code></pre>
+
+<p>或者(or)</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">LambdaQueryWrapper&lt;User&gt; lqw &#x3D; new LambdaQueryWrapper&lt;User&gt;();
+lqw.lt(User::getAge, 30).or().gt(User::getAge, 10);
+List&lt;User&gt; userList &#x3D; userDao.selectList(lqw);
+System.out.println(userList);</code></pre>
+
+<h4 id="关于null的判定"><a href="#关于null的判定" class="headerlink" title="关于null的判定"></a>关于null的判定</h4><p>如果传入的某一个查询条件为空，则查询会失败。</p>
+<p>我们选择<code>lt(boolean condition, R column, Object val)</code>方法</p>
+<p>true，则添加条件，返回false则不添加条件</p>
+<p>因此，如果某一查询条件为空时，我们返回false。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Test
+   void testGetAll()&#123;
+       &#x2F;&#x2F;模拟页面传递过来的查询数据
+       UserQuery uq &#x3D; new UserQuery();
+       uq.setAge(10);
+       uq.setAge2(30);
+       LambdaQueryWrapper&lt;User&gt; lqw &#x3D; new LambdaQueryWrapper&lt;User&gt;();
+       lqw.lt(null!&#x3D;uq.getAge2(),User::getAge, uq.getAge2());
+       lqw.gt(null!&#x3D;uq.getAge(),User::getAge, uq.getAge());
+       List&lt;User&gt; userList &#x3D; userDao.selectList(lqw);
+       System.out.println(userList);
+   &#125;</code></pre>
+
+<h3 id="查询投影"><a href="#查询投影" class="headerlink" title="查询投影"></a>查询投影</h3><ul>
+<li>查询结果包含模型类中的部分属性</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221025100957.png"></p>
+<h3 id="查询条件"><a href="#查询条件" class="headerlink" title="查询条件"></a>查询条件</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221027102330.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221027102430.png"></p>
+<p>更多查询条件设置参看<a target="_blank" rel="noopener" href="https://mybatis.plus/guide/wrapper.html#abstractwrapper">https://mybatis.plus/guide/wrapper.html#abstractwrapper</a></p>
+<h3 id="映射匹配兼容性"><a href="#映射匹配兼容性" class="headerlink" title="映射匹配兼容性"></a>映射匹配兼容性</h3><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221027103743.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221027103843.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221027103951.png"></p>
+<p><img src="https://raw.githubusercontent.com/2295237514/image/main/20221027104021.png"></p>
+<h2 id="DML编程控制"><a href="#DML编程控制" class="headerlink" title="DML编程控制"></a>DML编程控制</h2><h3 id="id生成策略控制"><a href="#id生成策略控制" class="headerlink" title="id生成策略控制"></a>id生成策略控制</h3><p>不同的表应用不同的id生成策略</p>
+<ul>
+<li>日志：自增（1,2,3,4，……）</li>
+<li>购物订单：特殊规则（FQ23948AK3843）</li>
+<li>外卖单：关联地区日期等信息（10 04 20200314 34 91）</li>
+<li>关系表：可省略id</li>
+<li>……</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>@TableId</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>&#x3D;&#x3D;属性注解&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>模型类中用于表示主键的属性定义上方</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>设置当前类中主键属性的生成策略</td>
+</tr>
+<tr>
+<td>相关属性</td>
+<td>value(默认)：设置数据库表主键名称<br/>type:设置主键属性的生成策略，值查照IdType的枚举值</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Data
+@TableName(&quot;tbl_user&quot;)
+public class User &#123;
+    @TableId(type &#x3D; IdType.AUTO)
+    private Long id;
+    private String name;
+    @TableField(value&#x3D;&quot;pwd&quot;,select&#x3D;false)
+    private String password;
+    private Integer age;
+    private String tel;
+    @TableField(exist&#x3D;false)
+    private Integer online;
+&#125;</code></pre>
+
+<p>能不能在某一处进行配置，就能让所有的模型类都可以使用该主键ID策略呢?</p>
+<p>答案是肯定有，我们只需要在配置文件中添加如下内容:</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">mybatis-plus:
+  global-config:
+    db-config:
+    	id-type: assign_id</code></pre>
+
+<p>配置完成后，每个模型类的主键ID策略都将成为assign_id.</p>
+<h3 id="数据库表与模型类的映射关系"><a href="#数据库表与模型类的映射关系" class="headerlink" title="数据库表与模型类的映射关系"></a>数据库表与模型类的映射关系</h3><p>MP会默认将模型类的类名名首字母小写作为表名使用，假如数据库表的名称都以<code>tbl_</code>开头，那么我们就需要将所有的模型类上添加<code>@TableName</code></p>
+<p>配置起来还是比较繁琐，简化方式为在配置文件中配置如下内容:</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">mybatis-plus:
+  global-config:
+    db-config:
+    	table-prefix: tbl_</code></pre>
+
+<p>设置表的前缀内容，这样MP就会拿 <code>tbl_</code>加上模型类的首字母小写，就刚好组装成数据库的表名。</p>
+<h3 id="多记录操作"><a href="#多记录操作" class="headerlink" title="多记录操作"></a>多记录操作</h3><p>具体该如何实现多条删除，我们找找对应的API方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">int deleteBatchIds(@Param(Constants.COLLECTION) Collection&lt;? extends Serializable&gt; idList);</code></pre>
+
+<p>除了按照id集合进行批量删除，也可以按照id集合进行批量查询，还是先来看下API</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">List&lt;T&gt; selectBatchIds(@Param(Constants.COLLECTION) Collection&lt;? extends Serializable&gt; idList);</code></pre>
+
+<h3 id="逻辑删除"><a href="#逻辑删除" class="headerlink" title="逻辑删除"></a>逻辑删除</h3><ul>
+<li><p>删除操作业务问题：业务数据从数据库中丢弃</p>
+</li>
+<li><p>逻辑删除：为数据设置是否可用状态字段，删除时设置状态字段为不可用状态，数据保留在数据库中</p>
+</li>
+</ul>
+<h4 id="修改数据库表添加deleted列"><a href="#修改数据库表添加deleted列" class="headerlink" title="修改数据库表添加deleted列"></a>修改数据库表添加<code>deleted</code>列</h4><p>字段名可以任意，内容也可以自定义，比如<code>0</code>代表正常，<code>1</code>代表删除，可以在添加列的同时设置其默认值为<code>0</code>正常。</p>
+<h4 id="实体类添加属性"><a href="#实体类添加属性" class="headerlink" title="实体类添加属性"></a>实体类添加属性</h4><p>(1)添加与数据库表的列对应的一个属性名，名称可以任意，如果和数据表列名对不上，可以使用@TableField进行关系映射，如果一致，则会自动对应。</p>
+<p>(2)标识新增的字段为逻辑删除字段，使用<code>@TableLogic</code></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Data
+&#x2F;&#x2F;@TableName(&quot;tbl_user&quot;) 可以不写是因为配置了全局配置
+public class User &#123;
+    @TableId(type &#x3D; IdType.ASSIGN_UUID)
+    private String id;
+    private String name;
+    @TableField(value&#x3D;&quot;pwd&quot;,select&#x3D;false)
+    private String password;
+    private Integer age;
+    private String tel;
+    @TableField(exist&#x3D;false)
+    private Integer online;
+    @TableLogic(value&#x3D;&quot;0&quot;,delval&#x3D;&quot;1&quot;)
+    &#x2F;&#x2F;value为正常数据的值，delval为删除数据的值
+    private Integer deleted;
+&#125;</code></pre>
+
+<h4 id="运行删除方法"><a href="#运行删除方法" class="headerlink" title="运行删除方法"></a>运行删除方法</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Mybatisplus03DqlApplicationTests &#123;
+
+    @Autowired
+    private UserDao userDao;
+	
+    @Test
+    void testDelete()&#123;
+       userDao.deleteById(1L);
+    &#125;
+&#125;</code></pre>
+
+<p><strong>MP的逻辑删除会将所有的查询都添加一个未被删除的条件，也就是已经被删除的数据是不应该被查询出来的。</strong></p>
+<p>如果每个表都要有逻辑删除，那么就需要在每个模型类的属性上添加<code>@TableLogic</code>注解，如何优化?</p>
+<p>在配置文件中添加全局配置，如下:</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">mybatis-plus:
+  global-config:
+    db-config:
+      # 逻辑删除字段名
+      logic-delete-field: deleted
+      # 逻辑删除字面值：未删除为0
+      logic-not-delete-value: 0
+      # 逻辑删除字面值：删除为1
+      logic-delete-value: 1</code></pre>
+
+<h4 id="逻辑删除本质"><a href="#逻辑删除本质" class="headerlink" title="逻辑删除本质"></a>逻辑删除本质</h4><p><strong>逻辑删除的本质其实是修改操作。如果加了逻辑删除字段，查询数据时也会自动带上逻辑删除字段。</strong></p>
+<p>执行的SQL语句为:</p>
+<p>UPDATE tbl_user SET &#x3D;&#x3D;deleted&#x3D;&#x3D;&#x3D;1 where id &#x3D; ? AND &#x3D;&#x3D;deleted&#x3D;&#x3D;&#x3D;0</p>
+<h4 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h4><ul>
+<li>业务并发现象带来的问题：秒杀</li>
+</ul>
+<h5 id="步骤1-数据库表添加列"><a href="#步骤1-数据库表添加列" class="headerlink" title="步骤1:数据库表添加列"></a>步骤1:数据库表添加列</h5><p>列名可以任意，比如使用<code>version</code>,给列设置默认值为<code>1</code></p>
+<h5 id="步骤2-在模型类中添加对应的属性"><a href="#步骤2-在模型类中添加对应的属性" class="headerlink" title="步骤2:在模型类中添加对应的属性"></a>步骤2:在模型类中添加对应的属性</h5><p>根据添加的字段列名，在模型类中添加对应的属性值</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Data
+&#x2F;&#x2F;@TableName(&quot;tbl_user&quot;) 可以不写是因为配置了全局配置
+public class User &#123;
+    @TableId(type &#x3D; IdType.ASSIGN_UUID)
+    private String id;
+    private String name;
+    @TableField(value&#x3D;&quot;pwd&quot;,select&#x3D;false)
+    private String password;
+    private Integer age;
+    private String tel;
+    @TableField(exist&#x3D;false)
+    private Integer online;
+    private Integer deleted;
+    @Version
+    private Integer version;
+&#125;</code></pre>
+
+<h5 id="步骤3-添加乐观锁的拦截器"><a href="#步骤3-添加乐观锁的拦截器" class="headerlink" title="步骤3:添加乐观锁的拦截器"></a>步骤3:添加乐观锁的拦截器</h5><pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+public class MpConfig &#123;
+    @Bean
+    public MybatisPlusInterceptor mpInterceptor() &#123;
+        &#x2F;&#x2F;1.定义Mp拦截器
+        MybatisPlusInterceptor mpInterceptor &#x3D; new MybatisPlusInterceptor();
+        &#x2F;&#x2F;2.添加乐观锁拦截器
+        mpInterceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
+        return mpInterceptor;
+    &#125;
+&#125;</code></pre>
+
+<h5 id="步骤4-执行更新操作"><a href="#步骤4-执行更新操作" class="headerlink" title="步骤4:执行更新操作"></a>步骤4:执行更新操作</h5><pre class="line-numbers language-java" data-language="java"><code class="language-java">@SpringBootTest
+class Mybatisplus03DqlApplicationTests &#123;
+
+    @Autowired
+    private UserDao userDao;
+	
+    @Test
+    void testUpdate()&#123;
+       User user &#x3D; new User();
+        user.setId(3L);
+        user.setName(&quot;Jock666&quot;);
+        user.setVersion(1);
+        userDao.updateById(user);
+    &#125;
+&#125;</code></pre>
+
+<h3 id="代码生成器"><a href="#代码生成器" class="headerlink" title="代码生成器"></a>代码生成器</h3><ul>
+<li>模板: MyBatisPlus提供，可以自己提供，但是麻烦，不建议</li>
+<li>数据库相关配置:读取数据库获取表和字段信息</li>
+<li>开发者自定义配置:手工配置，比如ID生成策略</li>
+</ul>
+<p>步骤：</p>
+<ol>
+<li><p>添加依赖</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">&lt;!--代码生成器--&gt;
+&lt;dependency&gt;
+&lt;groupId&gt;com.baomidou&lt;&#x2F;groupId&gt;
+&lt;artifactId&gt;mybatis-plus-generator&lt;&#x2F;artifactId&gt;
+&lt;version&gt;3.4.1&lt;&#x2F;version&gt;
+&lt;&#x2F;dependency&gt;
+
+&lt;!--velocity模板引擎--&gt;
+&lt;dependency&gt;
+&lt;groupId&gt;org.apache.velocity&lt;&#x2F;groupId&gt;
+&lt;artifactId&gt;velocity-engine-core&lt;&#x2F;artifactId&gt;
+&lt;version&gt;2.3&lt;&#x2F;version&gt;
+&lt;&#x2F;dependency&gt;</code></pre>
+</li>
+<li><p>创建代码生成类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class CodeGenerator &#123;
+    public static void main(String[] args) &#123;
+        &#x2F;&#x2F;1.获取代码生成器的对象
+        AutoGenerator autoGenerator &#x3D; new AutoGenerator();
+
+        &#x2F;&#x2F;设置数据库相关配置
+        DataSourceConfig dataSource &#x3D; new DataSourceConfig();
+        dataSource.setDriverName(&quot;com.mysql.cj.jdbc.Driver&quot;);
+        dataSource.setUrl(&quot;jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;mybatisplus_db?serverTimezone&#x3D;UTC&quot;);
+        dataSource.setUsername(&quot;root&quot;);
+        dataSource.setPassword(&quot;root&quot;);
+        autoGenerator.setDataSource(dataSource);
+
+        &#x2F;&#x2F;设置全局配置
+        GlobalConfig globalConfig &#x3D; new GlobalConfig();
+        globalConfig.setOutputDir(System.getProperty(&quot;user.dir&quot;)+&quot;&#x2F;mybatisplus_04_generator&#x2F;src&#x2F;main&#x2F;java&quot;);    &#x2F;&#x2F;设置代码生成位置
+        globalConfig.setOpen(false);    &#x2F;&#x2F;设置生成完毕后是否打开生成代码所在的目录
+        globalConfig.setAuthor(&quot;黑马程序员&quot;);    &#x2F;&#x2F;设置作者
+        globalConfig.setFileOverride(true);     &#x2F;&#x2F;设置是否覆盖原始生成的文件
+        globalConfig.setMapperName(&quot;%sDao&quot;);    &#x2F;&#x2F;设置数据层接口名，%s为占位符，指代模块名称
+        globalConfig.setIdType(IdType.ASSIGN_ID);   &#x2F;&#x2F;设置Id生成策略
+        autoGenerator.setGlobalConfig(globalConfig);
+
+        &#x2F;&#x2F;设置包名相关配置
+        PackageConfig packageInfo &#x3D; new PackageConfig();
+        packageInfo.setParent(&quot;com.aaa&quot;);   &#x2F;&#x2F;设置生成的包名，与代码所在位置不冲突，二者叠加组成完整路径
+        packageInfo.setEntity(&quot;domain&quot;);    &#x2F;&#x2F;设置实体类包名
+        packageInfo.setMapper(&quot;dao&quot;);   &#x2F;&#x2F;设置数据层包名
+        autoGenerator.setPackageInfo(packageInfo);
+
+        &#x2F;&#x2F;策略设置
+        StrategyConfig strategyConfig &#x3D; new StrategyConfig();
+        strategyConfig.setInclude(&quot;tbl_user&quot;);  &#x2F;&#x2F;设置当前参与生成的表名，参数为可变参数
+        strategyConfig.setTablePrefix(&quot;tbl_&quot;);  &#x2F;&#x2F;设置数据库表的前缀名称，模块名 &#x3D; 数据库表名 - 前缀名  例如： User &#x3D; tbl_user - tbl_
+        strategyConfig.setRestControllerStyle(true);    &#x2F;&#x2F;设置是否启用Rest风格
+        strategyConfig.setVersionFieldName(&quot;version&quot;);  &#x2F;&#x2F;设置乐观锁字段名
+        strategyConfig.setLogicDeleteFieldName(&quot;deleted&quot;);  &#x2F;&#x2F;设置逻辑删除字段名
+        strategyConfig.setEntityLombokModel(true);  &#x2F;&#x2F;设置是否启用lombok
+        autoGenerator.setStrategy(strategyConfig);
+        &#x2F;&#x2F;2.执行生成操作
+        autoGenerator.execute();
+    &#125;
+&#125;</code></pre></li>
+</ol>
+<p><strong>对于代码生成器中的代码内容，我们可以直接从官方文档中获取代码进行修改</strong></p>
+<p><code>https://mp.baomidou.com/guide/generator.html</code></p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://2295237514.github.io/post/SSM.html",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://2295237514.github.io/post/SSM.html";
+            const title         = "「SSM」";
+            const excerpt       = `spring官网
+Spring
+Spring Framework是Spring生态圈中最基础的项目，是其他项目的根基
+
+
+学习路线
+核心容器的核心概念
+代码书写现状
+
+代码耦合度高
+
+
+解决方案
+
+使用对象时，在程序中不要主动使用ne...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    
+                </div>
+                <div class="pull-date">
+                    <time datetime="2022-10-28T09:22:15.033Z" itemprop="dateModified">最后编辑：2022-10-28</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" Web核心" target="_blank" rel="noopener" href="//post/Web核心.html">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" JVM" target="_blank" rel="noopener" href="//post/JVM.html">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                16
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                4
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/JavaWeb/" style="font-size: 0.6em;">JavaWeb</a> <a href="/tags/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 0.6em;">java基础知识</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 0.6em;">前端</a> <a href="/tags/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 0.8em;">算法与数据结构</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/post/Mysql%E8%BF%9B%E9%98%B6%E7%AF%87.html"><i class="fa  fa-book"></i> Mysql进阶篇</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/post/Redis%E5%85%A5%E9%97%A8.html"><i class="fa  fa-book"></i> Redis入门</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/post/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.html"><i class="fa  fa-book"></i> Java集合框架</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/post/%E9%9D%A2%E8%AF%95%E7%B2%BE%E9%80%89%E9%97%AE%E9%A2%98.html"><i class="fa  fa-book"></i> 面试精选问题</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/post/JVM.html"><i class="fa  fa-book"></i> JVM</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2023 Hexo 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by GLK.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
