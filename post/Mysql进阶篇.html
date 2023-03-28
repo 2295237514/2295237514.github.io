@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20230304135655.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/2295237514/image/main/20230304135723.png">
 <meta property="article:published_time" content="2023-03-02T08:24:15.000Z">
-<meta property="article:modified_time" content="2023-03-04T06:00:50.823Z">
+<meta property="article:modified_time" content="2023-03-06T06:22:54.831Z">
 <meta property="article:author" content="GLK">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/2295237514/image/main/20230304134935.png">
@@ -146,7 +146,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~17.05K
+                        ~17.07K
                     
                     字
                 </li>
@@ -157,7 +157,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1677909650823"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1678083774831"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -383,7 +383,7 @@ show engines;</code></pre>
 <h4 id="B-Tree"><a href="#B-Tree" class="headerlink" title="B-Tree"></a>B-Tree</h4><p><img src="https://raw.githubusercontent.com/2295237514/image/main/20230304135159.png"></p>
 <p>二叉树的缺点可以用红黑树来解决：</p>
 <p><img src="https://raw.githubusercontent.com/2295237514/image/main/20230304135254.png"></p>
-<p>红黑树也存在大数据量情况下，层级较深，检索速度慢的问题。</p>
+<p><strong>红黑树也存在大数据量情况下，层级较深，检索速度慢的问题。</strong></p>
 <p>为了解决上述问题，可以使用 B-Tree 结构。<br>B-Tree (多路平衡查找树) 以一棵最大度数（max-degree，指一个节点的子节点个数）为5（5阶）的 b-tree 为例（每个节点最多存储4个key，5个指针）</p>
 <p><img src="https://raw.githubusercontent.com/2295237514/image/main/20230304135427.png"></p>
 <blockquote>
@@ -495,9 +495,9 @@ select * from user where name &#x3D; &#39;Arm&#39;;
 <p>答：假设一行数据大小为1k，一页中可以存储16行这样的数据。InnoDB 的指针占用6个字节的空间，主键假设为bigint，占用字节数为8.<br>可得公式：<code>n * 8 + (n + 1) * 6 = 16 * 1024</code>，其中 8 表示 bigint 占用的字节数，n 表示当前节点存储的key的数量，(n + 1) 表示指针数量（比key多一个）。算出n约为1170。</p>
 <p>如果树的高度为2，那么他能存储的数据量大概为：<code>1171 * 16 = 18736</code>；<br>如果树的高度为3，那么他能存储的数据量大概为：<code>1171 * 1171 * 16 = 21939856</code>。</p>
 <p>另外，如果有成千上万的数据，那么就要考虑分表，涉及运维篇知识。</p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>创建索引：<br><code>CREATE [ UNIQUE | FULLTEXT ] INDEX index_name ON table_name (index_col_name, ...);</code><br>如果不加 CREATE 后面不加索引类型参数，则创建的是常规索引</p>
-<p>查看索引：<br><code>SHOW INDEX FROM table_name;</code></p>
-<p>删除索引：<br><code>DROP INDEX index_name ON table_name;</code></p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p><strong>创建索引：</strong><br><code>CREATE [ UNIQUE | FULLTEXT ] INDEX index_name ON table_name (index_col_name, ...);</code><br>如果不加 CREATE 后面不加索引类型参数，则创建的是常规索引</p>
+<p><strong>查看索引：</strong><br><code>SHOW INDEX FROM table_name;</code></p>
+<p><strong>删除索引：</strong><br><code>DROP INDEX index_name ON table_name;</code></p>
 <p>案例：</p>
 <pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">-- name字段为姓名字段，该字段的值可能会重复，为该字段创建索引
 create index idx_user_name on tb_user(name);
@@ -511,12 +511,14 @@ create index idx_user_email on tb_user(email);
 -- 删除索引
 drop index idx_user_email on tb_user;</code></pre>
 
-<h3 id="使用规则"><a href="#使用规则" class="headerlink" title="使用规则"></a>使用规则</h3><h4 id="最左前缀法则"><a href="#最左前缀法则" class="headerlink" title="最左前缀法则"></a>最左前缀法则</h4><p>如果索引关联了多列（联合索引），要遵守最左前缀法则，最左前缀法则指的是查询从索引的最左列开始，并且不跳过索引中的列。<br>如果跳跃某一列，索引将部分失效（后面的字段索引失效）。</p>
+<h3 id="使用规则"><a href="#使用规则" class="headerlink" title="使用规则"></a>使用规则</h3><h4 id="最左前缀法则"><a href="#最左前缀法则" class="headerlink" title="最左前缀法则"></a>最左前缀法则</h4><p>如果索引关联了多列（联合索引），要遵守最左前缀法则，最左前缀法则指的是查询从索引的最左列开始，并且不跳过索引中的列。</p>
+<p>如果最左边的列不存在，索引将<strong>全部失效</strong>,</p>
+<p>如果跳跃某一列，索引将<strong>部分失效</strong>（<strong>后面的字段索引失效</strong>）。</p>
 <p>联合索引中，出现范围查询（&lt;, &gt;），范围查询右侧的列索引失效。可以用&gt;&#x3D;或者&lt;&#x3D;来规避索引失效问题。</p>
 <h4 id="索引失效情况"><a href="#索引失效情况" class="headerlink" title="索引失效情况"></a>索引失效情况</h4><ol>
 <li>在索引列上进行运算操作，索引将失效。如：<code>explain select * from tb_user where substring(phone, 10, 2) = &#39;15&#39;;</code></li>
 <li>字符串类型字段使用时，不加引号，索引将失效。如：<code>explain select * from tb_user where phone = 17799990015;</code>，此处phone的值没有加引号</li>
-<li>模糊查询中，如果仅仅是尾部模糊匹配，索引不会是失效；如果是头部模糊匹配，索引失效。如：<code>explain select * from tb_user where profession like &#39;%工程&#39;;</code>，前后都有 % 也会失效。</li>
+<li>模糊查询中，如果仅仅是尾部模糊匹配，索引不会是失效；如果是<strong>头部模糊匹配，索引失效</strong>。如：<code>explain select * from tb_user where profession like &#39;%工程&#39;;</code>，前后都有 % 也会失效。</li>
 <li>用 or 分割开的条件，如果 or 其中一个条件的列没有索引，那么涉及的索引都不会被用到。</li>
 <li>如果 MySQL 评估使用索引比全表更慢，则不使用索引。</li>
 </ol>
@@ -1244,7 +1246,7 @@ select * from tb_sku as s, (select id from tb_sku order by id limit 9000000, 10)
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-03-04T06:00:50.823Z" itemprop="dateModified">最后编辑：2023-03-04</time>
+                    <time datetime="2023-03-06T06:22:54.831Z" itemprop="dateModified">最后编辑：2023-03-06</time>
                 </div>
             </div>
         </footer>
@@ -1256,6 +1258,10 @@ select * from tb_sku as s, (select id from tb_sku order by id limit 9000000, 10)
                 <a title=" Redis入门" target="_blank" rel="noopener" href="//post/Redis入门.html">&lt; 上一篇</a>
             </div>
             
+            
+            <div class="nav-next clearfix">
+                <a title=" 深入学习Spring" target="_blank" rel="noopener" href="//post/深入学习Spring.html">下一篇 &gt;</a>
+            </div>
             
         </nav>
     
@@ -1291,7 +1297,7 @@ select * from tb_sku as s, (select id from tb_sku order by id limit 9000000, 10)
                 文章
             </span>
             <span class="count">
-                16
+                17
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -1336,6 +1342,12 @@ select * from tb_sku as s, (select id from tb_sku order by id limit 9000000, 10)
         
           
           
+            <a class="list-group-item" href="/post/%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0Spring.html"><i class="fa  fa-book"></i> 深入学习Spring</a>
+            
+          
+        
+          
+          
             <a class="list-group-item" href="/post/Mysql%E8%BF%9B%E9%98%B6%E7%AF%87.html"><i class="fa  fa-book"></i> Mysql进阶篇</a>
             
           
@@ -1359,11 +1371,7 @@ select * from tb_sku as s, (select id from tb_sku order by id limit 9000000, 10)
           
         
           
-          
-            <a class="list-group-item" href="/post/JVM.html"><i class="fa  fa-book"></i> JVM</a>
             
-          
-        
           
             
           
